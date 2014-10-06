@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         width="900" height="900">
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+    <s:DataGrid id="auctionItemFeeHolder" x="84" y="300" width="732" height="253"
+                requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="@idBidder" headerText="Bidder" width="75"></s:GridColumn>
+                <s:GridColumn dataField="@id" headerText="Item" width="75"></s:GridColumn>
+                <s:GridColumn dataField="@quantity" headerText="Qty" width="50"></s:GridColumn>
+                <s:GridColumn dataField="@description" headerText="Description"></s:GridColumn>
+                <s:GridColumn dataField="@display" headerText="Cost"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+    </s:DataGrid>
+    <s:Image id="buisnessLogo" y="10" horizontalCenter="0" source="assets/images/logo.jpg"/>
+    <s:RichText id="companyInfo" x="554" y="136" width="262" height="63" text="RichText"/>
+    <s:RichText id="bidderInfo" x="84" y="192" width="262" height="63" text="RichText"/>
+    <s:Label x="593" y="600" text="Bid Total:"/>
+    <s:Label id="bidTotalTxt" x="729" y="600" text="Bid Total Amount" textAlign="left"/>
+    <s:Button x="10" y="849" label="Email"/>
+    <s:Button x="88" y="849" label="Print"/>
+    <s:Label x="592" y="789" text="Cash"/>
+    <s:Label x="592" y="821" text="Cashier Check"/>
+    <s:Label x="592" y="858" text="Credit Card"/>
+    <s:Label x="593" y="620" text="Premium:"/>
+    <s:Label x="593" y="640" text="Sub-total:"/>
+    <s:Label id="premiumTotalTxt" x="729" y="620" text="Premium Total Amount" textAlign="left"/>
+    <s:Label id="subtotalTxt" x="729" y="640" text="Sub-total Amount" textAlign="left"/>
+    <s:Label x="593" y="669" text="Tax:"/>
+    <s:Label id="taxAmountTxt" x="729" y="669" text="Tax Amount"/>
+    <s:Label x="593" y="721" text="Total:"/>
+    <s:Label id="totalAmount" x="729" y="721" text="Total Amount"/>
+    <s:TextArea id="xmlPrint" x="84" y="582" width="490" height="259"/>
+</s:Group>

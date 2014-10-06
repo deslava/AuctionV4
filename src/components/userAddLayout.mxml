@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         width="886" height="396" currentState="createUser">
+    <s:states>
+        <s:State name="createUser"/>
+        <s:State name="registeredUser"/>
+    </s:states>
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+
+    <s:DropDownList id="userType" includeIn="createUser" x="182" y="82" width="228" enabled="true"
+                    prompt="Select User Type ..." selectedIndex="-1">
+    </s:DropDownList>
+    <s:Label includeIn="createUser" x="182" y="126" text="Name"/>
+    <s:TextInput id="nameUser" includeIn="createUser" x="182" y="146" width="229" enabled="false"/>
+    <s:Label includeIn="createUser" x="182" y="177" text="Email"/>
+    <s:TextInput id="emailUser" includeIn="createUser" x="182" y="197" width="229" enabled="false"
+                 restrict="a-z,0-9,@,_,\-,."/>
+    <s:Label includeIn="createUser" x="182" y="227" text="Status"/>
+    <s:DropDownList id="statusUser" includeIn="createUser" x="182" y="248" width="228" enabled="false"
+                    prompt="Select User Status ..." selectedIndex="-1"></s:DropDownList>
+    <s:Label includeIn="createUser" x="486" y="60" text="User Id"/>
+    <s:TextInput id="adminPanelUserId" includeIn="createUser" x="486" y="81" width="228"
+                 enabled="false" restrict="A,S,0-9"/>
+    <s:Label includeIn="createUser" x="486" y="126" text="State"/>
+    <s:DropDownList id="houseIDstates" includeIn="createUser" x="486" y="146" width="228"
+                    enabled="false" prompt="Select State ..." selectedIndex="-1"></s:DropDownList>
+    <s:Label id="createUserAdminPanelError" includeIn="createUser" x="486" y="257"
+             text="Create a User Fill Available fields"/>
+    <s:Button id="CreateUserBtn" includeIn="createUser" x="579" y="279" label="Create User"
+              enabled="false"/>
+    <s:CheckBox id="emailUserCreate" includeIn="createUser" x="486" y="197" label="Send Email"
+                enabled="false" selected="true"/>
+    <s:Label includeIn="createUser" x="182" y="60" text="User Type"/>
+    <s:Label includeIn="registeredUser" x="373" y="117" text="User ID"/>
+    <s:Label includeIn="registeredUser" x="373" y="170" text="Email"/>
+    <s:Label includeIn="registeredUser" x="373" y="221" text="Password"/>
+    <s:Label id="userName" includeIn="registeredUser" x="482" y="118" text="Label"/>
+    <s:Label id="userId" includeIn="registeredUser" x="482" y="170" text="Label"/>
+    <s:Label id="userPass" includeIn="registeredUser" x="482" y="221" text="Label"/>
+    <s:Button id="goToCreateUserBtn" includeIn="registeredUser" x="482" y="299"
+              label="Create New User"/>
+</s:Group>

@@ -1,0 +1,299 @@
+// ActionScript file
+import com.google.code.flexiframe.IFrame;
+
+import components.auctionDisplayInfo;
+
+import flash.events.Event;
+import flash.events.ProgressEvent;
+
+import flashx.textLayout.conversion.TextConverter;
+
+import mx.charts.chartClasses.RenderData;
+import mx.collections.ArrayCollection;
+import mx.collections.XMLListCollection;
+import mx.core.IFactory;
+import mx.core.IVisualElement;
+import mx.events.FlexEvent;
+import mx.managers.CursorManager;
+import mx.rpc.events.FaultEvent;
+import mx.rpc.events.ResultEvent;
+import mx.rpc.http.HTTPService;
+
+import spark.components.List;
+
+private var xmlLoaderDB:HTTPService = new HTTPService();
+private var auctionInfoXML:XML;
+
+
+private function displayAuctionFile_screenUpdate(event:FlexEvent):void{
+	
+	
+	
+	var s:String;
+	var node:XML = new XML();
+	
+	node = auctionInfoXML;
+	
+	
+	s = auctionInfoXML.address.toString();
+	
+	auctionTitle.text = auctionInfoXML.name;
+	categoryDisplay.text = auctionInfoXML.auctionCategory;
+	dateTimevalues.text = auctionInfoXML.endTime;
+	locationValues.text = auctionInfoXML.address + "\n" + auctionInfoXML.city + ", " +  auctionInfoXML.auctionState + " " + auctionInfoXML.zipcode;
+	
+	s= auctionInfoXML.rtAuctionDesInfo;
+	auctionNotesText.text = auctionInfoXML.AuctionDesInfo;
+	auctionNotesText.textFlow = TextConverter.importToFlow(s, TextConverter.TEXT_FIELD_HTML_FORMAT);
+	
+
+	assignHighlightImagHolderToList(imgHolderHightlight, auctionInfoXML);
+
+}
+
+
+
+public function displayAuctionFile(auctionInfo:XML):String{
+	
+	
+	var s:String;
+	
+	var node:XML = new XML();
+	
+	node = auctionInfoXML;
+	
+	if (node == null)
+		return s;
+	
+	
+	s = auctionInfoXML.address.toString();
+	
+	auctionTitle.text = auctionInfoXML.name;
+	categoryDisplay.text = auctionInfoXML.auctionCategory;
+	dateTimevalues.text = auctionInfoXML.endTime;
+	locationValues.text = auctionInfoXML.address + "\n" + auctionInfoXML.city + ", " +  auctionInfoXML.auctionState + " " + auctionInfoXML.zipcode;
+	
+	s= auctionInfoXML.rtAuctionDesInfo;
+	auctionNotesText.text = auctionInfoXML.AuctionDesInfo;
+	auctionNotesText.textFlow = TextConverter.importToFlow(s, TextConverter.TEXT_FIELD_HTML_FORMAT);
+	
+	assignHighlightImagHolderToList(imgHolderHightlight, auctionInfoXML);
+	
+
+	return s;
+	
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+private function loadAuctionFile(url:String):void{
+	
+	
+	
+	auctionInfoXML = this.data as XML;
+	auctionInfoXML;
+	
+	var node:String = "";
+	node = auctionInfoXML.address.toString();
+	
+	
+	
+	var obj:Object = new Object;
+	
+	xmlLoaderDB = new HTTPService();
+	xmlLoaderDB.addEventListener(ResultEvent.RESULT, loadAuctionFileVerify);
+	xmlLoaderDB.addEventListener(ResultEvent.RESULT, loadAuctionFileFail);
+	
+	
+	xmlLoaderDB.contentType="application/x-www-form-urlencoded";
+	xmlLoaderDB.resultFormat="text";
+	xmlLoaderDB.method = "POST";
+	
+	xmlLoader(url, obj)
+	
+	
+	
+}
+
+private function loadAuctionFileFail(event:Event):void{
+	
+	CursorManager.removeBusyCursor();
+	
+	
+	
+}
+
+private function loadAuctionFileVerify(event:Event):void{
+	
+	CursorManager.removeBusyCursor();
+	
+	var responseXML:XML = XML(xmlLoaderDB.lastResult);
+	auctionInfoXML = responseXML.auction[0];
+	var node:XML = auctionInfoXML;
+	xmlLoaderDB.removeEventListener(ResultEvent.RESULT, loadAuctionFileVerify);
+	xmlLoaderDB.removeEventListener(ResultEvent.RESULT, loadAuctionFileFail);
+	
+	
+	
+	var node2:XML = <downloaded>done</downloaded>;
+	
+	if(auctionInfoXML == null)
+	{
+		
+		auctionInfoXML;
+		return;
+	}
+	
+	else{
+	auctionInfoXML.appendChild(node2);
+
+	}
+	
+	this.data = auctionInfoXML as Object;
+	
+	loadAuctionFileValid();
+	
+}
+
+private function loadAuctionFileValid():void{
+	
+	displayAuctionFile(auctionInfoXML);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+private function assignHighlightImagHolderToList(list:List, xml:XML):void{
+	
+	list.dataProvider = null;
+	var _itemRenderer:IFactory = list.itemRenderer;
+	list.itemRenderer = null;
+	list.itemRenderer = _itemRenderer;
+
+	var s:String = xml.auctionImages.toString();
+	
+	s = xml.auctionImages.toString();
+	if(s != "" ){
+		var xl:XMLList = XMLList(xml.auctionImages.children());
+		var xc:XMLListCollection = new XMLListCollection( xl  );
+		list.dataProvider = xc.list;}
+	else{
+		xml.auctionImages="";
+		}
+
+	
+	list.dataGroup.invalidateDisplayList();
+	
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+private function xmlLoader(url:String, obj:Object):void
+{
+	CursorManager.setBusyCursor();
+	
+	xmlLoaderDB.url = url;
+	var param:Object = new Object();
+	
+	param = obj;
+	param.nocache = new Date().getTime(); 
+	
+	xmlLoaderDB.send(param);
+	
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+protected function itemrenderer1_enterFrameHandler(event:Event):void
+{
+
+	auctionInfoXML = event.target.data as XML;
+
+	
+	var s:String = ""; 
+	
+	if(auctionInfoXML != null)
+		s = auctionInfoXML.downloaded.toString();
+	else 
+		return;
+
+	
+	if(s == "done")
+	{
+		event.target.addEventListener(FlexEvent.SHOW, displayAuctionFile_screenUpdate);
+		
+		return;
+	}
+	
+	
+	
+	if(s != "done")
+	{
+	
+		var urlString:String;
+		urlString = auctionInfoXML.auctionXML.toString();
+		loadAuctionFile(urlString);
+		return;
+
+	}
+	else{
+		
+
+		
+		displayAuctionFile(this.data as XML);
+		
+		return;
+	}
+	
+
+//	event.target.removeEventListener(Event.ENTER_FRAME, itemrenderer1_enterFrameHandler);
+//	return;
+	
+
+}
+
+protected function itemrenderer1_addedToStageHandler(event:Event):void
+{
+	// TODO Auto-generated method stub
+	
+	
+	auctionInfoXML = this.data as XML;
+	auctionInfoXML;
+	
+	this.focusEnabled = true;
+	this.setFocus();
+	
+	event.target.addEventListener(Event.ENTER_FRAME, itemrenderer1_enterFrameHandler);
+	
+}
+
+
+protected function itemrenderer1_creationCompleteHandler():void
+{
+	// TODO Auto-generated method stub
+	
+	auctionInfoXML = this.data as XML;
+	auctionInfoXML;
+	
+	
+	this.addEventListener(Event.ENTER_FRAME, itemrenderer1_enterFrameHandler);
+	
+	this.removeEventListener(Event.ENTER_FRAME, itemrenderer1_enterFrameHandler);
+	
+	
+/*	if(auctionInfoXML != null){
+	var node:XML= null; 
+	node= auctionInfoXML.downloaded as XML; 
+	node;
+	
+	if(node != null)
+		this.removeEventListener(Event.ENTER_FRAME, itemrenderer1_enterFrameHandler);
+		this.removeEventListener(FlexEvent.SHOW, displayAuctionFile_screenUpdate);
+	}*/
+
+}
+

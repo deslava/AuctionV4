@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009"
+                xmlns:s="library://ns.adobe.com/flex/spark"
+                xmlns:components="components.*"
+                width="980" height="330" label="Bid and View Full Item Description"
+                autoDrawBackground="true">
+
+    <s:states>
+        <s:State name="State1"/>
+        <s:State name="State2"/>
+    </s:states>
+
+    <s:Rect id="background" includeIn="State1, State2" width="960" height="300" horizontalCenter="0"
+            verticalCenter="0"
+            horizontalCenter.State2="0" verticalCenter.State2="0">
+        <s:fill>
+            <s:SolidColor id="bgFill" color="0xFFFFFF"/>
+        </s:fill>
+    </s:Rect>
+
+    <fx:DesignLayer id="S1">
+        <s:TextArea id="xmlDBInfo" includeIn="State1" x="74" y="130" width="317" height="180"
+                    enabled="false" visible="false"/>
+        <s:TextArea id="xmlFileInfo" includeIn="State1" x="429" y="133" width="438" height="135"
+                    enabled="false" visible="false"/>
+        <s:Button id="loadAuctionPreviewBtn" includeIn="State1" x="454" y="294"
+                  label="View Auction Details"/>
+        <s:Button id="auctionViewItemBtn" includeIn="State1" x="842" y="294" label="View Items Details"/>
+    </fx:DesignLayer>
+
+    <fx:DesignLayer id="S2">
+        <s:Button id="loadItemPreviewBtn" includeIn="State2" x="800" y="294" width="150" label="Bid on Items"/>
+        <s:List id="xmlItemsDBInfo" includeIn="State2" x="30" y="39" width="355" height="276"
+                itemRenderer="components.auctionItemDisplay" useVirtualLayout="false"></s:List>
+        <s:Button id="viewAuctionDisplayBtn" includeIn="State2" x="459" y="294"
+                  label="Return to Auction description"/>
+        <s:TextArea id="itemSelectedTxt" includeIn="State2" x="460" y="21" width="462" height="163" visible="false"
+                    enabled="false"/>
+
+        <s:Label id="descriptionText" includeIn="State2" x="393" y="85" fontWeight="bold" text="Description:"
+                 textAlign="left"/>
+        <s:TextArea id="itemDescription" includeIn="State2" x="393" y="103" width="557" height="110"
+                    borderColor="#FFFFFF" borderVisible="true" editable="false" enabled="true"
+                    focusEnabled="false" fontSize="13" fontWeight="bold" textAlign="left"
+                    contentBackgroundColor.State2="#FFFFFF"/>
+        <s:Label id="itemTitle" x="393" includeIn="State2" y="24" width="324" height="37" fontSize="16"
+                 fontWeight="bold" text="Label" textAlign="left"/>
+        <s:Label id="categoryText" includeIn="State2" x="725" y="48.5" fontSize="14" fontWeight="bold"
+                 text="Category:"/>
+        <s:Label id="ReserveBidNowLabel" includeIn="State2" x="395" y="63" width="210" color="#FF0000" fontSize="12"
+                 fontWeight="bold" text="Label" textAlign="left"/>
+        <s:Label id="itemIdLabel" includeIn="State2" x="725" y="24" fontSize="14" fontWeight="bold" text="Item ID:"/>
+        <s:Label id="itemIDtext" includeIn="State2" x="814" y="24" width="137" fontSize="14" text="Label"/>
+        <s:Label id="categoryDisplay2" includeIn="State2" x="814" y="48.5" width="137" fontSize="14"/>
+        <components:countDownDisplay id="countDownTimer" includeIn="State1" x="108" y="43">
+        </components:countDownDisplay>
+        <components:itemCurrentBidDisplay id="currentItemBidDisplay" includeIn="State2" x="405" y="225" width="556">
+        </components:itemCurrentBidDisplay>
+        <s:Label includeIn="State1" x="19" y="67" fontWeight="bold" text="Date &amp; Time:"/>
+        <s:Label includeIn="State1" x="448" y="43" fontWeight="bold" text="Location:"/>
+        <s:TextArea id="locationValues" includeIn="State1" x="448" y="58" width="511" height="45"
+                    borderColor="#FFFFFF" borderVisible="true" chromeColor="#FFD800" editable="false"
+                    enabled="true" focusEnabled="false" fontSize="13" fontWeight="bold"/>
+        <s:Label includeIn="State1" x="19" y="110" fontWeight="bold" text="Highlights:"/>
+        <s:Label includeIn="State1" x="448" y="110" fontWeight="bold" text="Auction Description"/>
+        <s:TextArea id="dateTimevalues" includeIn="State1" x="28" y="80" width="271" height="21"
+                    borderColor="#FFFFFF" editable="false" enabled="true" focusEnabled="false"
+                    fontSize="13" fontWeight="bold"/>
+
+        <s:Label id="auctionTitle" includeIn="State1" x="19" y="18" width="339" fontSize="16"
+                 fontWeight="bold" text="Label"/>
+        <s:Label includeIn="State1" x="20" y="43" fontWeight="bold" text="Auction Ends:"/>
+        <s:TextArea id="auctionNotesText" includeIn="State1" x="447" y="130" width="512" height="156"
+                    borderColor="#FFFFFF" chromeColor="#FFD800" editable="false" enabled="true"
+                    focusEnabled="false"/>
+        <s:List id="imgHolderHightlight" includeIn="State1" x="19" y="134" width="325" height="181"
+                borderVisible="false" cacheAsBitmap="false" chromeColor="#FFD800"
+                itemRenderer="components.RepeatedItem1" useVirtualLayout="false">
+            <s:layout>
+                <s:TileLayout horizontalAlign="center" orientation="rows"
+                              requestedColumnCount="2" requestedRowCount="2"
+                              verticalAlign="middle"/>
+            </s:layout>
+
+        </s:List>
+        <s:Label includeIn="State1" x="448" y="18" fontWeight="bold" text="Category:"/>
+        <s:Label id="categoryDisplay" includeIn="State1" x="513" y="18" width="446"/>
+        <s:Label id="repeatAuctionName" includeIn="State2" x="30" y="24" fontWeight="bold"
+                 text="Auction Items"/>
+
+    </fx:DesignLayer>
+
+
+</s:ItemRenderer>

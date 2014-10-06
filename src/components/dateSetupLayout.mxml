@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:mx="library://ns.adobe.com/flex/mx" width="368" height="164">
+
+    <fx:Script source="timeFunction.as"/>
+
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+    <s:Label x="23" y="19" text="End Time Hour, Minute, Date"/>
+    <s:NumericStepper id="auctionHourTab" x="23" y="44" maximum="12" minimum="1" value="7"/>
+    <s:NumericStepper id="auctionMinuteTab" x="100" y="44" maximum="59"/>
+    <s:DropDownList id="ampmTab" x="172" y="45" width="83" enabled="true" prompt="AM/PM"
+                    selectedIndex="-1"></s:DropDownList>
+    <mx:DateField id="auctionDateTab" x="22" y="80" width="131" enabled="true"
+                  selectableRange="{{rangeStart : new Date()}}" showToday="true"/>
+    <s:Label id="currentTimeDisplay" x="22" y="117" text="Label"/>
+    <s:Label id="closingAuctionTime" x="22" y="137" text="Label"/>
+    <s:Label id="countDownTimerTxt" x="242" y="137" text="Label"/>
+    <s:Button id="setDateBtn" x="172" y="82" width="85" label="Set Date"/>
+</s:Group>

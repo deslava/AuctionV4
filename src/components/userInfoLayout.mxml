@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         width="886" height="396" currentState="StaticInfo">
+    <s:states>
+        <s:State name="StaticInfo"/>
+        <s:State name="EditInfo"/>
+    </s:states>
+    <fx:Declarations>
+        <s:RadioButtonGroup id="radiogroup1"/>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+    <s:TitleWindow id="userInfoPanel" includeIn="StaticInfo" x="10" y="10" width="867" height="377"
+                   skinClass="skins.noCloseBtn" title="Current User Information">
+        <s:Label x="18" y="11" text="Name"/>
+        <s:Label x="18" y="53" text="User ID"/>
+        <s:Label x="18" y="97" text="Password"/>
+        <s:Label x="18" y="136" text="Email"/>
+        <s:Label x="18" y="172" text="User Type"/>
+        <s:Label x="18" y="213" text="State"/>
+        <s:Label id="userNameLabel" x="87" y="11" text="Label"/>
+        <s:Label id="userIdLabel" x="87" y="53" text="Label"/>
+        <s:Label id="userPassLabel" x="87" y="97" text="Label"/>
+        <s:Label id="userEmailLabel" x="87" y="136" text="Label"/>
+        <s:Label id="userTypeLabel" x="87" y="172" text="Label"/>
+        <s:Label id="userCurrStateLabel" x="87" y="213" text="Label"/>
+
+
+        <s:Label id="personalTxt" x="274" y="11" text="Personal Information"/>
+        <s:Label id="nameTxt" x="274" y="53" text="Name"/>
+        <s:Label id="addressTxt" x="274" y="97" text="Address"/>
+        <s:Label id="stateTxt" x="274" y="136" text="State"/>
+        <s:Label id="zipocodeTxt" x="274" y="172" text="Zipcode"/>
+        <s:Label id="phoneTxt" x="274" y="213" text="Phone"/>
+
+        <s:Label id="businessTxt" x="589" y="11" text="Business Information"/>
+        <s:Label id="name1Txt" x="589" y="53" text="Name"/>
+        <s:Label id="address1Txt" x="589" y="97" text="Address"/>
+        <s:Label id="state1Txt" x="589" y="136" text="State"/>
+        <s:Label id="zipcode2Txt" x="589" y="172" text="Zipcode"/>
+        <s:Label id="phone2Txt" x="589" y="213" text="Phone"/>
+
+        <s:Label id="nameTxtLabel" x="339" y="53" width="180" text="Label"/>
+        <s:Label id="addressTxtLabel" x="339" y="97" width="180" height="31" text="Label"/>
+        <s:Label id="stateTxtLabel" x="339" y="136" width="180" text="Label"/>
+        <s:Label id="zipocodeTxtLabel" x="339" y="172" width="180" text="Label"/>
+        <s:Label id="phoneTxtLabel" x="339" y="213" width="180" text="Label"/>
+
+        <s:Label id="name1TxtLabel" x="659" y="53" width="180" text="Label"/>
+        <s:Label id="address1TxtLabel" x="659" y="97" width="180" height="31" text="Label"/>
+        <s:Label id="state1TxtLabel" x="659" y="136" width="180" text="Label"/>
+        <s:Label id="zipcode2TxtLabel" x="659" y="172" width="180" text="Label"/>
+        <s:Label id="phone2TxtLabel" x="659" y="213" width="180" text="Label"/>
+
+        <s:Group x="10" y="259" width="538" height="75" id="CreditCardBox1">
+            <s:Label id="CCTxt" x="12" y="17" text="Type of Credit Card"/>
+            <s:Label id="ccNumTxt" x="257" y="17" text="Credit Card Number"/>
+            <s:Label id="cscTxt" x="257" y="53" text="CSC"/>
+            <s:Label id="experationTxt" x="12" y="53" text="Expiration Date"/>
+            <s:Label id="CCTxtLabel" x="147" y="17" text="Label"/>
+            <s:Label id="ccNumTxtLabel" x="397" y="17" text="Label"/>
+            <s:Label id="experationTxtLabel" x="147" y="53" text="** / **"/>
+            <s:Label id="cscTxtLabel" x="397" y="53" text="****"/>
+        </s:Group>
+        <s:Button id="editUserInfoBtn" x="590" y="313" label="Edit Info"/>
+        <s:Label id="accountStatusTxt" x="590" y="276" text="Account Status"/>
+        <s:Label id="accountStatusTxtLabel" x="715" y="276" text="Label"/>
+    </s:TitleWindow>
+
+    <s:TitleWindow id="updateInfoPanel" includeIn="EditInfo" x="10" y="10" width="867" height="377"
+                   title="Update User Information">
+        <s:Label x="18" y="11" text="Name"/>
+        <s:Label x="18" y="53" text="User ID"/>
+        <s:Label x="18" y="97" text="Password"/>
+        <s:Label x="18" y="136" text="Email"/>
+        <s:Label x="18" y="172" text="User Type"/>
+        <s:Label x="18" y="213" text="State"/>
+        <s:TextInput id="userNameLabel0" x="84" y="6" text="Label"/>
+        <s:Label id="userIdLabel0" x="84" y="53" text="Label"/>
+        <s:TextInput id="userPassLabel0" x="84" y="92" text="Label"/>
+        <s:Label id="userEmailLabel0" x="84" y="136" text="Label"/>
+        <s:Label id="userTypeLabel0" x="84" y="172" text="Label"/>
+        <s:DropDownList id="states1" x="54" y="208" width="158" prompt="Select a State ..."
+                        selectedIndex="-1"></s:DropDownList>
+
+
+        <s:Label id="personalTxt0" x="274" y="11" text="Personal Information"/>
+        <s:Label id="nameTxt0" x="275" y="53" text="Name"/>
+        <s:Label id="addressTxt0" x="275" y="97" text="Address"/>
+        <s:Label id="stateTxt0" x="275" y="136" text="State"/>
+        <s:Label id="zipocodeTxt0" x="275" y="172" text="Zipcode"/>
+        <s:Label id="phoneTxt0" x="275" y="213" text="Phone"/>
+
+        <s:Label id="businessTxt0" x="589" y="11" text="Business Information"/>
+        <s:Label id="name0" x="589" y="53" text="Name"/>
+        <s:Label id="address0" x="589" y="97" text="Address"/>
+        <s:Label id="state0" x="589" y="136" text="State"/>
+        <s:Label id="zipcode0" x="589" y="172" text="Zipcode"/>
+        <s:Label id="phone0" x="589" y="213" text="Phone"/>
+
+        <s:TextInput id="nameTxtLabel0" x="340" y="47" width="180" text="Label"/>
+        <s:TextInput id="addressTxtLabel0" x="340" y="91" width="180" text="Label"/>
+        <s:DropDownList id="states2" x="340" y="130" width="180" prompt="Select a State ..."
+                        selectedIndex="-1"></s:DropDownList>
+        <s:TextInput id="zipocodeTxtLabel0" x="340" y="167" width="180" text="Label" restrict="0-9"/>
+        <s:TextInput id="phoneTxtLabel0" x="340" y="208" width="180" text="Label" restrict="0-9"/>
+
+        <s:TextInput id="name1" x="659" y="47" width="180" text="Label"/>
+        <s:TextInput id="address1" x="659" y="91" width="180" text="Label"/>
+        <s:DropDownList id="states3" x="659" y="130" width="182" prompt="Select a State ..."
+                        selectedIndex="-1"></s:DropDownList>
+        <s:TextInput id="zipcode1" x="659" y="167" width="180" text="Label" restrict="0-9"/>
+        <s:TextInput id="phone1" x="659" y="208" width="180" text="Label" restrict="0-9"/>
+        <s:Button id="saveUserInfoBtn" x="764" y="310" label="Save Info"/>
+        <s:Group id="CreditCardBox2" x="10" y="259" width="669" height="74">
+            <s:Label id="CCTxt0" x="6" y="17" text="Credit Card Type"/>
+            <s:Label id="ccNumTxt0" x="286" y="17" text="Credit Card Number"/>
+            <s:Label id="cscTxt0" x="286" y="53" text="CSC"/>
+            <s:Label id="experationTxt0" x="6" y="53" text="Expiration Date"/>
+            <s:DropDownList id="cc1" x="106" y="11" width="161" prompt="Credit Card Type ..."></s:DropDownList>
+            <s:TextInput id="ccNumTxtLabel0" x="407" y="11" text="Label"/>
+            <s:TextInput id="mmCC" x="101" y="48" width="49" maxChars="2"
+                         restrict="0-9" text="mm"/>
+            <s:TextInput id="yyCC" x="182" y="48" width="49" maxChars="2"
+                         restrict="0-9" text="yy"/>
+            <s:Label id="slashTxt" x="162" y="48" fontSize="27" fontWeight="bold" text="/"/>
+            <s:TextInput id="cscTxtLabel0" x="407" y="48" text="****" restrict="0-9"/>
+            <s:VGroup x="556" y="11">
+                <s:RadioButton id="b1" label="Business Card" groupName="radiogroup1"/>
+                <s:RadioButton id="b2" label="Personal Card" groupName="radiogroup1"/>
+            </s:VGroup>
+        </s:Group>
+
+    </s:TitleWindow>
+
+
+</s:Group>

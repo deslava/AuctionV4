@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:mx="library://ns.adobe.com/flex/mx" width="886" height="422">
+    <s:states>
+        <s:State name="addAuction"/>
+    </s:states>
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+    <s:SWFLoader includeIn="addAuction" id="imageThumb" x="36" y="39" width="327" height="298"
+                 source="assets/images/DEFAULT.png"/>
+    <s:Button includeIn="addAuction" id="SelectImages" x="213" y="377" label="Select Images "/>
+    <s:DataGrid includeIn="addAuction" id="imageFileHolder" x="373" y="35" width="481" height="298"
+                requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="@name" headerText="File Name"></s:GridColumn>
+                <s:GridColumn dataField="@file" headerText="Link"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+    </s:DataGrid>
+    <s:Button includeIn="addAuction" id="deleteImages" x="759" y="341" label="Delete Image"/>
+    <mx:ProgressBar includeIn="addAuction" id="imageUploadProg" x="73" y="338" width="232" label="0%"
+                    enabled="true" labelPlacement="left" maximum="100" minimum="0"/>
+
+</s:Group>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:flexiframe="com.google.code.flexiframe.*"
+         xmlns:mx="library://ns.adobe.com/flex/mx" width="886" height="422">
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+    <flexiframe:IFrame id="slowLoadingIFrameWithLoadIndicator" x="389" y="0"
+                       width="461" height="100%" source=""/>
+    <s:Button id="googleMapLoader" x="310" y="143" label="Load Map"/>
+    <s:TextArea id="googleCode1" x="22" y="64" width="284" height="99"/>
+    <s:TextArea x="10" y="6" width="371" height="51" borderVisible="false"
+                editable="false" enabled="true"
+                text="Go to Google Maps. Select your Map. Click on the Link Icon, and select the option that says &quot;Paste HTML to embed in website&quot;.  It should start with the code &quot;&lt;iframe .... &quot;"/>
+    <mx:RichTextEditor id="richTextEditor" x="14" y="168" width="367" height="243"
+                       enabled="true" status="Additional Map Instuctions"
+                       title="Map Instructions">
+    </mx:RichTextEditor>
+</s:Group>

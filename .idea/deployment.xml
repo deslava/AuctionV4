@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="localServer" uploadOnCheckin="113d1a52-b3b7-4a78-ab26-eced458acec9">
+    <serverData>
+      <paths name="localServer">
+        <serverdata>
+          <mappings>
+            <mapping deploy="\AuctionV4" local="$PROJECT_DIR$" web="/AuctionV4" />
+            <mapping deploy="\AuctionV4\src" local="C:/Program Files (x86)/Zend/Apache2/htdocs/AuctionV4/src" web="/AuctionV4/src" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="localServer" />
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
+

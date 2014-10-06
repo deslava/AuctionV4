@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:mx="library://ns.adobe.com/flex/mx"
+         width="400" height="300" currentState="Login"
+         width.activateAccount="594" height.activateAccount="480">
+
+    <fx:Script source="1ComponentValidator.as"/>
+
+    <s:states>
+        <s:State name="Login"/>
+        <s:State name="Register"/>
+        <s:State name="Logout"/>
+        <s:State name="activateAccount"/>
+    </s:states>
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+    <s:Panel skinClass="skins.menuPanel" includeIn="Login" width="398" height="297" horizontalCenter="0"
+             verticalCenter="0" mouseEnabled="true">
+        <s:TextInput id="userLogInID" x="88" y="37" width="179" enabled="true" restrict="a-z,0-9,@,_,\-,.,-"
+                     mouseEnabled="true"/>
+        <s:TextInput id="userLogInPassword" x="88" y="96" width="179" displayAsPassword="true"
+                     enabled="true" restrict="a-z,A-Z,0-9,*,!,." mouseEnabled="true"/>
+        <s:Label x="88" y="12" text="User ID / Email"/>
+        <s:Label x="88" y="71" text="Password"/>
+        <s:Button id="logInBtn" x="201" y="166" label="Log In"/>
+        <s:Button id="goToRegisterIn" x="316" y="202" label="Register"/>
+        <s:Label id="errorSignIn" x="88" y="138" text="Please enter your info"/>
+    </s:Panel>
+
+    <s:Panel skinClass="skins.menuPanel " includeIn="Register" width="398" height="297" horizontalCenter="0"
+             verticalCenter="0" mouseEnabled="true">
+
+        <s:Label x="42" y="27" text="Email"/>
+        <s:TextInput id="emailVerify" x="121" y="17" width="208" enabled="true" restrict="a-z,0-9,@,_,\-,.,-"
+                     mouseEnabled="true"/>
+        <s:Label x="42" y="70" text="Password"/>
+        <s:TextInput id="regPass1" x="121" y="60" width="208"
+                     displayAsPassword="true" enabled="true" restrict="a-z,A-Z,0-9,*,!,." mouseEnabled="true"/>
+        <s:Label x="42" y="117" text="Password"/>
+        <s:TextInput id="regPass2" x="121" y="107" width="208"
+                     displayAsPassword="true" enabled="true" restrict="a-z,A-Z,0-9,*,!,." mouseEnabled="true"/>
+        <s:Button id="RegistrationBtn" x="259" y="227" label="Register" enabled="false"/>
+        <s:Label id="errorRegister" x="40" y="188"
+                 text="Please Add Your Email and Desired Password&#xd;Password Characters Restricted to: a-z, A-Z, ! , . , * "/>
+        <s:DropDownList id="regState" x="121" y="153" width="208" enabled="false"
+                        prompt="Select State ..." selectedIndex="-1"></s:DropDownList>
+        <s:Label x="42" y="158" text="State"/>
+        <s:Button id="goToLogIn" x="42" y="227" label="Log In"/>
+    </s:Panel>
+
+    <s:Panel skinClass="skins.menuPanel" includeIn="Logout" width="398" height="297" horizontalCenter="0"
+             verticalCenter="0" mouseEnabled="true">
+        <s:Label x="83" y="36" text="You Are Logged In. Click Below to Log Out."/>
+        <s:Button id="logOutBtn" x="163" y="64" label="Log Out"/>
+        <s:Button id="accountInfoBtn" x="152" y="165" label="View Account"/>
+        <s:Label includeIn="Logout" x="101" y="119"
+                 text="To view your account information, or &#xd;update your account, Click Below."
+                 textAlign="center" verticalAlign="top"/>
+    </s:Panel>
+
+    <s:Panel skinClass="skins.menuPanel" includeIn="activateAccount" width="594" height="479" horizontalCenter="0"
+             verticalCenter="0" mouseEnabled="true">
+
+
+        <s:Label x="10" y="7" width="549" color="#FF0000" fontWeight="bold"
+                 text="Please activate your account, check your email  Fill out the fields and paste your activation code below. Credit Card Required, if no credit card or other issues call (952)688-6798 for assistance."
+                 textAlign="center"/>
+
+
+        <s:Label id="nameTxt0" x="10" y="50" text="Name:"/>
+        <s:Label id="addressTxt0" x="10" y="85" text="Address:"/>
+        <s:Label id="zipocodeTxt0" x="10" y="118" text="Zipcode:"/>
+        <s:Label id="phoneTxt0" x="10" y="157" text="Phone:"/>
+        <s:Label x="10" y="191" text="Cellphone:"/>
+        <s:TextInput id="nameTxtLabel0" x="75" y="44" width="180" text="Label"/>
+        <s:TextInput id="addressTxtLabel0" x="75" y="79" width="180" text="Label"/>
+        <s:TextInput id="zipocodeTxtLabel0" x="75" y="113" width="180" text="Label" restrict="0-9"/>
+        <s:TextInput id="phoneTxtLabel0" x="75" y="147" width="180" text="Label" restrict="0-9"/>
+        <s:TextInput id="cellphoneTxt" x="75" y="180" width="180" text="Label"/>
+
+
+        <s:Label id="CCTxt0" x="302" y="49" text="Credit Card Type:"/>
+        <s:Label id="ccNumTxt0" x="302" y="78" text="Credit Card Number:"/>
+        <s:Label id="cscTxt0" x="302" y="150" text="CSC"/>
+        <s:Label id="experationTxt0" x="302" y="110" text="Expiration Date:"/>
+        <s:DropDownList id="cc1" x="421" y="43" width="161" prompt="Credit Card Type ..."></s:DropDownList>
+        <s:TextInput id="ccNumTxtLabel0" x="422" y="72" width="160" text="Label"/>
+        <s:TextInput id="mmCC" x="429" y="105" width="49" maxChars="2"
+                     restrict="0-9" text="mm"/>
+        <s:TextInput id="yyCC" x="510" y="105" width="49" maxChars="2"
+                     restrict="0-9" text="yy"/>
+        <s:Label id="slashTxt" x="490" y="105" fontSize="27" fontWeight="bold" text="/"/>
+        <s:TextInput id="cscTxtLabel0" x="336" y="145" width="75" restrict="0-9" text="****"/>
+
+
+        <s:TextInput id="activationCodeTxt" x="191" y="223" width="230" mouseEnabled="true"/>
+        <s:Button id="activateAccountBtn" x="245" y="407" label="Activate Account" enabled="false"/>
+        <s:Label includeIn="activateAccount" x="9" y="272" width="573"
+                 text="By opening this account and checking the” I have read and understand all the term and conditions in the link below”  I accept all terms and conditions that are set forth by winning-bidder.com in the use of this web site.  I also understand that there can be and will be other individual terms and conditions for each auction listed by the different auction companies listing on this site and it is the bidders responsibility to read all terms and conditions for each auction before bidding. There is a buyer's premium on all auctions."
+                 textAlign="left" verticalAlign="top"/>
+        <s:CheckBox id="tosCheck" x="108" y="360" width="39"/>
+        <mx:LinkButton x="208" y="386" label="Terms and Conditions, TOS." color="#CA0000"/>
+        <s:Label x="148" y="360" width="329"
+                 text="I have read and understand all the term and conditions in the link below:"/>
+        <s:Label x="79" y="234" text="Activation Code:"/>
+        <s:Label id="errorCode" x="266" y="253" text="Label"/>
+        <s:Button id="resendEmailBtn" x="452" y="223" label="Resend Email"/>
+
+    </s:Panel>
+</s:Group>

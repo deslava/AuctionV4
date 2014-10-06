@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:s="library://ns.adobe.com/flex/spark" xmlns:fx="http://ns.adobe.com/mxml/2009">
+    <fx:Metadata>[HostComponent("spark.components.Button")]</fx:Metadata>
+    <s:states>
+        <s:State name="up"/>
+        <s:State name="over"/>
+        <s:State name="down"/>
+        <s:State name="disabled"/>
+    </s:states>
+    <s:BitmapImage id="bitmapimage1" rotation="-180" smooth="true" source="@Embed('/assets/images/blueArrow.png')"
+                   x="53" y="48" blendMode.disabled="erase" visible.disabled="false">
+        <s:filters>
+            <s:DropShadowFilter includeIn="over" blurX="4.0" hideObject="false" blurY="4.0" distance="4.0" inner="false"
+                                color="0x000000" strength="1" alpha="0.5" quality="2" knockout="false" angle="45.0"/>
+        </s:filters>
+    </s:BitmapImage>
+    <s:RichText blendMode.disabled="erase" color="#000000" fontFamily="Arial" fontSize="12" fontWeight.over="bold"
+                height="12" id="labelDisplay" tabStops="S0 S50 S100" tabStops.disabled="S0 S50" textAlign="center"
+                width="63" x="0" y="49" y.down="51" y.over="51" visible.disabled="false"/>
+    <s:transitions>
+        <s:Transition fromState="down" toState="up" autoReverse="true">
+            <s:Parallel>
+                <s:Parallel target="{labelDisplay}">
+                    <s:Move duration="0" autoCenterTransform="true"/>
+                </s:Parallel>
+            </s:Parallel>
+        </s:Transition>
+    </s:transitions>
+</s:Skin>

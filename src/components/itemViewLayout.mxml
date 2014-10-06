@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:components="components.*"
+         width="1024" height="550">
+    <s:states>
+        <s:State name="State1"/>
+    </s:states>
+
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+    <s:TextArea id="itemSelectedTxt" visible="false" x="533" y="214" width="462" height="163"
+                enabled="false"/>
+
+    <s:Label x="10" y="24" fontWeight="bold" text="Highlights:"/>
+
+    <s:List id="imgHolderHightlight" x="10" y="40" width="355" height="350" borderVisible="false"
+            chromeColor="#FFD800" itemRenderer="components.RepeatedItem1" useVirtualLayout="false">
+        <s:layout>
+            <s:TileLayout horizontalAlign="center" orientation="rows"
+                          requestedColumnCount="2" requestedRowCount="2"
+                          verticalAlign="middle"/>
+        </s:layout>
+
+    </s:List>
+
+
+    <s:Label id="descriptionText" x="393" y="85" fontWeight="bold" text="Description:"
+             textAlign="left"/>
+    <s:TextArea id="itemDescription" x="393" y="103" width="620" height="110" borderColor="#FFFFFF"
+                borderVisible="true" contentBackgroundColor="#FFFFFF" editable="false"
+                enabled="true" focusEnabled="false" fontSize="13" fontWeight="bold" textAlign="left"/>
+    <s:Label id="itemTitle" x="393" y="24" width="324" height="37" fontSize="16" fontWeight="bold"
+             text="Label" textAlign="left"/>
+    <s:Label id="categoryText" x="725" y="48.5" fontSize="14" fontWeight="bold" text="Category:"/>
+    <s:Label id="ReserveBidNowLabel" x="393" y="63" width="210" color="#FF0000" fontSize="12"
+             fontWeight="bold" text="Label" textAlign="left"/>
+    <s:Label id="itemIdLabel" x="725" y="24" fontSize="14" fontWeight="bold" text="Item ID:"/>
+    <s:Label id="itemIDtext" x="814" y="24" width="201" fontSize="14" text="Label"/>
+    <s:Label id="categoryDisplay" x="814" y="48.5" width="200" fontSize="14"/>
+    <s:Label x="725" y="77" fontSize="14" fontWeight="bold" text="Time Left:"/>
+    <components:countDownDisplay id="countDownTimer" x="814" y="75">
+    </components:countDownDisplay>
+</s:Group>

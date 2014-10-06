@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:mx="library://ns.adobe.com/flex/mx"
+         width="886" height="422" currentState="addItem">
+    <s:states>
+        <s:State name="addItem"/>
+        <s:State name="addCategory"/>
+        <s:State name="addSeller"/>
+        <s:State name="addFeeType"/>
+    </s:states>
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+    <s:Label includeIn="addItem" x="6" y="17" text="Name"/>
+    <s:TextInput id="itemName" includeIn="addItem" x="113" y="12" width="224"/>
+    <s:Label includeIn="addItem" x="6" y="59" text="Category"/>
+    <s:DropDownList id="itemCategories" includeIn="addItem" x="6" y="83" width="218"
+                    prompt="Select Item Category ..."
+                    selectedIndex="-1"></s:DropDownList>
+    <s:Button id="itemCategoriesBtn" includeIn="addItem" x="243" y="83" label="Add Category"/>
+    <s:Label includeIn="addItem" x="6" y="165" text="Initial Bid"/>
+    <s:TextInput id="itemInitalBidDollar" includeIn="addItem" x="113" y="155" width="65"
+                 restrict="0-9" text="0"/>
+    <s:NumericStepper id="itemInitalBidCents" includeIn="addItem" x="243" y="155" width="53"
+                      maximum="90" minimum="0" stepSize="10"/>
+    <s:Label includeIn="addItem" x="187" y="166" text="Dollars"/>
+    <s:Label includeIn="addItem" x="303" y="166" text="Cents"/>
+    <s:Label includeIn="addItem" x="6" y="214" text="Reserve/Buy Now"/>
+    <s:TextInput id="itemReserveBidDollar" includeIn="addItem" x="113" y="204" width="65"
+                 restrict="0-9" text="0"/>
+    <s:NumericStepper id="itemReserveBidCents" includeIn="addItem" x="243" y="203" width="53"
+                      maximum="90" minimum="0" stepSize="10"/>
+    <s:Label includeIn="addItem" x="187" y="214" text="Dollars"/>
+    <s:Label includeIn="addItem" x="303" y="214" text="Cents"/>
+    <s:Label includeIn="addItem" x="6" y="269" text="Item Quantity"/>
+    <s:NumericStepper id="itemQuantity" includeIn="addItem" x="112" y="258" maximum="20" minimum="1"
+                      stepSize="1"/>
+    <s:CheckBox id="optionBuyNow" includeIn="addItem" x="112" y="302" label="Buy Now" enabled="true"
+                selected="false"/>
+    <s:Label includeIn="addItem" x="394" y="17" text="Seller"/>
+    <s:DropDownList id="itemSeller" includeIn="addItem" x="462" y="12.5" width="315"
+                    prompt="Select A Seller ..." selectedIndex="-1"></s:DropDownList>
+    <s:Button id="itemSellerBtn" includeIn="addItem" x="801" y="10.5" label="Add Seller"/>
+    <s:Button id="sellerEditBtn" includeIn="addItem" x="801" y="40" label="Edit Seller"/>
+    <mx:RichTextEditor id="richTextEditorItem1" includeIn="addItem" x="388" y="79" width="491"
+                       height="293" status="Insert Item Description" title="Item Description">
+    </mx:RichTextEditor>
+    <s:Button id="saveItemAddBtn" includeIn="addItem" x="807" y="395" label="Save"
+              chromeColor="#FF0000" color="#FFFFFF" fontWeight="bold"/>
+
+    <s:TitleWindow id="itemsCategoryPanel" includeIn="addCategory" x="248" y="34" width="390"
+                   height="352" enabled="true">
+        <s:Label x="41" y="11" text="Items Category"/>
+        <s:TextInput id="newItemCategory" x="36" y="42" width="205"/>
+        <s:DataGrid id="itemCategoryHolder" x="36" y="97" width="329" height="203"
+                    color="#000000" contentBackgroundColor="#FFFFFF">
+            <s:columns>
+                <s:ArrayList>
+                    <s:GridColumn dataField="@name" headerText="Items Category"></s:GridColumn>
+                </s:ArrayList>
+            </s:columns>
+        </s:DataGrid>
+        <s:Button id="eventItemCreateBtn" x="266" y="42.5" label="Add Category"/>
+        <s:Label id="errorItemTypeLabel" x="36" y="70"/>
+    </s:TitleWindow>
+
+    <s:TitleWindow id="addSellerPanel" includeIn="addSeller" x="10" y="10" width="866" height="402">
+        <s:Label x="66" y="8" text="Name"/>
+        <s:TextInput id="nameP9" x="66" y="24" width="229" enabled="true"/>
+        <s:Label x="66" y="54" text="Email"/>
+        <s:TextInput id="emailP9" x="66" y="75" width="229" enabled="true"
+                     restrict="a-z,0-9,@,_,\-,."/>
+        <s:Label x="66" y="110" text="State"/>
+        <s:DropDownList id="houseIDstates" x="66" y="130" width="228" enabled="true"
+                        prompt="Select State ..." selectedIndex="-1"></s:DropDownList>
+        <s:Label x="66" y="164" text="Street"/>
+        <s:TextInput id="streetAuctionTab" x="66" y="186" width="224"/>
+        <s:Label x="66" y="221" text="City/County"/>
+        <s:TextInput id="cityAuctionTab" x="66" y="244" width="225"/>
+        <s:Label x="66" y="280" text="Zip Code:"/>
+        <s:TextInput id="zipAuctionTab" x="66" y="301" width="84" restrict="0-9"/>
+        <s:Label x="312" y="8" text="Phone:"/>
+        <s:TextInput id="phoneAuctionTab" x="312" y="24" width="141" restrict="0-9"/>
+        <s:Label x="548" y="8" text="Fees"/>
+        <s:DropDownList id="feeNameDropDown" x="547" y="24" width="190" prompt="Select A Fee ..."></s:DropDownList>
+        <s:Button id="addFeeBtn" x="761" y="24" label="Add Fee"/>
+        <s:Button id="auctionItemFeeAddBtn" x="761" y="102" label="Add"/>
+        <s:TextInput id="feeAmountItem" x="548" y="66" width="123" restrict="0-9, '.'"/>
+        <s:DropDownList id="feeTypeDropDown" x="679" y="67" width="152" prompt="Fee Type ..."></s:DropDownList>
+        <s:Label id="itemFeeError" x="548" y="108" text="Label"/>
+        <s:DataGrid id="auctionItemFeeHolder" x="410" y="139" width="444" height="177"
+                    requestedRowCount="4">
+            <s:columns>
+                <s:ArrayList>
+                    <s:GridColumn dataField="@id" headerText="Fee"></s:GridColumn>
+                    <s:GridColumn dataField="@display" headerText="Cost"></s:GridColumn>
+                    <s:GridColumn dataField="@applyTo" headerText="Apply To"></s:GridColumn>
+                </s:ArrayList>
+            </s:columns>
+        </s:DataGrid>
+        <s:Button id="deleteFeeBtn" x="410" y="330" label="Delete Fee"/>
+        <s:Button id="saveSellerBtn" x="208" y="301" label="Save Seller" chromeColor="#FF0000"
+                  color="#FFFFFF" fontWeight="bold"/>
+
+        <s:Button id="updateSellerBtn" x="301" y="301" label="Update Seller" chromeColor="#FF0000"
+                  color="#FFFFFF" fontWeight="bold"/>
+    </s:TitleWindow>
+    <s:TitleWindow id="eventTypePnl" includeIn="addFeeType" x="248" y="32" width="390" height="362">
+
+        <s:Label x="41" y="11" text="Fee Type"/>
+        <s:TextInput id="newFeeCategory" x="36" y="42" width="205"/>
+        <s:DataGrid id="auctionFeeCategoryHolder" x="36" y="97" width="329" height="203"
+                    color="#000000" contentBackgroundColor="#FFFFFF">
+            <s:columns>
+                <s:ArrayList>
+                    <s:GridColumn dataField="@name" headerText="Auction Category"></s:GridColumn>
+                </s:ArrayList>
+            </s:columns>
+        </s:DataGrid>
+        <s:Button id="eventFeeCreateBtn" x="266" y="42.5" label="Add Fee"/>
+        <s:Label id="errorEventFeeLabel" x="36" y="70"/>
+    </s:TitleWindow>
+
+
+</s:Group>

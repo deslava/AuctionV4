@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:mx="library://ns.adobe.com/flex/mx" width="886" height="422">
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+
+    <mx:RichTextEditor id="richTextEditor2" x="531" y="4" width="352" height="201"
+                       status="Enter Inspection Details Below" title="Inspection Notes">
+    </mx:RichTextEditor>
+    <mx:RichTextEditor id="richTextEditor3" x="531" y="223" width="352" height="211"
+                       status="Enter PickUp Date Notes" title="PickUp Notes">
+    </mx:RichTextEditor>
+    <s:Label x="8" y="6" text="Inspection Date"/>
+    <s:Label x="10" y="220" text="Pick Up Date"/>
+    <mx:DateField id="inspectionDateDay" x="10" y="138" width="113" enabled="true"
+                  selectableRange="{{rangeStart : new Date()}}" showToday="true"/>
+    <s:NumericStepper id="inspectionDateHr" x="10" y="31" maximum="12" minimum="1" value="7"/>
+    <s:NumericStepper id="inspectionDateMin" x="70" y="31" maximum="59"/>
+
+    <s:DropDownList id="ampmTab2" x="131" y="250" width="83" enabled="true" prompt="AM/PM"
+                    selectedIndex="1"></s:DropDownList>
+
+    <mx:DateField id="pickUpdateDay" x="11" y="356" width="112" enabled="true"
+                  selectableRange="{{rangeStart : new Date()}}" showToday="true"/>
+    <s:NumericStepper id="pickUpDateHr" x="10" y="250" maximum="12" minimum="1" value="7"/>
+    <s:NumericStepper id="pickUpdateMin" x="70" y="250" maximum="59"/>
+    <s:DropDownList id="ampmTab0" x="131" y="31" width="83" enabled="true" prompt="AM/PM"
+                    selectedIndex="1"></s:DropDownList>
+    <s:NumericStepper id="inspectionDateHr0" x="10" y="82" maximum="12" minimum="1" value="7"/>
+    <s:NumericStepper id="inspectionDateMin0" x="70" y="82" maximum="59"/>
+    <s:DropDownList id="ampmTab1" x="131" y="82" width="83" enabled="true" prompt="AM/PM"
+                    selectedIndex="2"></s:DropDownList>
+    <s:DataGrid id="inspectionDateHolder" x="222" y="31" width="293" height="130"
+                requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="@day" headerText="Day"></s:GridColumn>
+                <s:GridColumn dataField="@hours" headerText="hours"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+        <s:typicalItem>
+            <fx:Object dataField1="Sample Data" dataField2="Sample Data"
+                       dataField3="Sample Data"></fx:Object>
+        </s:typicalItem>
+    </s:DataGrid>
+    <s:Button id="inspectionDateBtn" x="55" y="171" label="Add Date"/>
+    <s:Button id="inspectDateDeleteBtn" x="423" y="175" label="Delete Date"/>
+    <s:DataGrid id="pickupDatesHolder" x="222" y="250" width="293" height="130"
+                requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="@day" headerText="Day"></s:GridColumn>
+                <s:GridColumn dataField="@hours" headerText="hours"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+        <s:typicalItem>
+            <fx:Object dataField1="Sample Data" dataField2="Sample Data"
+                       dataField3="Sample Data"></fx:Object>
+        </s:typicalItem>
+    </s:DataGrid>
+    <s:Button id="pickupDateBtn" x="53" y="402" label="Add Date"/>
+    <s:Button id="pickupDateDeleteBtn" x="429" y="402" label="Delete Date"/>
+    <s:NumericStepper id="pickUpDateHr0" x="10" y="302" maximum="12" minimum="1" value="7"/>
+    <s:NumericStepper id="pickUpdateMin0" x="70" y="302" maximum="59"/>
+    <s:DropDownList id="ampmTab3" x="131" y="302" width="83" enabled="true" prompt="AM/PM"
+                    selectedIndex="2"></s:DropDownList>
+
+</s:Group>

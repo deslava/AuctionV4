@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:components="components.*"
+         width="886" height="422">
+    <s:states>
+        <s:State name="auctionEditInfo"/>
+        <s:State name="addAuctionCategory"/>
+    </s:states>
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+    <s:Label includeIn="auctionEditInfo" x="30" y="26" text="Auciton Name:"/>
+    <s:TextInput id="auctionNameTab" includeIn="auctionEditInfo" x="131" y="16" width="224"/>
+    <s:Label includeIn="auctionEditInfo" x="30" y="65" text="Auciton State:"/>
+    <s:DropDownList id="statesTabAuctionCreate" includeIn="auctionEditInfo" x="131" y="59"
+                    width="224" enabled="true" prompt="Select State ..." selectedIndex="-1"></s:DropDownList>
+    <s:Label includeIn="auctionEditInfo" x="29" y="111" text="Street"/>
+    <s:TextInput id="streetAuctionTab" includeIn="auctionEditInfo" x="131" y="101" width="224"/>
+    <s:Label includeIn="auctionEditInfo" x="29" y="156" text="City/County"/>
+    <s:TextInput id="cityAuctionTab" includeIn="auctionEditInfo" x="131" y="146" width="225"/>
+    <s:Label includeIn="auctionEditInfo" x="30" y="205" text="Zip Code:"/>
+    <s:TextInput id="zipAuctionTab" includeIn="auctionEditInfo" x="131" y="195" width="84"
+                 restrict="0-9"/>
+    <s:DropDownList id="auctionCategoryTab" includeIn="auctionEditInfo" x="27" y="273" width="218"
+                    prompt="Select  Auction Categories..."></s:DropDownList>
+    <s:Button id="addEventTypeAuctionBtn" includeIn="auctionEditInfo" x="253" y="273"
+              label="Add Category"/>
+    <s:Label includeIn="auctionEditInfo" x="29" y="249" text="Auction Categories"/>
+    <s:Button id="saveAuctionTab1Btn" includeIn="auctionEditInfo" x="480" y="381"
+              label="Save Auction" chromeColor="#FF0000" color="#FFFFFF" fontWeight="bold"/>
+    <s:Label id="auctionInfoAddError" includeIn="auctionEditInfo" x="601" y="381"/>
+    <s:TitleWindow id="eventTypePnl" includeIn="addAuctionCategory" x="248" y="32" width="390"
+                   height="362">
+
+        <s:Label x="41" y="11" text="Auction Category"/>
+        <s:TextInput id="newAuctionCategory" x="36" y="42" width="205"/>
+        <s:DataGrid id="auctionCategoryHolder" x="36" y="97" width="329" height="203"
+                    color="#000000" contentBackgroundColor="#FFFFFF">
+            <s:columns>
+                <s:ArrayList>
+                    <s:GridColumn dataField="@name" headerText="Auction Category"></s:GridColumn>
+                </s:ArrayList>
+            </s:columns>
+        </s:DataGrid>
+        <s:Button id="eventTypeCreateBtn" x="266" y="42.5" label="Add Category"/>
+        <s:Label id="errorEventTypeLabel" x="36" y="70"/>
+    </s:TitleWindow>
+    <components:dateSetup id="auctionCountDown" includeIn="auctionEditInfo" x="445" y="5">
+    </components:dateSetup>
+
+
+</s:Group>

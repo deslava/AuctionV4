@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user>
+	<userId/>
+	<userEmail/>
+	<userPath/>
+	<userXML/>
+	<userState/>
+	<Personal>
+		<name></name>
+		<address></address>
+		<state></state>
+		<zipcode></zipcode>
+		<phone></phone>
+		<cellphone></cellphone>
+		<CC type="" number="" expMonth="" expYear="" csc=""></CC>
+	</Personal>
+	<Business>
+		<name></name>
+		<address></address>
+		<state></state>
+		<zipcode></zipcode>
+		<phone></phone>
+		<cellphone></cellphone>	
+		<CC type="" number="" expMonth="" expYear="" csc=""></CC>
+	</Business>
+</user>

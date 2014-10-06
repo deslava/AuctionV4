@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:components="components.*"
+         width="886" height="422">
+
+    <s:states>
+        <s:State name="houseBidSelect"/>
+    </s:states>
+
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+    <s:DataGrid id="itemsListHolder" x="9" y="55" width="367" height="314" requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="itemId" headerText="ID" width="50"></s:GridColumn>
+                <s:GridColumn dataField="sellerId" headerText="Seller" width="50"></s:GridColumn>
+                <s:GridColumn dataField="itemName" headerText="Name"></s:GridColumn>
+                <s:GridColumn dataField="category" headerText="Category" width="100"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+        <s:typicalItem>
+            <fx:Object dataField1="Sample Data" dataField2="Sample Data" dataField3="Sample Data"></fx:Object>
+        </s:typicalItem>
+        <s:ArrayList>
+        </s:ArrayList>
+    </s:DataGrid>
+    <s:DropDownList id="auctionListDropDown" x="97" y="10" width="184" prompt="Select Auction ..."></s:DropDownList>
+    <s:Button id="loadAuctionListBtn" x="289" y="10" label="load Auction"/>
+    <s:Label x="10" y="16" width="92" text="Active Auctions"/>
+    <s:Label x="6" y="381" id="houseLabelTxt" text="House Number"/>
+    <s:DropDownList id="houseNumberDropDown" x="97" y="375.5" width="184" prompt="Select House ..."></s:DropDownList>
+    <s:Button id="loadItemDisplayBtn" x="304" y="375.5" label="load Item"/>
+    <components:itemViewSmall id="itemPublicFileViewDisplay" x="384" y="10" width="492" height="402">
+    </components:itemViewSmall>
+</s:Group>

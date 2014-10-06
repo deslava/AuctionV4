@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         width="556" height="90"
+         width.State1="492" height.State1="62" contentBackgroundColor.State1="#FFFFFF">
+    <s:states>
+        <s:State name="State1"/>
+        <s:State name="State2"/>
+    </s:states>
+
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+    <s:Rect id="background" includeIn="State1" x="0" y="4" width="492" height="41">
+        <s:fill>
+            <s:SolidColor id="bgFill" color="0xFFFFFF"/>
+        </s:fill>
+    </s:Rect>
+
+    <s:Label id="higherBidText" includeIn="State1" x="315" y="10" width="83" text="High Bidder"
+             textAlign="center"/>
+    <s:Label id="currAmountText" includeIn="State1" x="76" y="10" width="77" text="Current Bid"
+             textAlign="center"/>
+    <s:Label id="nextBidText" includeIn="State1" x="173" y="10" text="Next Bid Required"
+             textAlign="center"/>
+    <s:Label id="currAmountTxt" includeIn="State1" x="76" y="33" width="77" text="0"
+             textAlign="center"/>
+    <s:Label id="bidRequiredTxt" includeIn="State1" x="173" y="33" width="100" text="0"
+             textAlign="center"/>
+    <s:Label id="higherBidderTxt" includeIn="State1" x="315" y="33" width="83" text="0"
+             textAlign="center"/>
+    <s:Label id="bidsText" includeIn="State1" x="10" y="10" width="66" text="Bids" textAlign="left"/>
+    <s:Label id="bidsTxt" includeIn="State1" x="10" y="33" width="66" text="0" textAlign="left"/>
+    <s:Label includeIn="State2" x="237" y="24" fontSize="17" fontWeight="bold" text="Loading ..."/>
+    <s:Label includeIn="State1" x="401" y="10" width="87" text="State" textAlign="center"/>
+    <s:Label id="stateBidderTxt" includeIn="State1" x="401" y="33" width="86" text="0"
+             textAlign="center"/>
+</s:Group>

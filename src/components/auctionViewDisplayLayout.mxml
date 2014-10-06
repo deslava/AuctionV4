@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:components="components.*"
+         width="1024" height="1200">
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+    <s:TextArea id="xmlFileInfo" x="10" y="729" width="332" height="119" enabled="false" visible="false"/>
+    <components:itemPublicDisplay id="itemPublicViewDisplay" x="0" y="864" width="1024" height="330"/>
+    <s:Label x="10" y="182" fontWeight="bold" text="Highlights:"/>
+    <s:List id="imgHolderHightlight" x="10" y="206" width="326" height="350"
+            borderVisible="false" chromeColor="#FFD800"
+            itemRenderer="components.RepeatedItem1" useVirtualLayout="false">
+        <s:layout>
+            <s:TileLayout horizontalAlign="center" orientation="rows"
+                          requestedColumnCount="2" requestedRowCount="2"
+                          verticalAlign="middle"/>
+        </s:layout>
+
+    </s:List>
+    <s:Label x="393" y="73" fontWeight="bold" text="Date &amp; Time:"/>
+    <s:Label x="708" y="36" fontWeight="bold" text="Location:"/>
+    <s:TextArea id="dateTimevalues" x="393" y="85" width="271" height="38"
+                borderColor="#FFFFFF" editable="false" enabled="true" focusEnabled="false"
+                fontSize="13" fontWeight="bold"/>
+    <s:TextArea id="locationValues" x="708" y="56" width="308" height="68"
+                borderColor="#FFFFFF" borderVisible="true" chromeColor="#FFD800"
+                editable="false" enabled="true" focusEnabled="false" fontSize="13"
+                fontWeight="bold"/>
+    <s:Label id="auctionTitle" x="98" y="15" width="566" fontSize="16" fontWeight="bold"
+             text="Label"/>
+    <s:Label x="393" y="36" fontWeight="bold" text="Category:"/>
+    <s:Label id="categoryDisplay" x="456" y="37" width="198"/>
+    <s:Label x="11" y="36" fontWeight="bold" text="Auction Ends:"/>
+    <components:countDownDisplay id="countDownTimer" x="101" y="36">
+    </components:countDownDisplay>
+    <s:Label x="393" y="142" fontWeight="bold" text="Auction Description"/>
+    <s:Label x="393" y="396" fontWeight="bold" text="Terms:"/>
+    <s:Label x="393" y="578" fontWeight="bold" text="Inspection Notes"/>
+    <s:TextArea id="inspecitonNotesText" x="393" y="597.35" width="279" height="100"
+                borderColor="#FFFFFF" chromeColor="#FFD800" editable="false" enabled="true"
+                focusEnabled="false"/>
+    <s:TextArea id="auctionNotesText" x="393" y="162" width="622" height="228"
+                borderColor="#FFFFFF" chromeColor="#FFD800" editable="false" enabled="true"
+                focusEnabled="false"/>
+    <s:TextArea id="shippingNotesText" x="10" y="598.35" width="325" height="99"
+                borderColor="#FFFFFF" chromeColor="#FFD800" editable="false" enabled="true"
+                focusEnabled="false"/>
+    <s:TextArea id="termsNotesText" x="393" y="426" width="579" height="137"
+                borderColor="#FFFFFF" chromeColor="#FFD800" editable="false" enabled="true"
+                focusEnabled="false"/>
+    <s:Label x="8" y="578" fontWeight="bold" text="Shipping Notes"/>
+    <s:TextArea id="pickupNotesText" x="737" y="598.3" width="279" height="100"
+                borderColor="#FFFFFF" chromeColor="#FFD800" editable="false" enabled="true"
+                focusEnabled="false"/>
+    <s:Label x="708" y="578" fontWeight="bold" text="PickUp Notes"/>
+    <s:Label x="393" y="705" fontWeight="bold" text="Inspection Dates"/>
+    <s:Label x="708" y="705" fontWeight="bold" text="Pickup Dates"/>
+    <s:DataGrid id="inspectionDateHolder0" x="393" y="723.35" width="300" height="130"
+                chromeColor="#FFD800" requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="@day" headerText="Day"></s:GridColumn>
+                <s:GridColumn dataField="@hours" headerText="hours"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+        <s:typicalItem>
+            <fx:Object dataField1="Sample Data" dataField2="Sample Data"
+                       dataField3="Sample Data"></fx:Object>
+        </s:typicalItem>
+    </s:DataGrid>
+    <s:DataGrid id="pickupDatesHolder0" x="708" y="723.35" width="306" height="130"
+                chromeColor="#FFD800" requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="@day" headerText="Day"></s:GridColumn>
+                <s:GridColumn dataField="@hours" headerText="hours"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+        <s:typicalItem>
+            <fx:Object dataField1="Sample Data" dataField2="Sample Data"
+                       dataField3="Sample Data"></fx:Object>
+        </s:typicalItem>
+    </s:DataGrid>
+    <s:Button id="mapDisplayBtn" x="10" y="67" width="326" height="101" chromeColor="#CCCCCC"
+              enabled="true" skinClass="skins.mapIcon"/>
+</s:Group>

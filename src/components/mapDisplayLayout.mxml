@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:flexiframe="com.google.code.flexiframe.*" width="800" height="700">
+
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+    <s:TitleWindow id="mapHolder" width="800" height="700" borderColor="#FFD800" borderVisible="false"
+                   chromeColor="#FFD800" horizontalCenter="0" verticalCenter="0">
+        <flexiframe:IFrame id="slowLoadingIFrameWithLoadIndicator" top="6" width="690" height="533"
+                           borderVisible="false" horizontalCenter="0" visible="true" maintainProjectionCenter="true"
+                           scaleX="1" scaleY="1" scrollPolicy="auto"/>
+        <s:Label fontWeight="bold" text="Directions:"
+                 left="10" bottom="109"/>
+        <s:TextArea id="mapDirectionsText" width="690" height="77" borderColor="#FFFFFF"
+                    editable="false" enabled="true"
+                    left="55" bottom="15"/>
+    </s:TitleWindow>
+</s:Group>

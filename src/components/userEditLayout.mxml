@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         width="886" height="396">
+
+
+    <s:states>
+        <s:State name="allUserInfo"/>
+        <s:State name="deleteUser"/>
+        <s:State name="updateUserInfo"/>
+    </s:states>
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+    <fx:Script source="1searchFunctions.as"/>
+
+
+    <s:TextInput id="userEditSerch" includeIn="allUserInfo" x="36" y="6.5" width="154"/>
+    <s:HGroup includeIn="allUserInfo" x="36" y="34" width="233">
+        <s:RadioButton label="ID" groupName="radiogroup1" id="radioIDadmin" selected="true"/>
+        <s:RadioButton label="Email" groupName="radiogroup1" id="radioEmailadmin"/>
+        <s:RadioButton label="Name" groupName="radiogroup1" id="radioNameadmin"/>
+        <s:RadioButton label="Load All" groupName="radiogroup1" id="radioLoadAll"/>
+    </s:HGroup>
+    <s:Button id="userSearchBtn" includeIn="allUserInfo" x="198" y="8" label="Search"/>
+    <s:DropDownList id="userEditType" includeIn="allUserInfo" x="377" y="8" width="180"
+                    prompt="Select User Type ..."
+                    selectedIndex="-1"></s:DropDownList>
+    <s:DropDownList id="userEditStatus" includeIn="allUserInfo" x="589" y="8" width="180"
+                    prompt="Select User Status ..."
+                    selectedIndex="-1"></s:DropDownList>
+    <s:Label includeIn="allUserInfo" x="375" y="42" text="Total Users In Search:"/>
+    <s:Label id="editUsersTally" includeIn="allUserInfo" x="501" y="42" text="0"/>
+    <s:DataGrid id="allUserDataLoader" includeIn="allUserInfo" x="25" y="82" width="851" height="256"
+                enabled="true" requestedRowCount="4" sortableColumns="true">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="userId" headerText="UserID" sortable="true"
+                              sortDescending="false"></s:GridColumn>
+                <s:GridColumn dataField="userName" headerText="Name" sortable="true"></s:GridColumn>
+                <s:GridColumn dataField="userEmail" headerText="Email" sortable="true"></s:GridColumn>
+                <s:GridColumn dataField="userType" headerText="User Type" sortable="true"></s:GridColumn>
+                <s:GridColumn dataField="userStatus" headerText="Status" sortable="true"></s:GridColumn>
+                <s:GridColumn dataField="userCreator" headerText="Creator" sortable="true"></s:GridColumn>
+                <s:GridColumn dataField="userCreatorID" headerText="CreatorID" sortable="true"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+    </s:DataGrid>
+    <s:Button id="removeUserEdit" includeIn="allUserInfo" x="25" y="356" label="Remove User" enabled="false"/>
+    <s:Button id="editUserBtn" includeIn="allUserInfo" x="158" y="356" label="Edit User" enabled="false"/>
+    <s:Label id="editUserBtnError" includeIn="allUserInfo" x="252" y="363.5" text="Select A User"/>
+    <s:TitleWindow id="deleteUserAdminPnl" includeIn="deleteUser" x="318" y="58" width="250"
+                   height="263" chromeColor="#FFE400" enabled="true" title="Delete User">
+        <s:TextArea x="10" y="6" width="228" height="137" borderColor="#FFDE00" borderVisible="false"
+                    color="#FF0000" editable="false" enabled="true" fontWeight="bold"
+                    text="Are you Sure you want to Delete this User?&#xd;&#xd;This can not be undone. All Files and User Info will be deleted. &#xd;&#xd;Update User Status to Block if you do not want user to gain access but keep all their info &amp; settings."/>
+        <s:Button id="deleteSelectedUserAdmin" x="30" y="181" label="Delete User and Lose all Data"
+                  enabled="false"/>
+        <s:CheckBox id="yesDeleteUserBtn" x="81" y="151" label="Yes I'm Sure" enabled="true" selected="false"/>
+    </s:TitleWindow>
+    <s:TitleWindow id="userUpdatePnl" includeIn="updateUserInfo" x="229" y="27" width="542"
+                   height="330" chromeColor="#FFF600" title="Update User Info">
+        <s:Label x="26" y="6" text="Name"/>
+        <s:TextInput id="nameEdit" x="26" y="22" width="180" enabled="true"/>
+        <s:Label x="26" y="57" text="Email"/>
+        <s:TextInput id="emailEdit" x="26" y="77" width="180" enabled="false" restrict="a-z,0-9,@,_,-,."/>
+        <s:Label x="25" y="113" text="User Type"/>
+        <s:DropDownList id="userTypeEdit" x="26" y="137" width="180"
+                        prompt="Select User Type ..." selectedIndex="-1"></s:DropDownList>
+        <s:Label x="25" y="174" text="Status"/>
+        <s:DropDownList id="userStatusEdit" x="26" y="195" width="180"
+                        prompt="Select User Status ..." selectedIndex="-1"></s:DropDownList>
+        <s:Label x="321" y="6" text="ID"/>
+        <s:TextInput id="userEditID" x="321" y="22" width="180" enabled="false"/>
+        <s:DropDownList id="userStateEdit" x="321" y="77" width="180"
+                        prompt="Select State ..."></s:DropDownList>
+        <s:Label x="321" y="113" text="Server Path"/>
+        <s:TextInput id="userEditServerPath" x="321" y="137" width="180" enabled="false"/>
+        <s:Label x="321" y="174" text="Password"/>
+        <s:TextInput id="userEditPass" x="321" y="194" width="180" enabled="false"
+                     prompt="***********"/>
+        <s:Button id="userEditResetPass" x="321" y="225.5" label="New"/>
+        <s:Label id="userEditError" x="29" y="271"
+                 text="Warning, Changes are Immediate!"/>
+        <s:Button id="userInfoUpdate" x="379" y="266.5" label="Update"/>
+        <s:CheckBox id="userEditResetPassEmailcheck" x="457" y="269" label="email"
+                    selected="true"/>
+        <s:CheckBox id="housePassReset" x="397" y="227" width="133" label="Update All House"
+                    selected="true"/>
+    </s:TitleWindow>
+
+
+</s:Group>

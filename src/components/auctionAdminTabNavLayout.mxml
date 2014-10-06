@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:components="components.*" width="1024" height="768">
+    <mx:TabNavigator id="AuctionAdminTabNav" x="58" y="223" width="908" height="476" chromeColor="#FFD800"
+                     creationPolicy="all">
+        <s:NavigatorContent id="auctionTab1" width="100%" height="100%" label="Auction">
+            <components:auctionLoader id="addAuctionTab1" x="10" y="10">
+            </components:auctionLoader>
+        </s:NavigatorContent>
+        <s:NavigatorContent id="auctionTab2" width="100%" height="100%" label="Auction Info">
+            <components:auctionAddTab1 id="addAuctionTab2" x="10" y="10">
+            </components:auctionAddTab1>
+        </s:NavigatorContent>
+        <s:NavigatorContent id="auctionTab3" width="100%" height="100%"
+                            label="Highlight Images">
+            <components:imageUploader id="addAuctionTab3" x="10" y="10" visible="true" enabled="true">
+            </components:imageUploader>
+        </s:NavigatorContent>
+        <s:NavigatorContent id="auctionTab4" width="100%" height="100%" label="Auction Type">
+            <components:auctionAddTab3 id="addAuctionTab4" x="10" y="10">
+            </components:auctionAddTab3>
+        </s:NavigatorContent>
+        <s:NavigatorContent id="auctionTab5" width="100%" height="100%" label="Auction Map">
+            <components:auctionAddTab4 id="addAuctionTab5" x="10" y="10">
+            </components:auctionAddTab4>
+        </s:NavigatorContent>
+        <s:NavigatorContent id="auctionTab6" width="100%" height="100%"
+                            label="Inspection &amp; Pick up Date">
+            <components:auctionAddTab5 id="addAuctionTab6" x="10" y="10">
+            </components:auctionAddTab5>
+        </s:NavigatorContent>
+        <s:NavigatorContent id="auctionTab7" width="100%" height="100%"
+                            label="Shipping &amp; Terms">
+            <components:auctionAddTab6 id="addAuctionTab7" x="10" y="10">
+            </components:auctionAddTab6>
+        </s:NavigatorContent>
+        <s:NavigatorContent id="auctionTab8" width="100%" height="100%"
+                            label="Auction Description">
+            <components:auctionAddTab7 id="addAuctionTab8" x="10" y="10">
+            </components:auctionAddTab7>
+        </s:NavigatorContent>
+        <s:NavigatorContent id="auctionTab9" width="100%" height="100%" label="Auction Fees">
+            <components:feesAdd id="addAuctionTab9" x="10" y="10">
+            </components:feesAdd>
+        </s:NavigatorContent>
+        <s:NavigatorContent id="auctionTab10" width="100%" height="100%" label="Complete">
+        </s:NavigatorContent>
+    </mx:TabNavigator>
+</s:Group>

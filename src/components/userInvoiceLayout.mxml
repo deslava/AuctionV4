@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         width="886" height="396" currentState="userInvoiceSelect">
+    <s:states>
+        <s:State name="userInvoiceSelect"/>
+        <s:State name="buyerInvoiceSelect"/>
+        <s:State name="sellerInvoiceSelect"/>
+        <s:State name="satteliteInvoiceSelect"/>
+    </s:states>
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+    <fx:DesignLayer id="page1">
+        <s:DataGrid id="itemsListHolder" includeIn="userInvoiceSelect" x="389" y="60" width="487"
+                    height="287" fontWeight="normal" requestedRowCount="4">
+            <s:columns>
+                <s:ArrayList>
+                    <s:GridColumn dataField="itemId" headerText="ID" width="50"></s:GridColumn>
+                    <s:GridColumn dataField="sellerId" headerText="Seller" width="50"></s:GridColumn>
+                    <s:GridColumn dataField="itemName" headerText="Name"></s:GridColumn>
+                    <s:GridColumn dataField="max_bid" headerText="Reserve" width="70"></s:GridColumn>
+                    <s:GridColumn dataField="start_bid" headerText="Curr Bid" width="70"></s:GridColumn>
+                    <s:GridColumn dataField="currBidWinner" headerText="Winner" width="70"></s:GridColumn>
+                    <s:GridColumn dataField="currBidType" headerText="Type" width="70"></s:GridColumn>
+
+                </s:ArrayList>
+            </s:columns>
+            <s:ArrayList>
+            </s:ArrayList>
+        </s:DataGrid>
+        <s:DropDownList id="auctionListDropDown" includeIn="userInvoiceSelect" x="104" y="62" width="184"
+                        fontWeight="normal" prompt="Select Auction ..."></s:DropDownList>
+        <s:Button id="loadAuctionListBtn" includeIn="userInvoiceSelect" x="294" y="62"
+                  label="load Auction" fontWeight="normal"/>
+        <s:Label includeIn="userInvoiceSelect" x="10" y="68" width="92" fontWeight="normal"
+                 text="Closed Auctions"/>
+        <s:Label includeIn="userInvoiceSelect" x="104" y="128" fontWeight="normal"
+                 text="View Unsold Items"/>
+        <s:Button id="loadUnsoldItemBtn" includeIn="userInvoiceSelect" x="10" y="118.5" label="Load"
+                  fontWeight="normal"/>
+        <s:Label includeIn="userInvoiceSelect" x="105" y="267" fontWeight="normal"
+                 text="View Items With Sold Requirments:"/>
+        <s:Button id="loadReserveItemsBtn" includeIn="userInvoiceSelect" x="10" y="212" label="Load"/>
+        <s:Label includeIn="userInvoiceSelect" x="105" y="219" text="View Items with Reserve"/>
+        <s:Button id="loadSoldItemBtn" includeIn="userInvoiceSelect" x="10" y="257.5" label="Load"
+                  fontWeight="normal"/>
+        <s:Label includeIn="userInvoiceSelect" x="104" y="175" fontWeight="normal"
+                 text="House/Seller Control Items"/>
+        <s:Button id="loadAuctionItemsBtn" includeIn="userInvoiceSelect" x="10" y="165.5" label="Load"
+                  fontWeight="normal"/>
+        <s:Button id="itemInvoiceBtn" includeIn="userInvoiceSelect" x="262" y="325" label="View Item Invoice"
+                  fontWeight="normal"/>
+    </fx:DesignLayer>
+
+
+    <fx:DesignLayer id="topMenu">
+        <s:Label id="soldTag" includeIn="userInvoiceSelect" x="675" y="367" text="Amount Sold:"/>
+        <s:Label id="totalAmount" x="757" y="367" width="119" text="amount"/>
+        <s:Button id="itemDisplayBtn" x="280" y="10" label="by Item" fontWeight="normal"/>
+        <s:Button id="buyerDisplayBtn" x="389" y="10" label="by Buyer"/>
+        <s:Button id="settlementInvoiceBtn" x="504" y="10" label="by Seller"/>
+        <s:Button id="satelliteInvoiceBtn" x="626" y="10" label="by Satellite"/>
+
+        <s:Label includeIn="userInvoiceSelect" x="155" y="16" fontSize="14" fontWeight="normal"
+                 text="Select Invoice"/>
+    </fx:DesignLayer>
+    <s:DataGrid id="itemsListHolder2" includeIn="buyerInvoiceSelect" x="10" y="60" width="866"
+                height="218" fontWeight="normal" requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="buyerCount" headerText="Number of Items"></s:GridColumn>
+                <s:GridColumn dataField="buyerID" headerText="Buyer"></s:GridColumn>
+                <s:GridColumn dataField="buyerItemTotal" headerText="Sub-Total"></s:GridColumn>
+                <s:GridColumn dataField="tax" headerText="Tax"></s:GridColumn>
+                <s:GridColumn dataField="premium" headerText="Premium"></s:GridColumn>
+                <s:GridColumn dataField="completeTotal" headerText="Total"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+        <s:ArrayList>
+        </s:ArrayList>
+    </s:DataGrid>
+
+
+    <s:DataGrid id="itemsListHolder3" includeIn="sellerInvoiceSelect" x="10" y="60" width="866" height="218"
+                fontWeight="normal"
+                requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="sellerCount" headerText="Number of Items"></s:GridColumn>
+                <s:GridColumn dataField="sellerID" headerText="Seller"></s:GridColumn>
+                <s:GridColumn dataField="sellerItemTotal" headerText="Sub-Total"></s:GridColumn>
+                <s:GridColumn dataField="tax" headerText="Tax"></s:GridColumn>
+                <s:GridColumn dataField="completeTotal" headerText="Total"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+        <s:ArrayList>
+        </s:ArrayList>
+    </s:DataGrid>
+    <s:Button id="buyerInvoiceBtn" includeIn="buyerInvoiceSelect" x="10" y="286"
+              label="load Buyer Invoice"/>
+    <s:Button id="sellerInvoiceBtn" includeIn="sellerInvoiceSelect" x="10" y="300" label="Load Seller Invoice"/>
+
+    <s:DataGrid id="itemsListHolder4" includeIn="satteliteInvoiceSelect" x="10" y="60" width="866" height="218"
+                fontWeight="normal"
+                requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="auctionCount" headerText="Number of Items"></s:GridColumn>
+                <s:GridColumn dataField="auctionID" headerText="Auction ID"></s:GridColumn>
+                <s:GridColumn dataField="auctionItemTotal" headerText="Sub-Total"></s:GridColumn>
+                <s:GridColumn dataField="tax" headerText="Tax"></s:GridColumn>
+                <s:GridColumn dataField="completeTotal" headerText="Total"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+        <s:ArrayList>
+        </s:ArrayList>
+    </s:DataGrid>
+</s:Group>

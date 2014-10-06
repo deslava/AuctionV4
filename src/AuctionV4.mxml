@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+               xmlns:s="library://ns.adobe.com/flex/spark"
+               xmlns:components="components.*" minWidth="955" minHeight="600" creationComplete="init();"
+               skinClass="skins.applicationScrollerSkin"
+               currentState="Home">
+
+    <fx:Script source="auctionFunctions.as"/>
+    <fx:Script source="auctionItemFunctions.as"/>
+    <fx:Script source="pageCreationCompleteHandler.as"/>
+    <fx:Script source="pageClickHandler.as"/>
+    <fx:Script source="pageClearHandler.as"/>
+    <fx:Script source="pageLoader.as"/>
+    <fx:Script source="global.as"/>
+    <fx:Script source="invoiceFunctions.as"/>
+
+
+    <s:states>
+        <s:State name="Home"/>
+        <s:State name="LogIn"/>
+        <s:State name="AdminPage"/>
+        <s:State name="BidderPage"/>
+        <s:State name="AddAuction"/>
+        <s:State name="PreviewAuction"/>
+        <s:State name="AddItem"/>
+        <s:State name="PreviewItem"/>
+        <s:State name="InvoiceSystem"/>
+    </s:states>
+
+
+    <fx:DesignLayer id="LogInPageLayer">
+        <s:Group left="0" top="0" horizontalCenter="0" width="1024" height="768" enabled="true" includeIn="LogIn">
+            <components:logInComponentDisplay id="logInCom" x="312" y="220" width="400" height="300"
+                                              chromeColor="#fff000" currentState="Login"
+                                              horizontalCenter="0"/>
+        </s:Group>
+    </fx:DesignLayer>
+
+    <fx:DesignLayer id="AdminPageLayer">
+        <s:Group includeIn="AdminPage" left="0" top="0" horizontalCenter="0">
+            <components:adminNavTab id="AdminTabNav" horizontalCenter="0" chromeColor="#ffd800"/>
+        </s:Group>
+    </fx:DesignLayer>
+
+    <fx:DesignLayer id="BidderPageLayer">
+        <s:Group includeIn="BidderPage" left="0" top="0" horizontalCenter="0">
+            <components:bidderNavTab id="bidderTabNav" includeIn="BidderPage" horizontalCenter="0"
+                                     chromeColor="#ffd800"/>
+        </s:Group>
+    </fx:DesignLayer>
+
+    <fx:DesignLayer id="AuctionAdmin">
+        <s:Group id="auctionAddAuctionDisplayer" includeIn="AddAuction" left="0" top="0" horizontalCenter="0">
+            <components:auctionAdminTabNav id="auctionadmintabnav1" includeIn="AddAuction"/>
+        </s:Group>
+    </fx:DesignLayer>
+
+    <fx:DesignLayer id="AuctionPreview">
+        <s:Group id="auctionPublicDisplayer" includeIn="PreviewAuction" left="0" top="0" horizontalCenter="0">
+            <components:auctionViewDisplay id="auctionAdminPreviewCom" includeIn="PreviewAuction" y="188"/>
+        </s:Group>
+    </fx:DesignLayer>
+
+    <fx:DesignLayer id="AuctionItem">
+        <s:Group id="auctionAddItemAuctionDisplayer" includeIn="AddItem" left="0" top="0" horizontalCenter="0">
+            <components:itemAdminTabNav id="auctionitemadmintabnav1" includeIn="AddItem"/>
+        </s:Group>
+    </fx:DesignLayer>
+
+
+    <fx:DesignLayer id="ItemPreview">
+        <s:Group id="itemPublicDisplayer" includeIn="PreviewItem" left="0" top="0" horizontalCenter="0">
+            <components:itemView id="itemAdminPreviewCom" includeIn="PreviewItem" y="188"/>
+        </s:Group>
+    </fx:DesignLayer>
+
+    <fx:DesignLayer id="InvoiceDisplay">
+        <s:Group id="invoiceAuctionDisplay" includeIn="InvoiceSystem" left="0" top="0" horizontalCenter="0">
+            <components:invoice id="invoicePrintOut"/>
+        </s:Group>
+    </fx:DesignLayer>
+
+    <fx:DesignLayer id="Header">
+        <s:Group horizontalCenter="0">
+            <s:Image id="kisokoBanner" x="286" y="10" width="728" height="90"/>
+            <s:Image x="10" y="10" width="205" height="90" scaleMode="letterbox" smooth="true"
+                     smoothingQuality="high" source="assets/images/web.jpg"/>
+            <s:Button id="menuBackBtn" visible="true" x="52" y="119" label="Back"
+                      click="menuClickFunction(event);" enabled="true"
+                      skinClass="components.backScreenBtn"/>
+            <s:Button id="menuLogIn" x="900" y="108" label="Log In/Register"
+                      click="menuClickFunction(event);" enabled="true"
+                      skinClass="components.loginBtn"/>
+        </s:Group>
+    </fx:DesignLayer>
+
+
+    <fx:DesignLayer id="MapDisplay">
+        <s:Group includeIn="PreviewAuction, PreviewItem"
+                 horizontalCenter="0" verticalCenter="0">
+            <components:mapDisplay id="mapDisplayer" visible="false"/>
+        </s:Group>
+    </fx:DesignLayer>
+
+    <fx:DesignLayer id="GalleryDisplay">
+        <s:Group includeIn="PreviewAuction, PreviewItem"
+                 top="10" horizontalCenter="0">
+            <components:galleryDisplay id="galleryDisplayer" visible="false"/>
+        </s:Group>
+    </fx:DesignLayer>
+
+</s:Application>

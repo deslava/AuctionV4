@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         width="886" height="396">
+
+
+    <s:states>
+        <s:State name="auctionLoader"/>
+        <s:State name="itemsLoader"/>
+        <s:State name="deleteAuction"/>
+        <s:State name="privateAuctionAdd"/>
+    </s:states>
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+    <s:Button id="createAuctionAdminPageBtn" includeIn="auctionLoader" x="10" y="22"
+              label="Create Auction"/>
+    <s:DataGrid id="auctionListHolder" includeIn="auctionLoader" x="10" y="67" width="866"
+                height="258" requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="id" headerText="ID" width="50"></s:GridColumn>
+                <s:GridColumn dataField="name" headerText="Name"></s:GridColumn>
+                <s:GridColumn dataField="auctionView" headerText="Auction View" width="100"></s:GridColumn>
+                <s:GridColumn dataField="sataliteID" headerText="Satallite" width="100"></s:GridColumn>
+                <s:GridColumn dataField="status" headerText="Status" width="100"></s:GridColumn>
+                <s:GridColumn dataField="auctionCategory" headerText="Category" width="100"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+        <s:typicalItem>
+            <fx:Object dataField1="Sample Data" dataField2="Sample Data" dataField3="Sample Data"></fx:Object>
+        </s:typicalItem>
+    </s:DataGrid>
+    <s:Button id="editAuctionBtn" includeIn="auctionLoader" x="6" y="352" label="Edit Auction"/>
+    <s:Button id="addAuctionItemsBtn" includeIn="auctionLoader" x="481" y="352" label="Add Item"/>
+    <s:Button id="previewAuctionBtn" includeIn="auctionLoader" x="127" y="352"
+              label="Preview Auction"/>
+    <s:Button id="previewAuctionItemsListBtn" includeIn="auctionLoader" x="586" y="352" label="Preview Items"/>
+    <s:DataGrid id="itemsListHolder" includeIn="itemsLoader" x="10" y="67" width="866" height="258"
+                requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="itemId" headerText="ID" width="50"></s:GridColumn>
+                <s:GridColumn dataField="sellerId" headerText="Seller" width="50"></s:GridColumn>
+                <s:GridColumn dataField="itemName" headerText="Name"></s:GridColumn>
+                <s:GridColumn dataField="currentBid" headerText="Current Bid" width="100"></s:GridColumn>
+                <s:GridColumn dataField="category" headerText="Category" width="100"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+    </s:DataGrid>
+    <s:Button id="previewAuctionItemBtn" includeIn="itemsLoader" x="586" y="348" label="Preview Item"/>
+    <s:Button id="editAuctionItemBtn" includeIn="itemsLoader" x="481" y="348" label="Edit Item"/>
+    <s:Button id="backToAuctionBtn" includeIn="itemsLoader" x="806" y="10" label="Back"/>
+    <s:Button id="deleteAuctionBtn" includeIn="auctionLoader" x="137" y="22" label="Delete Auction"/>
+    <s:TitleWindow id="deleteAuctionAdminPnl" includeIn="deleteAuction" x="318" y="58" width="250"
+                   height="263" chromeColor="#FFE400"
+                   enabled="true" title="Delete Auction">
+        <s:TextArea x="10" y="6" width="228" height="137" borderColor="#FFDE00" borderVisible="false"
+                    color="#FF0000" editable="false" enabled="true" fontWeight="bold"
+                    text="Are you Sure you want to Delete this Auction?&#xd;&#xd;This can not be undone. All Files and User Info will be deleted. &#xd;&#xd;Deleting an Auction will delete all Auction Items, and Sellers."/>
+        <s:Button id="deleteSelectedAuctionBtn" x="22" y="177"
+                  label="Delete Auction, Items, and Sellers" enabled="false"/>
+        <s:CheckBox id="yesDeleteAuctionBtn" x="81" y="151" label="Yes I'm Sure" enabled="true" selected="false"/>
+    </s:TitleWindow>
+    <s:Button id="activateAuctionBtn" includeIn="auctionLoader" x="259" y="22"
+              label="Activate Auction"/>
+    <s:Button id="addUserPrivateAuctionBtn" includeIn="auctionLoader" x="709" y="22"
+              label="Add Users Private Auction" enabled="false"/>
+    <s:TextInput id="userEditSerch" includeIn="privateAuctionAdd" x="36" y="6.5" width="154"/>
+    <s:HGroup includeIn="privateAuctionAdd" x="36" y="34" width="233">
+        <s:RadioButton label="ID" groupName="radiogroup1" id="radioIDadmin" selected="true"/>
+        <s:RadioButton label="Email" groupName="radiogroup1" id="radioEmailadmin"/>
+        <s:RadioButton label="Name" groupName="radiogroup1" id="radioNameadmin"/>
+        <s:RadioButton label="Load All" groupName="radiogroup1" id="radioLoadAll"/>
+    </s:HGroup>
+    <s:Button id="userSearchBtn" includeIn="privateAuctionAdd" x="198" y="8" label="Search"/>
+    <s:Label includeIn="privateAuctionAdd" x="375" y="42" text="Total Users In Search:"/>
+    <s:Label id="editUsersTally" includeIn="privateAuctionAdd" x="501" y="42" text="0"/>
+    <s:DataGrid id="allUserDataLoader" includeIn="privateAuctionAdd" x="25" y="82" width="396"
+                height="256" enabled="true" requestedRowCount="4" sortableColumns="true">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="userId" headerText="UserID" sortable="true"
+                              sortDescending="false"></s:GridColumn>
+                <s:GridColumn dataField="userName" headerText="Name" sortable="true"></s:GridColumn>
+                <s:GridColumn dataField="userEmail" headerText="Email" sortable="true"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+    </s:DataGrid>
+    <s:DataGrid id="privateUsersLoader" includeIn="privateAuctionAdd" x="470" y="82" width="396"
+                height="256" requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="userId" headerText="UserID"></s:GridColumn>
+                <s:GridColumn dataField="userName" headerText="Name"></s:GridColumn>
+                <s:GridColumn dataField="userEmail" headerText="Email"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+    </s:DataGrid>
+    <s:Button id="addPrivateUserBtn" includeIn="privateAuctionAdd" x="349" y="365" label="Add User"/>
+    <s:Button id="removePrivateUserBtn" includeIn="privateAuctionAdd" x="470" y="365"
+              label="Remove User"/>
+    <s:Button id="returnPrivateAuctionBtn" includeIn="privateAuctionAdd" x="796" y="8" label="Back"/>
+    <s:Label id="errorText" includeIn="privateAuctionAdd" x="25" y="365" text="Label"/>
+    <s:Button id="deleteAuctionItemBtn" includeIn="itemsLoader" x="711" y="348" label="Delete Item"/>
+</s:Group>

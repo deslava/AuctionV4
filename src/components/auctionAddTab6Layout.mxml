@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:mx="library://ns.adobe.com/flex/mx" width="886" height="422">
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+
+    <mx:RichTextEditor id="richTextEditor4" x="4" y="10" width="432" height="373"
+                       status="Shipping Notes" title="Insert Shipping notes below">
+    </mx:RichTextEditor>
+    <mx:RichTextEditor id="richTextEditor6" x="451" y="10" width="432" height="373"
+                       status="Terms and Conditions" title="Insert Terms and Conditions below">
+    </mx:RichTextEditor>
+</s:Group>

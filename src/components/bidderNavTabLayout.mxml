@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:components="components.*" width="1024" height="768">
+    <mx:TabNavigator id="bidderTabNav" x="58" y="223" width="908" height="476" chromeColor="#ffd800">
+        <s:NavigatorContent width="100%" height="100%" label="Auction Bid">
+            <components:houseNumberBid id="bidderBidCom" x="10" y="10"/>
+        </s:NavigatorContent>
+        <s:NavigatorContent width="100%" height="100%" label="Bidder Info">
+            <components:userInfo id="bidderUserInfoCom" x="10" y="10"/>
+        </s:NavigatorContent>
+    </mx:TabNavigator>
+</s:Group>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009"
+                xmlns:s="library://ns.adobe.com/flex/spark"
+                autoDrawBackground="true" width="338" height="138">
+
+    <s:Image id="imageLoad" x="10" y="10" width="120" height="120"/>
+    <s:Label id="itemTitle" x="138" y="10" width="192" height="37" fontSize="12"
+             fontWeight="bold" text="Label" textAlign="left"/>
+    <s:Label id="categoryText" x="138" y="79.5" fontSize="12" fontWeight="bold" text="Category:"/>
+    <s:Label id="ReserveBidNowLabel" x="138" y="118" width="194" color="#FF0000" fontSize="12"
+             fontWeight="bold" text="Label" textAlign="left"/>
+    <s:Label id="itemIdLabel" x="138" y="55" fontSize="12" fontWeight="bold" text="Item ID:"/>
+    <s:Label id="itemIDtext" x="227" y="55" width="103" fontSize="12" text="Label"/>
+    <s:Label id="categoryDisplay2" x="200" y="77.5" width="130" fontSize="12"/>
+
+
+</s:ItemRenderer>

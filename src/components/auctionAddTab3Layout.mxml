@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         width="886" height="422">
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+
+    <s:CheckBox id="check2" x="85" y="132" label="Private Auction"/>
+    <s:CheckBox id="check1" x="85" y="85" label="Public Auction"/>
+    <s:CheckBox id="check4" x="243" y="222" label="Buy Now"/>
+    <s:CheckBox id="check3" x="83" y="223" label="Open Bidding"/>
+    <s:Label x="53" y="57" text="Auction View"/>
+    <s:Label x="53" y="195" text="Auction Type"/>
+    <s:CheckBox id="check5" x="83" y="266" label="Maximum Bidding"/>
+    <s:CheckBox id="check6" x="243" y="266" label="Buy Now"/>
+    <s:CheckBox id="check7" x="83" y="308" label="Price List"/>
+    <s:Label x="348" y="52" fontWeight="bold" text="Auto extend time (minutes)"/>
+    <s:NumericStepper id="extendTimer" x="442" y="72" maximum="20" minimum="1"/>
+    <s:Label x="563" y="19" fontWeight="bold" text="Staggered ending:"/>
+    <s:CheckBox id="r1" x="563" y="41" label="1 item/20 minutes"/>
+    <s:CheckBox id="r2" x="563" y="67" label="1 item/minute"/>
+    <s:CheckBox id="r3" x="563" y="90" label="2 item/minute"/>
+    <s:CheckBox id="r4" x="563" y="114" label="3 item/minute"/>
+    <s:CheckBox id="r5" x="563" y="138" label="4 item/minute"/>
+    <s:CheckBox id="r6" x="563" y="162" label="5 item/minute"/>
+    <s:CheckBox id="r7" x="563" y="188" label="6 item/minute"/>
+    <s:CheckBox id="r8" x="563" y="214" label="7 item/minute"/>
+    <s:CheckBox id="r9" x="563" y="240" label="8 item/minute"/>
+    <s:CheckBox id="r10" x="563" y="266" label="9 item/minute"/>
+    <s:CheckBox id="r11" x="563" y="290" label="10 item/minute"/>
+    <s:CheckBox id="r12" x="563" y="316" label="20 item/minute"/>
+    <s:CheckBox id="r13" x="563" y="342" label="30 item/minute"/>
+    <s:CheckBox id="r14" x="563" y="368" label="40 item/minute"/>
+    <s:CheckBox id="r15" x="563" y="394" label="50 item/minute"/>
+
+</s:Group>

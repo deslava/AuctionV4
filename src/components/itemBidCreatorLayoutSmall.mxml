@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:mx="library://ns.adobe.com/flex/mx"
+         width="462" height="238"
+         height.State1="149"
+         height.State2="149">
+    <s:states>
+        <s:State name="State1"/>
+        <s:State name="State2"/>
+    </s:states>
+
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+
+    <s:Button id="bidUpdateBtn" includeIn="State1" x="382" y="24" label="Enter"/>
+    <s:TextInput id="currUserMaxBidTxt" includeIn="State1" x="209" y="24" width="76" editable="true"
+                 enabled="true" restrict="0-9"/>
+    <s:Label includeIn="State1" x="210" y="10" width="76" text="Max Bid"/>
+    <s:TextInput id="currUserBidTxt" includeIn="State1" x="10" y="24" width="76" editable="true"
+                 enabled="true" restrict="0-9"/>
+    <s:DropDownList id="currUserMaxBidDec" includeIn="State1" x="291" y="25" width="60"
+                    selectedIndex="0" skinClass="skins.popupUpward">
+        <s:dataProvider>
+            <mx:ArrayList>
+                <fx:String>.00</fx:String>
+                <fx:String>.10</fx:String>
+                <fx:String>.20</fx:String>
+                <fx:String>.30</fx:String>
+                <fx:String>.40</fx:String>
+                <fx:String>.50</fx:String>
+                <fx:String>.60</fx:String>
+                <fx:String>.70</fx:String>
+                <fx:String>.80</fx:String>
+                <fx:String>.90</fx:String>
+            </mx:ArrayList>
+        </s:dataProvider>
+    </s:DropDownList>
+    <s:DropDownList id="currUserBidDec" includeIn="State1" x="94" y="25" width="60" selectedIndex="0"
+                    skinClass="skins.popupUpward">
+        <s:dataProvider>
+            <mx:ArrayList>
+                <fx:String>.00</fx:String>
+                <fx:String>.10</fx:String>
+                <fx:String>.20</fx:String>
+                <fx:String>.30</fx:String>
+                <fx:String>.40</fx:String>
+                <fx:String>.50</fx:String>
+                <fx:String>.60</fx:String>
+                <fx:String>.70</fx:String>
+                <fx:String>.80</fx:String>
+                <fx:String>.90</fx:String>
+            </mx:ArrayList>
+        </s:dataProvider>
+    </s:DropDownList>
+    <s:Label includeIn="State1" x="12" y="10" width="72" text="Bid"/>
+    <s:Label id="displayUpdate" includeIn="State1" x="10" y="53" width="341" fontSize="12"
+             textAlign="center" verticalAlign="middle"/>
+    <s:Label id="logInText" includeIn="State1" x="10" y="125" text="Logged In as: "/>
+    <s:Label id="userIDdisplay" includeIn="State1" x="90" y="125" width="60" textAlign="left"/>
+    <s:Label id="maxText" includeIn="State1" x="165" y="125" text="Your Current Max:"/>
+    <s:Label id="userMaxDisplay" includeIn="State1" x="273" y="125" width="70" textAlign="left"/>
+    <mx:LinkButton id="viewBidHistoryBtn" includeIn="State1" x="348" y="118" label="View Bid Histroy"/>
+    <s:DataGrid id="bidHistoryDisplay" includeIn="State2" x="10" y="10" width="443" height="105"
+                requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="userID" headerText="User"></s:GridColumn>
+                <s:GridColumn dataField="currentBid" headerText="Amount"></s:GridColumn>
+                <s:GridColumn dataField="currBidState" headerText="State"></s:GridColumn>
+                <s:GridColumn dataField="currBidTime" headerText="Time"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+    </s:DataGrid>
+    <mx:LinkButton id="returnToBidBtn" includeIn="State2" x="361" y="118" label="Return to Bid"/>
+    <s:Button id="refreshBtn" includeIn="State2" x="10" y="118" label="Refresh"/>
+    <s:Label id="displayAllInfo" includeIn="State1" x="90" y="78" width="261" height="25"
+             color="#1401D0" textAlign="left" verticalAlign="middle"/>
+</s:Group>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:flexiframe="com.google.code.flexiframe.*"
+         width="886" height="422">
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+
+    <s:Image id="sampleYoutube" x="380" y="32" source="@Embed('/assets/images/SNP_2615129_en_v1.jpg')"/>
+    <flexiframe:IFrame id="slowLoadingIFrameWithLoadIndicator" x="389" y="0"
+                       width="461" height="100%" source=""/>
+    <s:Button id="googleMapLoader" x="22" y="298" label="Load Video"/>
+    <s:TextArea id="googleCode1" x="22" y="138" width="284" height="99"/>
+    <s:TextArea x="10" y="30" width="371" height="68" borderVisible="false"
+                editable="false" enabled="true"
+                text="Go to youTube. Click the Share button located under the video.Click the Embed button. Uncheck Use Old Embed Code. Copy the code provided in the expanded box.Paste the code it begins with &quot;&lt;iframe .... &quot;"/>
+
+</s:Group>

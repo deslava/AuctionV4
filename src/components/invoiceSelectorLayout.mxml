@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         width="900" height="300">
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+    <s:DataGrid id="itemSeller" x="149" y="24" width="351" height="208" requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="sellerId" headerText="Seller ID" width="70"></s:GridColumn>
+                <s:GridColumn dataField="userName" headerText="Seller Name"></s:GridColumn>
+                <s:GridColumn dataField="email" headerText="Seller Email"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+        <s:typicalItem>
+            <fx:Object dataField1="Sample Data" dataField2="Sample Data" dataField3="Sample Data"></fx:Object>
+        </s:typicalItem>
+    </s:DataGrid>
+    <s:DataGrid id="itemsListHolder" x="528" y="24" width="351" height="208" requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="itemId" headerText="Item ID"></s:GridColumn>
+                <s:GridColumn dataField="itemName" headerText="Item Name"></s:GridColumn>
+                <s:GridColumn dataField="start_bid" headerText="Final Bid"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+        <s:typicalItem>
+            <fx:Object dataField1="Sample Data" dataField2="Sample Data" dataField3="Sample Data"></fx:Object>
+        </s:typicalItem>
+    </s:DataGrid>
+    <s:Button id="loadItemInvoice" x="794" y="256" label="load Invoice"/>
+    <s:Label x="149" y="4" fontWeight="bold" text="Seller"/>
+    <s:Button id="invoiceLoadBtn" x="405" y="256" label="load Invoices"/>
+    <s:Label x="528" y="4" fontWeight="bold" text="Item"/>
+    <s:Button id="viewAllItemsBtn" x="528" y="256" label="View All Items"/>
+</s:Group>

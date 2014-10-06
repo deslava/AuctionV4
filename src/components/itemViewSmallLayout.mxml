@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:components="components.*"
+         width="492" height="402">
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+    <s:TextArea id="itemSelectedTxt" visible="false" x="10" y="214" width="462" height="163"
+                enabled="false"/>
+
+    <s:Label x="27" y="9" fontWeight="bold" text="Highlights:"/>
+    <s:List id="imgHolderHightlight" x="27" y="25" width="186" height="164" borderVisible="false"
+            chromeColor="#FFD800" itemRenderer="components.RepeatedItem1" useVirtualLayout="false">
+        <s:layout>
+            <s:TileLayout horizontalAlign="center" orientation="rows"
+                          requestedColumnCount="1" requestedRowCount="1"
+                          verticalAlign="middle"/>
+        </s:layout>
+
+    </s:List>
+    <s:Label id="itemTitle" x="235" y="7" width="244" height="14" fontSize="12" fontWeight="bold"
+             text="Label" textAlign="left"/>
+    <s:Label id="categoryText" x="233" y="94.5" fontSize="12" fontWeight="bold" text="Category:"/>
+    <s:Label id="ReserveBidNowLabel" x="235" y="34" width="244" color="#FF0000" fontSize="12"
+             fontWeight="bold" text="Label" textAlign="left"/>
+    <s:Label id="itemIdLabel" x="233" y="70" fontSize="12" fontWeight="bold" text="Item ID:"/>
+    <s:Label id="itemIDtext" x="322" y="70" width="157" fontSize="12" text="Label"/>
+    <s:Label id="categoryDisplay" x="322" y="94.5" width="157" fontSize="12"/>
+    <components:countDownDisplay id="countDownTimerComponent" x="322" y="121" width="156"
+                                 fontSize="12">
+    </components:countDownDisplay>
+    <s:Label x="233" y="123" fontSize="12" fontWeight="bold" text="Time Left:"/>
+    <components:itemCurrentBidDisplaySmall id="currentItemBidDisplay" x="0" y="193" width="492"
+                                           height="62">
+    </components:itemCurrentBidDisplaySmall>
+    <components:itemBidCreatorDisplaySmall id="currentItemBidder" x="17" y="254" width="462"
+                                           height="149">
+    </components:itemBidCreatorDisplaySmall>
+</s:Group>

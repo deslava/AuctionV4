@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:components="components.*" width="1024" height="768">
+    <mx:TabNavigator id="AdminTabNav" x="58" y="223" width="908" height="476" chromeColor="#ffd800">
+        <s:NavigatorContent width="100%" height="100%" label="Admin Info">
+            <components:userInfo id="adminUserInfoCom" x="10" y="10"/>
+        </s:NavigatorContent>
+        <s:NavigatorContent width="100%" height="100%" label="Add User">
+            <components:userAdd id="addUserCom" x="10" y="10"/>
+        </s:NavigatorContent>
+        <s:NavigatorContent width="100%" height="100%" label="Edit Users">
+            <components:userEdit id="editUserCom" x="10" y="10"/>
+        </s:NavigatorContent>
+        <s:NavigatorContent width="100%" height="100%" label="Auctions">
+            <components:auctionLoader id="auctionLoaderCom" x="10" y="10"/>
+        </s:NavigatorContent>
+        <s:NavigatorContent width="100%" height="100%" label="Taxes &amp; Fees">
+        </s:NavigatorContent>
+        <s:NavigatorContent width="100%" height="100%" label="Global Options">
+        </s:NavigatorContent>
+        <s:NavigatorContent width="100%" height="100%" label="HouseBids">
+            <components:houseNumberBid id="adminHouseBidCom" x="10" y="10"/>
+        </s:NavigatorContent>
+        <s:NavigatorContent width="100%" height="100%" label="Invoices">
+            <components:userInvoice id="adminUserInvoice" x="10" y="10"/>
+        </s:NavigatorContent>
+    </mx:TabNavigator>
+
+</s:Group>

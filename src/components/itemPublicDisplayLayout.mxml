@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         xmlns:components="components.*"
+         width="1024" height="330">
+
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+    <s:List id="xmlItemsDBInfo" x="10" y="39" width="355" height="252" itemRenderer="components.auctionItemDisplay"
+            useVirtualLayout="false"></s:List>
+    <s:TextArea id="itemSelectedTxt" x="365" y="21" width="462" height="163" visible="false" enabled="false"/>
+    <s:Label id="descriptionText" x="393" y="85" fontWeight="bold" text="Description:"
+             textAlign="left"/>
+    <s:TextArea id="itemDescription" x="393" y="103" width="620" height="110"
+                borderColor="#FFFFFF" borderVisible="true" editable="false" enabled="true"
+                focusEnabled="false" fontSize="13" fontWeight="bold" textAlign="left"
+                contentBackgroundColor="#FFFFFF"/>
+    <s:Label id="itemTitle" x="393" y="24" width="324" height="37" fontSize="16"
+             fontWeight="bold" text="Label" textAlign="left"/>
+    <s:Label id="categoryText" x="725" y="48.5" fontSize="14" fontWeight="bold"
+             text="Category:"/>
+    <s:Label id="ReserveBidNowLabel" x="393" y="63" width="210" color="#FF0000" fontSize="12"
+             fontWeight="bold" text="Label" textAlign="left"/>
+    <s:Label id="itemIdLabel" x="725" y="24" fontSize="14" fontWeight="bold" text="Item ID:"/>
+    <s:Label id="itemIDtext" x="814" y="24" width="201" fontSize="14" text="Label"/>
+    <s:Label id="categoryDisplay2" x="814" y="48.5" width="200" fontSize="14"/>
+    <s:Label id="repeatAuctionName" x="10" y="24" fontWeight="bold"
+             text="Auction Items"/>
+
+
+    <components:itemCurrentBidDisplay id="currentItemBidDisplay" x="460" y="236"/>
+    <s:Button id="loadItemInfoBtn" x="10" y="299" label="Load Item Info Below"/>
+    <s:Button id="loadAuctionPreviewBtn" x="234" y="299" label="View Auction Details"/>
+    <s:Button id="loadItemPreviewBtn" x="864" y="299" width="150" label="Bid on Items"/>
+
+
+</s:Group>

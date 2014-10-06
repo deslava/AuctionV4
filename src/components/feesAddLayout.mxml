@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         width="872" height="422">
+    <s:states>
+        <s:State name="AddFees"/>
+        <s:State name="AddFeeType"/>
+    </s:states>
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+
+    <s:DataGrid id="auctionItemFeeHolder" includeIn="AddFees" x="415" y="13" width="444" height="177"
+                requestedRowCount="4">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="@id" headerText="Fee"></s:GridColumn>
+                <s:GridColumn dataField="@display" headerText="Cost"></s:GridColumn>
+                <s:GridColumn dataField="@applyTo" headerText="Apply To"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+    </s:DataGrid>
+    <s:Label includeIn="AddFees" x="14" y="23" text="Fees"/>
+    <s:DropDownList id="feeNameDropDown" includeIn="AddFees" x="13" y="51" width="190"
+                    prompt="Select A Fee ..."></s:DropDownList>
+    <s:Button id="auctionItemFeeAddBtn" includeIn="AddFees" x="227" y="131" label="Add"/>
+    <s:TextInput id="feeAmountItem" includeIn="AddFees" x="14" y="95" width="123" restrict="0-9, '.'"/>
+    <s:DropDownList id="feeTypeDropDown" includeIn="AddFees" x="145" y="96" width="152"
+                    prompt="Fee Type ..."></s:DropDownList>
+    <s:Label id="itemFeeError" includeIn="AddFees" x="14" y="140"/>
+    <s:Button id="deleteFeeBtn" includeIn="AddFees" x="778" y="198" label="Delete Fee"/>
+    <s:Button id="addFeeBtn" includeIn="AddFees" x="227" y="51" label="Add Fee"/>
+    <s:TitleWindow id="eventTypePnl" includeIn="AddFeeType" x="241" y="33" width="390" height="362">
+
+        <s:Label x="41" y="11" text="Fee Type"/>
+        <s:TextInput id="newFeeCategory" x="36" y="42" width="205"/>
+        <s:DataGrid id="auctionFeeCategoryHolder" x="36" y="97" width="329" height="203"
+                    color="#000000" contentBackgroundColor="#FFFFFF">
+            <s:columns>
+                <s:ArrayList>
+                    <s:GridColumn dataField="@name" headerText="Auction Category"></s:GridColumn>
+                </s:ArrayList>
+            </s:columns>
+        </s:DataGrid>
+        <s:Button id="eventFeeCreateBtn" x="266" y="42.5" label="Add Fee"/>
+        <s:Label id="errorEventFeeLabel" x="36" y="70"/>
+    </s:TitleWindow>
+
+</s:Group>
