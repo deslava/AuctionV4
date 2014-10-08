@@ -655,6 +655,8 @@ public class invoice extends invoiceLayout {
         _auctionFileURL;
         //addFinalBid();
         loadAuctionFileXML(_auctionFileURL);
+
+        _auctionFileURL;
     }
 }
 }
