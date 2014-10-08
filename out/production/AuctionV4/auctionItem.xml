@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+    <item>
+        <sellerId/>
+        <sellerType/>
+        <itemId/>
+        <auctionId/>
+        <itemName/>
+        <currentBid/>
+        <path/>
+        <info_xml/>
+        <category/>
+        <initialDollarBid/>
+        <initialCentsBid/>
+        <reserveDollar/>
+        <reserveCents/>
+        <quantity/>
+        <buyNow/>
+        <description/>
+        <rtdescription/>
+        <auctionImages/>
+        <auctionFees/>
+        <youtubeVideo></youtubeVideo>
+        <youtubeVideoCode></youtubeVideoCode>
+        <dropDown/>
+    </item>
+</items>

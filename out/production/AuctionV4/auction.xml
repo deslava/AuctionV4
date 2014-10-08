@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<auctions>
+    <auction>
+        <id></id>
+        <name></name>
+        <auctionCategory></auctionCategory>
+        <sataliteID></sataliteID>
+        <endTime></endTime>
+        <address></address>
+        <auctionState></auctionState>
+        <city></city>
+        <zipcode></zipcode>
+        <hr></hr>
+        <min></min>
+        <sec></sec>
+        <ampm></ampm>
+        <timeZone></timeZone>
+        <day></day>
+        <month></month>
+        <year></year>
+        <date></date>
+        <path></path>
+        <status></status>
+        <auctionXML></auctionXML>
+        <itemsXML></itemsXML>
+        <auctionView></auctionView>
+        <auctionType></auctionType>
+        <auctionType2></auctionType2>
+        <extendTime></extendTime>
+        <auctionStagerEnding min="0" numpermin="0"></auctionStagerEnding>
+        <auctionImages></auctionImages>
+        <googleMap></googleMap>
+        <googleMapCode></googleMapCode>
+        <DirectionMap></DirectionMap>
+        <rtDirectionMap></rtDirectionMap>
+        <InspectInfo></InspectInfo>
+        <rtInspectInfo></rtInspectInfo>
+        <inspectionDates></inspectionDates>
+        <PickUpInfo></PickUpInfo>
+        <rtPickUpInfo></rtPickUpInfo>
+        <pickupDates></pickupDates>
+        <ShippingInfo></ShippingInfo>
+        <rtShippingInfo></rtShippingInfo>
+        <TermsInfo></TermsInfo>
+        <rtTermsInfo></rtTermsInfo>
+        <AuctionDesInfo></AuctionDesInfo>
+        <rtAuctionDesInfo></rtAuctionDesInfo>
+        <auctionFees></auctionFees>
+    </auction>
+</auctions>

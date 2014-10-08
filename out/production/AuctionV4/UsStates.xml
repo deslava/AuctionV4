@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<states>
+    <state label="Alabama" value="AL" country="US"/>
+    <state label="Alaska" value="AK" country="US"/>
+    <state label="Arkansas" value="AR" country="US"/>
+    <state label="Arizona" value="AZ" country="US"/>
+    <state label="California" value="CA" country="US"/>
+    <state label="Colorado" value="CO" country="US"/>
+    <state label="Connecticut" value="CT" country="US"/>
+    <state label="District of Columbia" value="DC" country="US"/>
+    <state label="Delaware" value="DE" country="US"/>
+    <state label="Florida" value="FL" country="US"/>
+    <state label="Georgia" value="GA" country="US"/>
+    <state label="Hawaii" value="HI" country="US"/>
+    <state label="Idaho" value="ID" country="US"/>
+    <state label="Illinois" value="IL" country="US"/>
+    <state label="Indiana" value="IN" country="US"/>
+    <state label="Iowa" value="IA" country="US"/>
+    <state label="Kansas" value="KS" country="US"/>
+    <state label="Kentucky" value="KY" country="US"/>
+    <state label="Louisiana" value="LA" country="US"/>
+    <state label="Maine" value="ME" country="US"/>
+    <state label="Maryland" value="MD" country="US"/>
+    <state label="Massachusetts" value="MA" country="US"/>
+    <state label="Michigan" value="MI" country="US"/>
+    <state label="Minnesota" value="MN" country="US"/>
+    <state label="Mississippi" value="MS" country="US"/>
+    <state label="Missouri" value="MO" country="US"/>
+    <state label="Montana" value="MT" country="US"/>
+    <state label="Nebraska" value="NE" country="US"/>
+    <state label="Nevada" value="NV" country="US"/>
+    <state label="New Hampshire" value="NH" country="US"/>
+    <state label="New Jersey" value="NJ" country="US"/>
+    <state label="New Mexico" value="NM" country="US"/>
+    <state label="New York" value="NY" country="US"/>
+    <state label="North Carolina" value="NC" country="US"/>
+    <state label="North Dakota" value="ND" country="US"/>
+    <state label="Ohio" value="OH" country="US"/>
+    <state label="Oklahoma" value="OK" country="US"/>
+    <state label="Oregon" value="OR" country="US"/>
+    <state label="Pennsylvania" value="PA" country="US"/>
+    <state label="Rhode Island" value="RI" country="US"/>
+    <state label="South Carolina" value="SC" country="US"/>
+    <state label="South Dakota" value="SD" country="US"/>
+    <state label="Tennessee" value="TN" country="US"/>
+    <state label="Texas" value="TX" country="US"/>
+    <state label="Utah" value="UT" country="US"/>
+    <state label="Vermont" value="VT" country="US"/>
+    <state label="Virginia" value="VA" country="US"/>
+    <state label="Washington" value="WA" country="US"/>
+    <state label="West Virginia" value="WV" country="US"/>
+    <state label="Wisconsin" value="WI" country="US"/>
+    <state label="Wyoming" value="WY" country="US"/>
+</states>
