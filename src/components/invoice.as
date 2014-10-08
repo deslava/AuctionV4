@@ -122,6 +122,10 @@ public class invoice extends invoiceLayout {
         taxAmountTxt.text = "";
         totalAmount.text = "";
 
+        auctionItemFeeHolder.dataProvider = null;
+        auctionItemFeeHolder.validateNow();
+        auctionItemFeeHolder.validateDisplayList();
+
     }
 
     public function loadItemData():void {
