@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67542ef7-7a40-4b5d-a8d3-5f0c041b5c58" name="Default" comment="Update Backup Oct 5, 2014">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\.idea\compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\.idea\copyright\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\.idea\deployment.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\.idea\dictionaries\Daniel_Eslava.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\.idea\flexCompiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\.idea\php.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\.idea\uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\.idea\workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\AuctionV4.iml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\html-template\expressInstall.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\html-template\history\history.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\html-template\history\history.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\html-template\history\historyFrame.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\html-template\index.template.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Daniel Eslava\IdeaProjects\AuctionV4\html-template\swfobject.js" afterPath="" />
     </list>
     <ignored path="AuctionV4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,21 +52,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AuctionV4.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AuctionV4.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.34615386" vertical-offset="1606" max-vertical-offset="2210">
-              <caret line="95" column="37" selection-start-line="95" selection-start-column="37" selection-end-line="95" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="invoice.as" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/invoice.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.8016" vertical-offset="9486" max-vertical-offset="11373">
-              <caret line="661" column="5" selection-start-line="661" selection-start-column="5" selection-end-line="661" selection-end-column="5" />
+            <state vertical-scroll-proportion="-1.04" vertical-offset="10561" max-vertical-offset="11339">
+              <caret line="583" column="68" selection-start-line="583" selection-start-column="68" selection-end-line="583" selection-end-column="68" />
               <folding>
                 <element signature="e#21#66#0" expanded="true" />
               </folding>
@@ -151,7 +161,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages PackagesPane="true" />
       <showMembers />
       <showModules />
@@ -173,20 +183,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="AuctionV4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AuctionV4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AuctionV4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -745,7 +741,7 @@
       <workItem from="1412566793934" duration="842000" />
       <workItem from="1412567655305" duration="12376000" />
       <workItem from="1412653988377" duration="3954000" />
-      <workItem from="1412694308834" duration="5013000" />
+      <workItem from="1412694308834" duration="9325000" />
     </task>
     <task id="LOCAL-00001" summary="Update Backup Oct 5, 2014">
       <created>1412568188402</created>
@@ -767,11 +763,19 @@
       <created>1412733848756</created>
       <updated>1412733848756</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update Backup Oct 5, 2014">
+      <created>1412734941423</created>
+      <updated>1412734941423</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update Backup Oct 5, 2014">
+      <created>1412736449935</created>
+      <updated>1412736449935</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="732907000" />
+    <option name="totallyTimeSpent" value="737219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1689" height="1080" extended-state="0" />
@@ -789,13 +793,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32955715" sideWeight="0.50029886" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32117528" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32955715" sideWeight="0.49970114" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32955715" sideWeight="0.49970114" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32028836" sideWeight="0.4983897" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24805738" sideWeight="0.51459295" order="0" side_tool="true" content_ui="tabs" x="860" y="231" width="402" height="601" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24805738" sideWeight="0.48387095" order="1" side_tool="false" content_ui="combo" x="579" y="61" width="473" height="964" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24805738" sideWeight="0.48387095" order="1" side_tool="false" content_ui="combo" x="579" y="61" width="473" height="964" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285273" sideWeight="0.62227416" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1265,7 +1269,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AuctionV4.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.34615386" vertical-offset="1606" max-vertical-offset="2210">
+        <state vertical-scroll-proportion="0.015025042" vertical-offset="1606" max-vertical-offset="2210">
           <caret line="95" column="37" selection-start-line="95" selection-start-column="37" selection-end-line="95" selection-end-column="37" />
           <folding />
         </state>
@@ -1273,8 +1277,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/invoice.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.8016" vertical-offset="9486" max-vertical-offset="11373">
-          <caret line="661" column="5" selection-start-line="661" selection-start-column="5" selection-end-line="661" selection-end-column="5" />
+        <state vertical-scroll-proportion="-1.04" vertical-offset="10561" max-vertical-offset="11339">
+          <caret line="583" column="68" selection-start-line="583" selection-start-column="68" selection-end-line="583" selection-end-column="68" />
           <folding>
             <element signature="e#21#66#0" expanded="true" />
           </folding>
