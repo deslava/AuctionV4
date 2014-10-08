@@ -658,6 +658,7 @@ public class invoice extends invoiceLayout {
 
         _auctionFileURL;
         _auctionID;
+        _itemID;
     }
 }
 }
