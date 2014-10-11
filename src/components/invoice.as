@@ -350,7 +350,7 @@ public class invoice extends invoiceLayout {
         auctionItemFeeHolder.validateNow();
         auctionItemFeeHolder.validateDisplayList();
 
-        //calculateTaxAmount();
+        calculateTaxAmount();
     }
 
     private function loadAuctionFileXML(_auctionURL:String):void {
