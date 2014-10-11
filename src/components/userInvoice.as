@@ -128,8 +128,11 @@ public class userInvoice extends userInvoiceLayout {
 
     private function clearTab1():void {
 
+        xc = new XMLListCollection();
+        xc1 = new XMLListCollection();
 
         auctionListDropDown.selectedIndex = -1;
+        auctionListDropDown.dataProvider = null;
         itemsListHolder.selectedIndex = -1;
 
         auctionListDropDown.dataProvider = null;

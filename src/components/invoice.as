@@ -114,6 +114,7 @@ public class invoice extends invoiceLayout {
         companyInfo.text = "";
         bidderInfo.text = "";
 
+        xc8 = new XMLListCollection();
         auctionItemFeeHolder.dataProvider = null;
 
         bidTotalTxt.text = "";
