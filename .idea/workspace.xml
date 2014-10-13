@@ -4,71 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/src/AuctionV4.php" line="5" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67542ef7-7a40-4b5d-a8d3-5f0c041b5c58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/1componentValidator.as" afterPath="$PROJECT_DIR$/src/components/1componentValidator.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/1searchFunctions.as" afterPath="$PROJECT_DIR$/src/components/1searchFunctions.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util/HTTPServiceWrapper.as" afterPath="$PROJECT_DIR$/src/util/HTTPServiceWrapper.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/google/code/flexiframe/IFrame.as" afterPath="$PROJECT_DIR$/src/com/google/code/flexiframe/IFrame.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/flexiframe/IFrame.as" afterPath="$PROJECT_DIR$/src/flexiframe/IFrame.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/adminNavTab.as" afterPath="$PROJECT_DIR$/src/components/adminNavTab.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionAddTab1.as" afterPath="$PROJECT_DIR$/src/components/auctionAddTab1.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionAddTab3.as" afterPath="$PROJECT_DIR$/src/components/auctionAddTab3.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionAddTab4.as" afterPath="$PROJECT_DIR$/src/components/auctionAddTab4.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionAddTab5.as" afterPath="$PROJECT_DIR$/src/components/auctionAddTab5.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionAddTab6.as" afterPath="$PROJECT_DIR$/src/components/auctionAddTab6.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionAddTab7.as" afterPath="$PROJECT_DIR$/src/components/auctionAddTab7.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionAdminTabNav.as" afterPath="$PROJECT_DIR$/src/components/auctionAdminTabNav.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionClass.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionDisplayInfo.as" afterPath="$PROJECT_DIR$/src/components/auctionDisplayInfo.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctions.as" afterPath="$PROJECT_DIR$/src/auctionFunctions.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemClass.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionItemDisplay.as" afterPath="$PROJECT_DIR$/src/components/auctionItemDisplay.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemListClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemListClass.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemsListClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemsListClass.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionLoader.as" afterPath="$PROJECT_DIR$/src/components/auctionLoader.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionViewDisplay.as" afterPath="$PROJECT_DIR$/src/components/auctionViewDisplay.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionsListClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionsListClass.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/bidderNavTab.as" afterPath="$PROJECT_DIR$/src/components/bidderNavTab.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/countDownDisplay.as" afterPath="$PROJECT_DIR$/src/components/countDownDisplay.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/dateSetup.as" afterPath="$PROJECT_DIR$/src/components/dateSetup.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/feesAdd.as" afterPath="$PROJECT_DIR$/src/components/feesAdd.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/feesAddItem.as" afterPath="$PROJECT_DIR$/src/components/feesAddItem.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/fileLoaderClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/fileLoaderClass.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/galleryDisplay.as" afterPath="$PROJECT_DIR$/src/components/galleryDisplay.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/global.as" afterPath="$PROJECT_DIR$/src/global.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/houseNumberBid.as" afterPath="$PROJECT_DIR$/src/components/houseNumberBid.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/imageItemUploader.as" afterPath="$PROJECT_DIR$/src/components/imageItemUploader.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/imageUploader.as" afterPath="$PROJECT_DIR$/src/components/imageUploader.as" />
+    <list default="true" id="67542ef7-7a40-4b5d-a8d3-5f0c041b5c58" name="Default" comment="Update Backup Oct 5, 2014">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/invoice.as" afterPath="$PROJECT_DIR$/src/components/invoice.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/invoiceSelector.as" afterPath="$PROJECT_DIR$/src/components/invoiceSelector.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemAdd.as" afterPath="$PROJECT_DIR$/src/components/itemAdd.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemAdminTabNav.as" afterPath="$PROJECT_DIR$/src/components/itemAdminTabNav.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/itemBidClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/itemBidClass.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemBidCreatorDisplay.as" afterPath="$PROJECT_DIR$/src/components/itemBidCreatorDisplay.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemBidCreatorDisplaySmall.as" afterPath="$PROJECT_DIR$/src/components/itemBidCreatorDisplaySmall.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemCurrentBidDisplay.as" afterPath="$PROJECT_DIR$/src/components/itemCurrentBidDisplay.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemCurrentBidDisplaySmall.as" afterPath="$PROJECT_DIR$/src/components/itemCurrentBidDisplaySmall.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemImageListDisplay.as" afterPath="$PROJECT_DIR$/src/components/itemImageListDisplay.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemPublicDisplay.as" afterPath="$PROJECT_DIR$/src/components/itemPublicDisplay.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemVideo.as" afterPath="$PROJECT_DIR$/src/components/itemVideo.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemView.as" afterPath="$PROJECT_DIR$/src/components/itemView.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemViewDisplay.as" afterPath="$PROJECT_DIR$/src/components/itemViewDisplay.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemViewSmall.as" afterPath="$PROJECT_DIR$/src/components/itemViewSmall.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/logInComponentDisplay.as" afterPath="$PROJECT_DIR$/src/components/logInComponentDisplay.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/mapDisplay.as" afterPath="$PROJECT_DIR$/src/components/mapDisplay.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skins/menuPanel.mxml" afterPath="$PROJECT_DIR$/src/skins/menuPanel.mxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skins/noCloseBtn.mxml" afterPath="$PROJECT_DIR$/src/skins/noCloseBtn.mxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pageClickHandler.as" afterPath="$PROJECT_DIR$/src/pageClickHandler.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/publicAuctionListClass.as" afterPath="$PROJECT_DIR$/src/components/publicAuctionListClass.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/sellerClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/sellerClass.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/serverTime.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/serverTime.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/timeFunction.as" afterPath="$PROJECT_DIR$/src/components/timeFunction.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/userAdd.as" afterPath="$PROJECT_DIR$/src/components/userAdd.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/userBidderClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/userBidderClass.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/userClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/userClass.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/userEdit.as" afterPath="$PROJECT_DIR$/src/components/userEdit.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/userInfo.as" afterPath="$PROJECT_DIR$/src/components/userInfo.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/userInvoice.as" afterPath="$PROJECT_DIR$/src/components/userInvoice.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AuctionV4.iws" />
@@ -96,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pageCreationCompleteHandler.as" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pageCreationCompleteHandler.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pageCreationCompleteHandler.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.391681" vertical-offset="0" max-vertical-offset="3519">
-              <caret line="183" column="36" selection-start-line="183" selection-start-column="36" selection-end-line="183" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2913" max-vertical-offset="3519">
+              <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
               <folding>
                 <element signature="e#22#53#0" expanded="true" />
               </folding>
@@ -108,11 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invoice.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/invoice.as">
+      <file leaf-file-name="invoiceXML.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/invoiceXML.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2176" max-vertical-offset="11373">
-              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+            <state vertical-scroll-proportion="5.8846154" vertical-offset="153" max-vertical-offset="1292">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auctionClass.as" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/auctionFunctionsClass/auctionClass.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.422034" vertical-offset="4986" max-vertical-offset="8993">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,8 +111,8 @@
         <option value="$PROJECT_DIR$/src/AuctionV4.php" />
         <option value="$PROJECT_DIR$/src/pageClickHandler.as" />
         <option value="$PROJECT_DIR$/src/components/userInvoice.as" />
-        <option value="$PROJECT_DIR$/src/components/invoice.as" />
         <option value="$PROJECT_DIR$/src/pageCreationCompleteHandler.as" />
+        <option value="$PROJECT_DIR$/src/components/invoice.as" />
       </list>
     </option>
   </component>
@@ -282,24 +229,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AuctionV4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AuctionV4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -316,7 +245,7 @@
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Zend/Apache2/bin" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="vcs.TFS" />
+    <property name="options.lastSelected" value="Configurable.PHP.Servers" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -684,7 +613,7 @@
       <workItem from="1412653988377" duration="3954000" />
       <workItem from="1412694308834" duration="10857000" />
       <workItem from="1412784731421" duration="18146000" />
-      <workItem from="1413069280979" duration="198000" />
+      <workItem from="1413069280979" duration="22463000" />
     </task>
     <task id="LOCAL-00001" summary="Update Backup Oct 5, 2014">
       <created>1412568188402</created>
@@ -726,44 +655,48 @@
       <created>1412991567130</created>
       <updated>1412991567130</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update Backup Oct 5, 2014">
+      <created>1413069512053</created>
+      <updated>1413069512053</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="757095000" />
+    <option name="totallyTimeSpent" value="779360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1374" height="1080" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32440782" sideWeight="0.5677467" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955715" sideWeight="0.49970114" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36560246" sideWeight="0.69661266" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36560246" sideWeight="0.69661266" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36560246" sideWeight="0.30265096" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36560246" sideWeight="0.30338734" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32117528" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955715" sideWeight="0.49970114" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32028836" sideWeight="0.4983897" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30559647" sideWeight="0.51623374" order="0" side_tool="true" content_ui="tabs" x="860" y="231" width="402" height="601" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30559647" sideWeight="0.48376623" order="1" side_tool="false" content_ui="combo" x="579" y="61" width="473" height="964" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30559647" sideWeight="0.48376623" order="1" side_tool="false" content_ui="combo" x="579" y="61" width="473" height="964" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285273" sideWeight="0.62227416" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="MXML Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40091637" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32440782" sideWeight="0.5683962" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32028836" sideWeight="0.4983897" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955715" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39958805" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="MXML Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40091637" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -821,14 +754,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="flex">
-          <url>file://$PROJECT_DIR$/src/pageCreationCompleteHandler.as</url>
-          <line>194</line>
-          <option name="timeStamp" value="304" />
+          <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
+          <line>263</line>
+          <option name="timeStamp" value="309" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
-          <line>128</line>
-          <option name="timeStamp" value="308" />
+          <line>564</line>
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
+          <line>352</line>
+          <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
+          <line>330</line>
+          <option name="timeStamp" value="313" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://C:/Program Files (x86)/Zend/Apache2/htdocs/AuctionV4/out/production/AuctionV4/login.php</url>
@@ -849,7 +792,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="309" />
+      <option name="time" value="314" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -857,13 +800,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/logInComponentLayout.mxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="2023">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/1componentValidator.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42455775" vertical-offset="0" max-vertical-offset="1700">
@@ -1067,13 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auctionFunctionsClass/auctionClass.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.040678" vertical-offset="8301" max-vertical-offset="9095">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bidFunctions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8228">
@@ -1123,20 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auctionItemFunctions.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0720339" vertical-offset="0" max-vertical-offset="944">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/invoiceFunctions.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/itemView.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2516">
@@ -1182,16 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/userInvoice.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="2315" max-vertical-offset="9469">
-          <caret line="149" column="8" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
-          <folding>
-            <element signature="e#71#121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pageClickHandler.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5864406" vertical-offset="6550" max-vertical-offset="7140">
@@ -1204,27 +1109,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/invoiceLayout.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.14539006" vertical-offset="201" max-vertical-offset="765">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="40" />
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="765">
+          <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/invoice.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1980" max-vertical-offset="11373">
-          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        <state vertical-scroll-proportion="-116.28" vertical-offset="1428" max-vertical-offset="11203">
+          <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/userInvoice.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0033003301" vertical-offset="6547" max-vertical-offset="9469">
+          <caret line="387" column="23" selection-start-line="387" selection-start-column="23" selection-end-line="387" selection-end-column="23" />
+          <folding>
+            <element signature="e#71#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/invoiceFunctions.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33663365" vertical-offset="0" max-vertical-offset="606">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auctionItemFunctions.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11221122" vertical-offset="0" max-vertical-offset="606">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pageCreationCompleteHandler.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.391681" vertical-offset="0" max-vertical-offset="3519">
-          <caret line="183" column="36" selection-start-line="183" selection-start-column="36" selection-end-line="183" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2913" max-vertical-offset="3519">
+          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
           <folding>
             <element signature="e#22#53#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/invoiceXML.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.8846154" vertical-offset="153" max-vertical-offset="1292">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auctionFunctionsClass/auctionClass.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.422034" vertical-offset="4986" max-vertical-offset="8993">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
