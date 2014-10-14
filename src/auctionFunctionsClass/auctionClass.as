@@ -154,6 +154,12 @@ public class auctionClass extends AbstractInvoker {
         _xmlFileLoader.loadXML(url, obj);
     }
 
+    public  function loadAuctionByID(id:int = 0):void{
+        _auctionID = id;
+        loadAuctionDBXML();
+
+    }
+
     public function updateAuction():void {
 
     }
@@ -180,10 +186,6 @@ public class auctionClass extends AbstractInvoker {
 
     }
 
-    public function loadAuctionDBXML():void {
-
-
-    }
 
     public function activateAuction():void {
 
@@ -237,6 +239,30 @@ public class auctionClass extends AbstractInvoker {
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    private function loadAuctionDBXML():void {
+
+        var url:String;
+        var obj:Object = new Object();
+
+        url = "AuctionXML.php";
+
+        obj = blankOutAuctionVar(obj);
+        obj = loadAuctionObj(obj);
+
+        xmlService = new HTTPService();
+        _xmlFileLoader = new fileLoaderClass();
+
+        xmlService = _xmlFileLoader.xmlFileLoader;
+
+        xmlService.addEventListener(ResultEvent.RESULT, auctionDBXMLLoadVerify);
+        xmlService.addEventListener(FaultEvent.FAULT, auctionDBXMLLoadFail);
+
+        _xmlFileLoader.loadXML(url, obj);
+
+        FlexGlobals.topLevelApplication.enabled = false;
+    }
+
+
     private function saveAuctionXMLFile():void {
         var obj:Object = new Object();
         var url:String;
@@ -273,7 +299,7 @@ public class auctionClass extends AbstractInvoker {
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    private function sycronizeDBwithFile():void {
+    private function synchronizeDBwithFile():void {
         var s:String;
 
         s = _auctionDBXML.id;
@@ -375,6 +401,14 @@ public class auctionClass extends AbstractInvoker {
 
     /////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+    private function loadAuctionObj(obj:Object):Object {
+        obj.searchVar = _auctionID;
+        obj.table1 = "Load";
+
+        return obj;
+    }
+
     private function deleteAuctionObj(obj:Object):Object {
         obj.path = _auctionDBXML.path.toString();
         obj.searchVar = _auctionDBXML.id.toString();
@@ -406,7 +440,7 @@ public class auctionClass extends AbstractInvoker {
         return obj;
     }
 
-    public function auctionXMLFail(event:FaultEvent):void {
+    private function auctionXMLFail(event:FaultEvent):void {
 
         var obj:Object;
 
@@ -421,7 +455,7 @@ public class auctionClass extends AbstractInvoker {
         FlexGlobals.topLevelApplication.enabled = true;
     }
 
-    public function auctionXMLVerify(event:ResultEvent):void {
+    private function auctionXMLVerify(event:ResultEvent):void {
 
         var obj:Object;
 
@@ -436,7 +470,7 @@ public class auctionClass extends AbstractInvoker {
 
         if (node != null) {
             _auctionFileXML = node;
-            sycronizeDBwithFile();
+            synchronizeDBwithFile();
             this.dispatchEvent(event);
             return;
         }
@@ -446,7 +480,7 @@ public class auctionClass extends AbstractInvoker {
 
     }
 
-    protected function auctionDBXMLFail(event:FaultEvent):void {
+    private function auctionDBXMLFail(event:FaultEvent):void {
         var obj:Object;
 
         obj = XML(xmlService.lastResult);
@@ -456,7 +490,7 @@ public class auctionClass extends AbstractInvoker {
 
     }
 
-    protected function auctionDBXMLVerify(event:ResultEvent):void {
+    private function auctionDBXMLVerify(event:ResultEvent):void {
         var obj:Object;
 
         obj = XML(xmlService.lastResult);
@@ -468,14 +502,49 @@ public class auctionClass extends AbstractInvoker {
 
         if (node != null) {
             _auctionDBXML = node;
-            sycronizeDBwithFile();
+            synchronizeDBwithFile();
             saveAuctionXMLFile();
         }
 
 
     }
 
-    protected function auctionXMLFileFail(event:FaultEvent):void {
+
+
+
+
+    private function auctionDBXMLLoadFail(event:FaultEvent):void {
+        var obj:Object;
+
+        obj = XML(xmlService.lastResult);
+        xmlService.removeEventListener(ResultEvent.RESULT, auctionDBXMLVerify);
+        xmlService.removeEventListener(FaultEvent.FAULT, auctionDBXMLFail);
+
+
+    }
+
+    private function auctionDBXMLLoadVerify(event:ResultEvent):void {
+        var obj:Object;
+        var url:String;
+
+        obj = XML(xmlService.lastResult);
+        xmlService.removeEventListener(ResultEvent.RESULT, auctionDBXMLVerify);
+        xmlService.removeEventListener(FaultEvent.FAULT, auctionDBXMLFail);
+
+        var node:XML;
+        node = obj.auctionDB[0] as XML;
+
+        if (node != null) {
+            _auctionDBXML = node;
+            url = _auctionDBXML.auctionXML;
+            loadAuctionFileXML(url);
+        }
+
+
+    }
+
+
+    private function auctionXMLFileFail(event:FaultEvent):void {
         var obj:Object;
 
         obj = XML(xmlService.lastResult);
@@ -487,7 +556,7 @@ public class auctionClass extends AbstractInvoker {
         FlexGlobals.topLevelApplication.enabled = true;
     }
 
-    protected function auctionXMLFileVerify(event:ResultEvent):void {
+    private function auctionXMLFileVerify(event:ResultEvent):void {
         var obj:Object;
 
         obj = XML(xmlService.lastResult);

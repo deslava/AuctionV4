@@ -50,6 +50,16 @@ public class auctionItemClass extends AbstractInvoker {
         _auctionID = value;
     }
 
+    private var _itemID:int;
+
+    public function get itemID():int {
+        return _itemID;
+    }
+
+    public function set itemID(value:int):void {
+        _itemID = value;
+    }
+
     private var _auctionItemFileXML:XML;
 
     public function get auctionItemFileXML():XML {
@@ -116,6 +126,35 @@ public class auctionItemClass extends AbstractInvoker {
 
         _xmlFileLoader.loadXML(url, obj);
 
+
+    }
+
+
+    public function loadItemWithID(aID:int=0, iID:int=0):void{
+        _auctionID = aID;
+        _itemID = iID;
+
+        loadItemDBXML();
+    }
+
+    private function loadItemDBXML():void{
+
+        var obj:Object = new Object();
+        var url:String;
+
+        url = "itemsXML.php";
+        obj = blankOutItemVar(obj);
+        obj = loadItemObj(obj);
+
+        xmlService = new HTTPService();
+        _xmlFileLoader = new fileLoaderClass();
+
+        xmlService = _xmlFileLoader.xmlFileLoader;
+
+        xmlService.addEventListener(ResultEvent.RESULT, itemDBXMLLoadVerify);
+        xmlService.addEventListener(FaultEvent.FAULT, itemDBXMLLoadFail);
+
+        _xmlFileLoader.loadXML(url, obj);
 
     }
 
@@ -212,7 +251,7 @@ public class auctionItemClass extends AbstractInvoker {
 
     }
 
-    private function sycronizeDBwithFile():void {
+    private function synchronizeDBwithFile():void {
 
         _auctionItemFileXML.sellerId = _auctionItemDBXML.sellerId.toString();
         _auctionItemFileXML.auctionId = _auctionItemDBXML.auctionId.toString();
@@ -236,7 +275,19 @@ public class auctionItemClass extends AbstractInvoker {
 
     }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////	
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    private function loadItemObj(obj:Object):Object{
+        obj.auctionID = _auctionID;
+        obj.itemID = _itemID;
+        obj.table1 = "Update";
+
+        return (obj);
+
+    }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
     private function saveItemXMLFile():void {
         var url:String;
@@ -359,8 +410,45 @@ public class auctionItemClass extends AbstractInvoker {
 
         if (node != null) {
             _auctionItemDBXML = node;
-            sycronizeDBwithFile();
+            synchronizeDBwithFile();
             saveItemXMLFile();
+        }
+    }
+
+
+
+
+
+    protected function itemDBXMLLoadFail(event:FaultEvent):void {
+        var obj:Object;
+
+        obj = XML(event.fault);
+        obj;
+
+        xmlService.removeEventListener(ResultEvent.RESULT, itemDBXMLVerify);
+        xmlService.removeEventListener(FaultEvent.FAULT, itemDBXMLFail);
+
+        this.dispatchEvent(event);
+
+    }
+
+    protected function itemDBXMLLoadVerify(event:ResultEvent):void {
+        var obj:Object;
+        var url:String;
+
+        obj = XML(event.result);
+        obj;
+
+        xmlService.removeEventListener(ResultEvent.RESULT, itemDBXMLVerify);
+        xmlService.removeEventListener(FaultEvent.FAULT, itemDBXMLFail);
+
+        var node:XML;
+        node = obj.item[0] as XML;
+
+        if (node != null) {
+            _auctionItemDBXML = node;
+            url = _auctionItemDBXML.info_xml;
+            loadItemFileXML(url);
         }
     }
 }

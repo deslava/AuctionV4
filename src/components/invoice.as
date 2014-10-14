@@ -1,4 +1,6 @@
 package components {
+import auctionFunctionsClass.auctionClass;
+import auctionFunctionsClass.auctionItemClass;
 import auctionFunctionsClass.fileLoaderClass;
 import auctionFunctionsClass.sellerClass;
 
@@ -43,6 +45,11 @@ public class invoice extends invoiceLayout {
     private var sellerFileLoader:fileLoaderClass = new fileLoaderClass();
     private var _seller:sellerClass = new sellerClass();
     private var _sellerID:Number = 0;
+
+    private var auctionLoader:auctionClass = new auctionClass();
+    private var auctionxmlFileLoader:HTTPService = new HTTPService();
+    private var itemLoader:auctionItemClass = new auctionItemClass();
+    private var itemxmlFileLoader:HTTPService = new HTTPService();
 
     public function set sellerID(value:Number):void {
         _sellerID = value;
@@ -128,20 +135,18 @@ public class invoice extends invoiceLayout {
         auctionItemFeeHolder.validateNow();
         auctionItemFeeHolder.validateDisplayList();
 
+        auctionLoader.auctionID = _auctionID;
+        auctionLoader.loadAuctionByID(_auctionID);
+
+        auctionLoader.addEventListener(ResultEvent.RESULT, auctionFileVerify);
+        auctionLoader.addEventListener(FaultEvent.FAULT, auctionFileFail);
+
     }
 
     public function loadItemData():void {
 
         loadAuctionSellerInfo();
-        //loadBuyerUsers();
 
-        //addFinalBid();
-        //calculateFinalBidTotal();
-        //calculateFinalBidPreimum();
-        //calculateFinalBidSubTotal();
-        // calculateTaxAmount();
-
-        //loadFeeXML();
     }
 
     public function loadBuyerData():void {
@@ -657,6 +662,24 @@ public class invoice extends invoiceLayout {
         _auctionFileURL;
         loadAuctionFileXML(_auctionFileURL);
         _auctionFileURL;
+    }
+
+    private function auctionFileVerify(event:ResultEvent):void {
+        var obj:Object;
+        obj = XML(event.result);
+
+        auctionLoader.removeEventListener(ResultEvent.RESULT, auctionFileVerify);
+        auctionLoader.removeEventListener(FaultEvent.FAULT, auctionFileFail);
+
+    }
+
+    private function auctionFileFail(event:ResultEvent):void {
+        var obj:Object;
+        obj = XML(event.result);
+
+        auctionLoader.removeEventListener(ResultEvent.RESULT, auctionFileVerify);
+        auctionLoader.removeEventListener(FaultEvent.FAULT, auctionFileFail);
+
     }
 }
 }
