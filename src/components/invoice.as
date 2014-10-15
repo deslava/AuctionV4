@@ -671,6 +671,10 @@ public class invoice extends invoiceLayout {
         auctionLoader.removeEventListener(ResultEvent.RESULT, auctionFileVerify);
         auctionLoader.removeEventListener(FaultEvent.FAULT, auctionFileFail);
 
+        _auctionFileXML = obj as XML;
+        _auctionDBXML = auctionLoader.auctionDBXML;
+
+        obj;
     }
 
     private function auctionFileFail(event:ResultEvent):void {

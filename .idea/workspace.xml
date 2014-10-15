@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67542ef7-7a40-4b5d-a8d3-5f0c041b5c58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionClass.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemClass.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/invoice.as" afterPath="$PROJECT_DIR$/src/components/invoice.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <ignored path="AuctionV4.iws" />
-    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/" />
+    <ignored path="html-template/" />
+    <ignored path="out/" />
+    <ignored path="src/serverConfig.php" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,23 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pageCreationCompleteHandler.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pageCreationCompleteHandler.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2942" max-vertical-offset="3519">
-              <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
-              <folding>
-                <element signature="e#22#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="invoice.as" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/invoice.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="19.161016" vertical-offset="0" max-vertical-offset="11730">
-              <caret line="665" column="0" selection-start-line="665" selection-start-column="0" selection-end-line="665" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.29867986" vertical-offset="11005" max-vertical-offset="11798">
+              <caret line="658" column="0" selection-start-line="658" selection-start-column="0" selection-end-line="658" selection-end-column="0" />
               <folding>
                 <element signature="e#21#63#0" expanded="true" />
               </folding>
@@ -142,8 +130,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1374" />
-    <option name="height" value="1080" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -292,10 +282,10 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files (x86)/Zend/Apache2/bin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/serverConfig.php" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="Configurable.PHP.Servers" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Ignored.Files" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -666,7 +656,7 @@
       <workItem from="1412653988377" duration="3954000" />
       <workItem from="1412694308834" duration="10857000" />
       <workItem from="1412784731421" duration="18146000" />
-      <workItem from="1413069280979" duration="31555000" />
+      <workItem from="1413069280979" duration="34784000" />
     </task>
     <task id="LOCAL-00001" summary="Update Backup Oct 5, 2014">
       <created>1412568188402</created>
@@ -716,15 +706,19 @@
       <created>1413238340597</created>
       <updated>1413238340597</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Update Backup Oct 5, 2014">
+      <created>1413325450873</created>
+      <updated>1413325450873</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="788452000" />
+    <option name="totallyTimeSpent" value="791681000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1374" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32440782" sideWeight="0.5677467" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -733,18 +727,18 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36560246" sideWeight="0.69661266" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3596758" sideWeight="0.69635415" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36560246" sideWeight="0.30338734" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3596758" sideWeight="0.30364582" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32117528" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955715" sideWeight="0.49970114" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32028836" sideWeight="0.4983897" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30559647" sideWeight="0.51623374" order="0" side_tool="true" content_ui="tabs" x="860" y="231" width="402" height="601" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21614583" sideWeight="0.51582277" order="0" side_tool="true" content_ui="tabs" x="860" y="231" width="402" height="601" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30559647" sideWeight="0.48376623" order="1" side_tool="false" content_ui="combo" x="579" y="61" width="473" height="964" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21614583" sideWeight="0.4841772" order="1" side_tool="false" content_ui="combo" x="579" y="61" width="473" height="964" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285273" sideWeight="0.62227416" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="MXML Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40091637" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -830,6 +824,16 @@
           <line>335</line>
           <option name="timeStamp" value="313" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
+          <line>681</line>
+          <option name="timeStamp" value="314" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
+          <line>676</line>
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://C:/Program Files (x86)/Zend/Apache2/htdocs/AuctionV4/out/production/AuctionV4/login.php</url>
           <line>8</line>
@@ -849,7 +853,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="314" />
+      <option name="time" value="318" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1221,8 +1225,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/invoice.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="19.161016" vertical-offset="0" max-vertical-offset="11730">
-          <caret line="665" column="0" selection-start-line="665" selection-start-column="0" selection-end-line="665" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.29867986" vertical-offset="11005" max-vertical-offset="11798">
+          <caret line="658" column="0" selection-start-line="658" selection-start-column="0" selection-end-line="658" selection-end-column="0" />
           <folding>
             <element signature="e#21#63#0" expanded="true" />
           </folding>
