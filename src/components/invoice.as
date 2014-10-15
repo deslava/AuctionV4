@@ -47,9 +47,7 @@ public class invoice extends invoiceLayout {
     private var _sellerID:Number = 0;
 
     private var auctionLoader:auctionClass = new auctionClass();
-    private var auctionxmlFileLoader:HTTPService = new HTTPService();
     private var itemLoader:auctionItemClass = new auctionItemClass();
-    private var itemxmlFileLoader:HTTPService = new HTTPService();
 
     public function set sellerID(value:Number):void {
         _sellerID = value;
@@ -143,19 +141,7 @@ public class invoice extends invoiceLayout {
 
     }
 
-    public function loadItemData():void {
-
-        loadAuctionSellerInfo();
-
-    }
-
-    public function loadBuyerData():void {
-
-        loadAuctionSellerInfo();
-        loadBuyerUsers();
-    }
-
-    public function loadFeeXML():void {
+  public function loadFeeXML():void {
 
 
         tempXML = _auctionItemFileXML.copy();
@@ -167,6 +153,7 @@ public class invoice extends invoiceLayout {
         auctionItemFeeHolder.validateDisplayList();
 
     }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public function loadAdminUsers():void {
 
@@ -179,6 +166,89 @@ public class invoice extends invoiceLayout {
 
         loadUserLists(obj);
     }
+
+
+    private function loadUserLists(obj:Object):void {
+
+        var url:String;
+        url = "searchUserList.php";
+
+        xmlFileLoader = fileLoader.xmlFileLoader;
+        xmlFileLoader.addEventListener(ResultEvent.RESULT, loadUserInfoXMLVerify);
+        xmlFileLoader.addEventListener(FaultEvent.FAULT, loadUserInfoXMLFail);
+
+        fileLoader.loadXML(url, obj);
+
+    }
+
+    private function loadUserInfoXMLFail(event:Event):void {
+
+
+        _loginUserXML.userXML = "";
+
+    }
+
+    private function loadUserInfoXMLVerify(event:Event):void {
+
+        _sellerUserDBXML = XML(xmlFileLoader.lastResult);
+
+        verifyLoadUserInfoXMLValid();
+
+        xmlFileLoader.removeEventListener(ResultEvent.RESULT, loadUserInfoXMLVerify);
+        xmlFileLoader.removeEventListener(FaultEvent.FAULT, loadUserInfoXMLFail);
+
+    }
+
+    private function verifyLoadUserInfoXMLValid():void {
+
+        var urlPath:String;
+        var node:XML = _sellerUserDBXML.user[0];
+        urlPath = node.userPath.toString() + "userInfo.xml";
+
+        xmlFileLoader = fileLoader.xmlFileLoader;
+        xmlFileLoader.addEventListener(ResultEvent.RESULT, loadSellerUserInfoXMLVerify);
+        xmlFileLoader.addEventListener(FaultEvent.FAULT, loadSellerUserInfoXMLFail);
+
+        fileLoader.loadXML(urlPath);
+    }
+
+    private function loadSellerUserInfoXMLVerify(event:Event):void {
+
+
+        _sellerUserFileXML = XML(xmlFileLoader.lastResult);
+
+        verifyloadSellerUserInfoXMLValid();
+
+        xmlFileLoader.removeEventListener(ResultEvent.RESULT, loadSellerUserInfoXMLVerify);
+        xmlFileLoader.removeEventListener(FaultEvent.FAULT, loadSellerUserInfoXMLFail);
+
+    }
+
+    private function loadSellerUserInfoXMLFail(event:Event):void {
+
+        xmlFileLoader.removeEventListener(ResultEvent.RESULT, loadSellerUserInfoXMLVerify);
+        xmlFileLoader.removeEventListener(FaultEvent.FAULT, loadSellerUserInfoXMLFail);
+
+    }
+
+
+    private function verifyloadSellerUserInfoXMLValid():void {
+        var node:XML = _sellerUserFileXML.Business[0];
+        var fullTextSeller:String;
+        var businessName:String;
+        var businessAddress:String;
+        var businessPhone:String;
+
+        _sellerUserFileXML;
+        businessName = node.name.toString();
+        businessAddress = node.address.toString() + ", " + node.state.toString() + " " + node.zipcode.toString();
+        businessPhone = "Phone: " + node.phone.toString();
+
+        fullTextSeller = businessName + "\n" + businessAddress + "\n" + businessPhone;
+
+        companyInfo.text = fullTextSeller;
+    }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public function loadBuyerUsers():void {
 
@@ -199,11 +269,6 @@ public class invoice extends invoiceLayout {
 
     }
 
-    public function sumTotalsInvoice():void {
-
-
-    }
-
     public function loadSellersLists():void {
 
         if (_auctionID == -1)
@@ -217,6 +282,8 @@ public class invoice extends invoiceLayout {
 
     }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     public function loaditemSellerList(obj:Object):void {
         var url:String;
         url = "sellersListXML.php";
@@ -228,42 +295,36 @@ public class invoice extends invoiceLayout {
         sellerFileLoader.loadXML(url, obj);
     }
 
+
+
+    public function loaditemSellerListFail(event:FaultEvent):void {
+
+
+    }
+
+    public function loaditemSellerListVerify(event:ResultEvent):void {
+
+        var responseXML:XML = XML(event.result);
+        _auctionSellerLists = responseXML;
+
+        sellerXmlFileLoader.removeEventListener(ResultEvent.RESULT, loaditemSellerListVerify);
+        sellerXmlFileLoader.removeEventListener(ResultEvent.RESULT, loaditemSellerListFail);
+
+        loadSellerListValid();
+
+    }
+
+
     public function loadSellerListValid():void {
 
         loadItemSellerSelected(_sellerID);
 
     }
 
-    public function loadItemSellerSelected(i:int):void {
-        var url:String = "";
-        var node:XML = new XML();
 
-        if (i == -1)
-            return;
-
-        url = searchNode(i);
-        _seller.auctionID = _auctionID;
-        _seller.auctionSellerDBXML = node;
-        _seller.loadSellerFile(url);
-
-        _seller.addEventListener(ResultEvent.RESULT, saveSellerXMLVerify);
-        _seller.addEventListener(FaultEvent.FAULT, saveSellerXMLFail);
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-    }
-
-    public function loadSellerXML():void {
-
-
-    }
-
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    private function loadAuctionSellerInfo():void {
-        loadAdminUsers();
-
-    }
 
     private function calculateTaxAmount():void {
         _invoiceTaxAmountCharge = _invoiceTax * Number(_invoiceSubtotalAmount);
@@ -329,10 +390,6 @@ public class invoice extends invoiceLayout {
 
         _auctionItemFileXML.item[0].auctionFees.appendChild(node);
 
-
-        //_auctionFileURL = _auctionDBXML.auctionXML;
-        //loadAuctionFileXML(_auctionFileURL);
-
         addTaxes();
 
     }
@@ -358,66 +415,15 @@ public class invoice extends invoiceLayout {
         calculateTaxAmount();
     }
 
-    private function loadAuctionFileXML(_auctionURL:String):void {
-        auctionsxmlFileLoader = new HTTPService();
-        auctionsfileLoader = new fileLoaderClass();
-
-        auctionsxmlFileLoader = auctionsfileLoader.xmlFileLoader;
-
-        auctionsxmlFileLoader.addEventListener(ResultEvent.RESULT, auctionXMLVerify);
-        auctionsxmlFileLoader.addEventListener(FaultEvent.FAULT, auctionXMLFail);
 
 
-        auctionsfileLoader.loadXML(_auctionURL);
 
-
-    }
-
-    private function loadUserLists(obj:Object):void {
-
-        var url:String;
-        url = "searchUserList.php";
-
-        xmlFileLoader = fileLoader.xmlFileLoader;
-        xmlFileLoader.addEventListener(ResultEvent.RESULT, loadUserInfoXMLVerify);
-        xmlFileLoader.addEventListener(FaultEvent.FAULT, loadUserInfoXMLFail);
-
-        fileLoader.loadXML(url, obj);
-
-    }
-
-    private function verifyLoadUserInfoXMLValid():void {
-
-        var urlPath:String;
-        var node:XML = _sellerUserDBXML.user[0];
-        urlPath = node.userPath.toString() + "userInfo.xml";
-
-        xmlFileLoader = fileLoader.xmlFileLoader;
-        xmlFileLoader.addEventListener(ResultEvent.RESULT, loadSellerUserInfoXMLVerify);
-        xmlFileLoader.addEventListener(FaultEvent.FAULT, loadSellerUserInfoXMLFail);
-
-        fileLoader.loadXML(urlPath);
-    }
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    private function verifyloadSellerUserInfoXMLValid():void {
-        var node:XML = _sellerUserFileXML.Business[0];
-        var fullTextSeller:String;
-        var businessName:String;
-        var businessAddress:String;
-        var businessPhone:String;
 
-        _sellerUserFileXML;
-        businessName = node.name.toString();
-        businessAddress = node.address.toString() + ", " + node.state.toString() + " " + node.zipcode.toString();
-        businessPhone = "Phone: " + node.phone.toString();
 
-        fullTextSeller = businessName + "\n" + businessAddress + "\n" + businessPhone;
-
-        companyInfo.text = fullTextSeller;
-    }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     private function loadBuyerUserLists(obj:Object):void {
 
@@ -431,6 +437,25 @@ public class invoice extends invoiceLayout {
         fileLoader2.loadXML(url, obj);
 
     }
+
+    private function loadBuyerUserDBXMLFail(event:Event):void {
+
+
+        _loginUserXML.userXML = "";
+
+    }
+
+    private function loadBuyerUserDBXMLVerify(event:Event):void {
+
+        _bidderUserDBXML = XML(xmlFileLoader2.lastResult);
+
+        verifyloadBuyerUserDBXMLValid();
+
+        xmlFileLoader2.removeEventListener(ResultEvent.RESULT, loadBuyerUserDBXMLVerify);
+        xmlFileLoader2.removeEventListener(FaultEvent.FAULT, loadBuyerUserDBXMLFail);
+
+    }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     private function verifyloadBuyerUserDBXMLValid():void {
 
@@ -450,6 +475,27 @@ public class invoice extends invoiceLayout {
 
     }
 
+    private function loadBuyerUserInfoXMLVerify(event:Event):void {
+
+
+        _bidderUserFileXML = XML(xmlFileLoader2.lastResult);
+
+        verifyLoadBuyerUserInfoXMLValid();
+
+        xmlFileLoader2.removeEventListener(ResultEvent.RESULT, loadBuyerUserInfoXMLVerify);
+        xmlFileLoader2.removeEventListener(FaultEvent.FAULT, loadBuyerUserInfoXMLFail);
+
+    }
+
+    private function loadBuyerUserInfoXMLFail(event:Event):void {
+
+
+        _bidderUserFileXML.userXML = "";
+
+    }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     private function verifyLoadBuyerUserInfoXMLValid():void {
         var node:XML = _bidderUserFileXML.Personal[0];
         var fullTextSeller:String;
@@ -466,7 +512,7 @@ public class invoice extends invoiceLayout {
 
         bidderInfo.text = fullTextSeller;
     }
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
     private function blankOutObjVar(obj:Object):Object {
 
         obj.searchVar = "";
@@ -486,39 +532,35 @@ public class invoice extends invoiceLayout {
         return url;
     }
 
-    private function sellerXMLValid():void {
-        var node:XML = _auctionSellerFileXML;
-        var fullTextSeller:String;
-        var businessName:String;
-        var businessAddress:String;
-        var businessPhone:String;
-
-        businessName = node.userName.toString();
-        businessAddress = node.address.toString() + ", " + node.state.toString() + " " + node.zipcode.toString();
-        businessPhone = "Phone: " + node.phone.toString();
-
-        fullTextSeller = businessName + "\n" + businessAddress + "\n" + businessPhone;
-
-        bidderInfo.text = fullTextSeller;
-    }
-
-    public function loaditemSellerListFail(event:FaultEvent):void {
 
 
-    }
+
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    public function loaditemSellerListVerify(event:ResultEvent):void {
+    public function loadItemSellerSelected(i:int):void {
+        var url:String = "";
+        var node:XML = new XML();
 
-        var responseXML:XML = XML(event.result);
-        _auctionSellerLists = responseXML;
+        if (i == -1)
+            return;
 
-        sellerXmlFileLoader.removeEventListener(ResultEvent.RESULT, loaditemSellerListVerify);
-        sellerXmlFileLoader.removeEventListener(ResultEvent.RESULT, loaditemSellerListFail);
+        url = searchNode(i);
+        _seller.auctionID = _auctionID;
+        _seller.auctionSellerDBXML = node;
+        _seller.loadSellerFile(url);
 
-        loadSellerListValid();
+        _seller.addEventListener(ResultEvent.RESULT, saveSellerXMLVerify);
+        _seller.addEventListener(FaultEvent.FAULT, saveSellerXMLFail);
 
+
+    }
+
+    protected function saveSellerXMLFail(event:FaultEvent):void {
+        this.enabled = true;
+
+        _seller.removeEventListener(ResultEvent.RESULT, saveSellerXMLVerify);
+        _seller.removeEventListener(FaultEvent.FAULT, saveSellerXMLFail);
     }
 
     public function saveSellerXMLVerify(event:ResultEvent):void {
@@ -543,12 +585,25 @@ public class invoice extends invoiceLayout {
 
     }
 
-    protected function saveSellerXMLFail(event:FaultEvent):void {
-        this.enabled = true;
+    private function sellerXMLValid():void {
+        var node:XML = _auctionSellerFileXML;
+        var fullTextSeller:String;
+        var businessName:String;
+        var businessAddress:String;
+        var businessPhone:String;
 
-        _seller.removeEventListener(ResultEvent.RESULT, saveSellerXMLVerify);
-        _seller.removeEventListener(FaultEvent.FAULT, saveSellerXMLFail);
+        businessName = node.userName.toString();
+        businessAddress = node.address.toString() + ", " + node.state.toString() + " " + node.zipcode.toString();
+        businessPhone = "Phone: " + node.phone.toString();
+
+        fullTextSeller = businessName + "\n" + businessAddress + "\n" + businessPhone;
+
+        bidderInfo.text = fullTextSeller;
     }
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
     private function auctionXMLFail(event:Event):void {
 
@@ -570,80 +625,6 @@ public class invoice extends invoiceLayout {
         addFinalBid();
     }
 
-    private function loadUserInfoXMLFail(event:Event):void {
-
-
-        _loginUserXML.userXML = "";
-
-    }
-
-    private function loadUserInfoXMLVerify(event:Event):void {
-
-        _sellerUserDBXML = XML(xmlFileLoader.lastResult);
-
-        verifyLoadUserInfoXMLValid();
-
-        xmlFileLoader.removeEventListener(ResultEvent.RESULT, loadUserInfoXMLVerify);
-        xmlFileLoader.removeEventListener(FaultEvent.FAULT, loadUserInfoXMLFail);
-
-    }
-
-    private function loadSellerUserInfoXMLVerify(event:Event):void {
-
-
-        _sellerUserFileXML = XML(xmlFileLoader.lastResult);
-
-        verifyloadSellerUserInfoXMLValid();
-
-        xmlFileLoader.removeEventListener(ResultEvent.RESULT, loadSellerUserInfoXMLVerify);
-        xmlFileLoader.removeEventListener(FaultEvent.FAULT, loadSellerUserInfoXMLFail);
-
-    }
-
-    private function loadSellerUserInfoXMLFail(event:Event):void {
-
-        xmlFileLoader.removeEventListener(ResultEvent.RESULT, loadSellerUserInfoXMLVerify);
-        xmlFileLoader.removeEventListener(FaultEvent.FAULT, loadSellerUserInfoXMLFail);
-
-    }
-
-    private function loadBuyerUserDBXMLFail(event:Event):void {
-
-
-        _loginUserXML.userXML = "";
-
-    }
-
-    private function loadBuyerUserDBXMLVerify(event:Event):void {
-
-        _bidderUserDBXML = XML(xmlFileLoader2.lastResult);
-
-        verifyloadBuyerUserDBXMLValid();
-
-        xmlFileLoader2.removeEventListener(ResultEvent.RESULT, loadBuyerUserDBXMLVerify);
-        xmlFileLoader2.removeEventListener(FaultEvent.FAULT, loadBuyerUserDBXMLFail);
-
-    }
-
-    private function loadBuyerUserInfoXMLVerify(event:Event):void {
-
-
-        _bidderUserFileXML = XML(xmlFileLoader2.lastResult);
-
-        verifyLoadBuyerUserInfoXMLValid();
-
-        xmlFileLoader2.removeEventListener(ResultEvent.RESULT, loadBuyerUserInfoXMLVerify);
-        xmlFileLoader2.removeEventListener(FaultEvent.FAULT, loadBuyerUserInfoXMLFail);
-
-    }
-
-    private function loadBuyerUserInfoXMLFail(event:Event):void {
-
-
-        _bidderUserFileXML.userXML = "";
-
-    }
-
     public function set auctionsItemListDBXML(value:XML):void {
         _auctionsItemListDBXML = value;
     }
@@ -653,16 +634,8 @@ public class invoice extends invoiceLayout {
 
         xmlPrint.text = _auctionsItemListDBXML.toString();
 
-        _auctionItemDBXML = _auctionsItemListDBXML.item[_itemID-1];
-
-        _auctionItemFileXML;
-
-        _auctionFileURL = _auctionItemDBXML.info_xml;
-
-        _auctionFileURL;
-        loadAuctionFileXML(_auctionFileURL);
-        _auctionFileURL;
     }
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     private function auctionFileVerify(event:ResultEvent):void {
         var obj:Object;

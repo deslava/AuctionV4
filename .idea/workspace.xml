@@ -5,6 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67542ef7-7a40-4b5d-a8d3-5f0c041b5c58" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/1componentValidator.as" afterPath="$PROJECT_DIR$/src/components/1componentValidator.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/1searchFunctions.as" afterPath="$PROJECT_DIR$/src/components/1searchFunctions.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util/HTTPServiceWrapper.as" afterPath="$PROJECT_DIR$/src/util/HTTPServiceWrapper.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/google/code/flexiframe/IFrame.as" afterPath="$PROJECT_DIR$/src/com/google/code/flexiframe/IFrame.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/flexiframe/IFrame.as" afterPath="$PROJECT_DIR$/src/flexiframe/IFrame.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/adminNavTab.as" afterPath="$PROJECT_DIR$/src/components/adminNavTab.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionAddTab1.as" afterPath="$PROJECT_DIR$/src/components/auctionAddTab1.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionAddTab3.as" afterPath="$PROJECT_DIR$/src/components/auctionAddTab3.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionAddTab4.as" afterPath="$PROJECT_DIR$/src/components/auctionAddTab4.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionAddTab5.as" afterPath="$PROJECT_DIR$/src/components/auctionAddTab5.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionAddTab6.as" afterPath="$PROJECT_DIR$/src/components/auctionAddTab6.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionAddTab7.as" afterPath="$PROJECT_DIR$/src/components/auctionAddTab7.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionAdminTabNav.as" afterPath="$PROJECT_DIR$/src/components/auctionAdminTabNav.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionDisplayInfo.as" afterPath="$PROJECT_DIR$/src/components/auctionDisplayInfo.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctions.as" afterPath="$PROJECT_DIR$/src/auctionFunctions.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionItemDisplay.as" afterPath="$PROJECT_DIR$/src/components/auctionItemDisplay.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemListClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemListClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemsListClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemsListClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionLoader.as" afterPath="$PROJECT_DIR$/src/components/auctionLoader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/auctionViewDisplay.as" afterPath="$PROJECT_DIR$/src/components/auctionViewDisplay.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionsListClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionsListClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/bidderNavTab.as" afterPath="$PROJECT_DIR$/src/components/bidderNavTab.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/countDownDisplay.as" afterPath="$PROJECT_DIR$/src/components/countDownDisplay.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/dateSetup.as" afterPath="$PROJECT_DIR$/src/components/dateSetup.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/feesAdd.as" afterPath="$PROJECT_DIR$/src/components/feesAdd.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/feesAddItem.as" afterPath="$PROJECT_DIR$/src/components/feesAddItem.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/fileLoaderClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/fileLoaderClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/galleryDisplay.as" afterPath="$PROJECT_DIR$/src/components/galleryDisplay.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/global.as" afterPath="$PROJECT_DIR$/src/global.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/houseNumberBid.as" afterPath="$PROJECT_DIR$/src/components/houseNumberBid.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/imageItemUploader.as" afterPath="$PROJECT_DIR$/src/components/imageItemUploader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/imageUploader.as" afterPath="$PROJECT_DIR$/src/components/imageUploader.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/invoice.as" afterPath="$PROJECT_DIR$/src/components/invoice.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/invoiceSelector.as" afterPath="$PROJECT_DIR$/src/components/invoiceSelector.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemAdd.as" afterPath="$PROJECT_DIR$/src/components/itemAdd.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemAdminTabNav.as" afterPath="$PROJECT_DIR$/src/components/itemAdminTabNav.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/itemBidClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/itemBidClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemBidCreatorDisplay.as" afterPath="$PROJECT_DIR$/src/components/itemBidCreatorDisplay.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemBidCreatorDisplaySmall.as" afterPath="$PROJECT_DIR$/src/components/itemBidCreatorDisplaySmall.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemCurrentBidDisplay.as" afterPath="$PROJECT_DIR$/src/components/itemCurrentBidDisplay.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemCurrentBidDisplaySmall.as" afterPath="$PROJECT_DIR$/src/components/itemCurrentBidDisplaySmall.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemImageListDisplay.as" afterPath="$PROJECT_DIR$/src/components/itemImageListDisplay.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemPublicDisplay.as" afterPath="$PROJECT_DIR$/src/components/itemPublicDisplay.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemVideo.as" afterPath="$PROJECT_DIR$/src/components/itemVideo.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemView.as" afterPath="$PROJECT_DIR$/src/components/itemView.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemViewDisplay.as" afterPath="$PROJECT_DIR$/src/components/itemViewDisplay.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/itemViewSmall.as" afterPath="$PROJECT_DIR$/src/components/itemViewSmall.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/logInComponentDisplay.as" afterPath="$PROJECT_DIR$/src/components/logInComponentDisplay.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/mapDisplay.as" afterPath="$PROJECT_DIR$/src/components/mapDisplay.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skins/menuPanel.mxml" afterPath="$PROJECT_DIR$/src/skins/menuPanel.mxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/skins/noCloseBtn.mxml" afterPath="$PROJECT_DIR$/src/skins/noCloseBtn.mxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pageClickHandler.as" afterPath="$PROJECT_DIR$/src/pageClickHandler.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/publicAuctionListClass.as" afterPath="$PROJECT_DIR$/src/components/publicAuctionListClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/sellerClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/sellerClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/serverTime.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/serverTime.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/timeFunction.as" afterPath="$PROJECT_DIR$/src/components/timeFunction.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/userAdd.as" afterPath="$PROJECT_DIR$/src/components/userAdd.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/userBidderClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/userBidderClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/userClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/userClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/userEdit.as" afterPath="$PROJECT_DIR$/src/components/userEdit.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/userInfo.as" afterPath="$PROJECT_DIR$/src/components/userInfo.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/userInvoice.as" afterPath="$PROJECT_DIR$/src/components/userInvoice.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/" />
@@ -34,11 +98,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="pageCreationCompleteHandler.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pageCreationCompleteHandler.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2878" max-vertical-offset="3519">
+              <caret line="196" column="4" selection-start-line="196" selection-start-column="4" selection-end-line="196" selection-end-column="4" />
+              <folding>
+                <element signature="e#22#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="invoice.as" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/invoice.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.3260531" vertical-offset="10103" max-vertical-offset="11764">
-              <caret line="682" column="41" selection-start-line="682" selection-start-column="41" selection-end-line="682" selection-end-column="41" />
+            <state vertical-scroll-proportion="10.293831" vertical-offset="4284" max-vertical-offset="11305">
+              <caret line="625" column="5" selection-start-line="625" selection-start-column="5" selection-end-line="625" selection-end-column="5" />
               <folding>
                 <element signature="e#21#63#0" expanded="true" />
               </folding>
@@ -46,11 +122,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="invoiceListClass.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/auctionFunctionsClass/invoiceListClass.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="itemBidClass.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/auctionFunctionsClass/itemBidClass.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3655">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="auctionClass.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/auctionFunctionsClass/auctionClass.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10166">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="9117" max-vertical-offset="10268">
+              <caret line="433" column="41" selection-start-line="433" selection-start-column="41" selection-end-line="433" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -59,7 +155,7 @@
       <file leaf-file-name="sellerClass.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/auctionFunctionsClass/sellerClass.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4494" max-vertical-offset="5916">
+            <state vertical-scroll-proportion="0.0" vertical-offset="4561" max-vertical-offset="5967">
               <caret line="335" column="0" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
               <folding />
             </state>
@@ -656,7 +752,7 @@
       <workItem from="1412694308834" duration="10857000" />
       <workItem from="1412784731421" duration="18146000" />
       <workItem from="1413069280979" duration="35312000" />
-      <workItem from="1413348127331" duration="2185000" />
+      <workItem from="1413348127331" duration="13719000" />
     </task>
     <task id="LOCAL-00001" summary="Update Backup Oct 5, 2014">
       <created>1412568188402</created>
@@ -722,11 +818,15 @@
       <created>1413348544304</created>
       <updated>1413348544304</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Update Backup Oct 5, 2014">
+      <created>1413350385381</created>
+      <updated>1413350385381</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="794394000" />
+    <option name="totallyTimeSpent" value="805928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -818,12 +918,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
-          <line>679</line>
+          <line>652</line>
           <option name="timeStamp" value="314" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
-          <line>673</line>
+          <line>646</line>
           <option name="timeStamp" value="322" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -1021,20 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auctionFunctionsClass/itemBidClass.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3587">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auctionFunctionsClass/invoiceListClass.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bidFunctions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8228">
@@ -1117,6 +1203,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.5365078" vertical-offset="6187" max-vertical-offset="8602">
           <caret line="507" column="41" selection-start-line="507" selection-start-column="41" selection-end-line="507" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1132,9 +1219,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5864406" vertical-offset="6550" max-vertical-offset="7140">
           <caret line="122" column="35" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
-          <folding>
-            <element signature="e#22#53#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,9 +1235,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0033003301" vertical-offset="6547" max-vertical-offset="9469">
           <caret line="387" column="23" selection-start-line="387" selection-start-column="23" selection-end-line="387" selection-end-column="23" />
-          <folding>
-            <element signature="e#71#121#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1168,6 +1251,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11221122" vertical-offset="0" max-vertical-offset="606">
           <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1183,16 +1267,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46279493" vertical-offset="306" max-vertical-offset="1292">
           <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pageCreationCompleteHandler.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2913" max-vertical-offset="3519">
-          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#53#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1204,10 +1279,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/auctionFunctionsClass/invoiceListClass.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auctionFunctionsClass/itemBidClass.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3587">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/auctionFunctionsClass/auctionClass.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10166">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="9015" max-vertical-offset="10166">
+          <caret line="433" column="41" selection-start-line="433" selection-start-column="41" selection-end-line="433" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1220,10 +1311,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pageCreationCompleteHandler.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2878" max-vertical-offset="3519">
+          <caret line="196" column="4" selection-start-line="196" selection-start-column="4" selection-end-line="196" selection-end-column="4" />
+          <folding>
+            <element signature="e#22#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/invoice.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.3260531" vertical-offset="10103" max-vertical-offset="11764">
-          <caret line="682" column="41" selection-start-line="682" selection-start-column="41" selection-end-line="682" selection-end-column="41" />
+        <state vertical-scroll-proportion="10.293831" vertical-offset="4284" max-vertical-offset="11305">
+          <caret line="625" column="5" selection-start-line="625" selection-start-column="5" selection-end-line="625" selection-end-column="5" />
           <folding>
             <element signature="e#21#63#0" expanded="true" />
           </folding>
