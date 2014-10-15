@@ -668,13 +668,11 @@ public class invoice extends invoiceLayout {
         var obj:Object;
         obj = XML(event.result);
 
-        auctionLoader.removeEventListener(ResultEvent.RESULT, auctionFileVerify);
-        auctionLoader.removeEventListener(FaultEvent.FAULT, auctionFileFail);
-
         _auctionFileXML = obj as XML;
         _auctionDBXML = auctionLoader.auctionDBXML;
 
-        obj;
+        auctionLoader.removeEventListener(ResultEvent.RESULT, auctionFileVerify);
+        auctionLoader.removeEventListener(FaultEvent.FAULT, auctionFileFail);
     }
 
     private function auctionFileFail(event:ResultEvent):void {
