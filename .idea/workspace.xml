@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67542ef7-7a40-4b5d-a8d3-5f0c041b5c58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/invoice.as" afterPath="$PROJECT_DIR$/src/components/invoice.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="invoice.as" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/invoice.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6801872" vertical-offset="11107" max-vertical-offset="11764">
-              <caret line="679" column="14" selection-start-line="679" selection-start-column="14" selection-end-line="679" selection-end-column="14" />
+            <state vertical-scroll-proportion="2.3260531" vertical-offset="10103" max-vertical-offset="11764">
+              <caret line="682" column="41" selection-start-line="682" selection-start-column="41" selection-end-line="682" selection-end-column="41" />
               <folding>
                 <element signature="e#21#63#0" expanded="true" />
               </folding>
@@ -657,7 +656,7 @@
       <workItem from="1412694308834" duration="10857000" />
       <workItem from="1412784731421" duration="18146000" />
       <workItem from="1413069280979" duration="35312000" />
-      <workItem from="1413348127331" duration="396000" />
+      <workItem from="1413348127331" duration="2185000" />
     </task>
     <task id="LOCAL-00001" summary="Update Backup Oct 5, 2014">
       <created>1412568188402</created>
@@ -719,11 +718,15 @@
       <created>1413347430120</created>
       <updated>1413347430120</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Update Backup Oct 5, 2014">
+      <created>1413348544304</created>
+      <updated>1413348544304</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="792605000" />
+    <option name="totallyTimeSpent" value="794394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1219,8 +1222,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/invoice.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6801872" vertical-offset="11107" max-vertical-offset="11764">
-          <caret line="679" column="14" selection-start-line="679" selection-start-column="14" selection-end-line="679" selection-end-column="14" />
+        <state vertical-scroll-proportion="2.3260531" vertical-offset="10103" max-vertical-offset="11764">
+          <caret line="682" column="41" selection-start-line="682" selection-start-column="41" selection-end-line="682" selection-end-column="41" />
           <folding>
             <element signature="e#21#63#0" expanded="true" />
           </folding>
