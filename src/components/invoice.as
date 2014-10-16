@@ -517,12 +517,16 @@ public class invoice extends invoiceLayout {
     private function itemFileVerify(event:ResultEvent):void {
             var obj:Object;
             obj = XML(event.result);
+            var node:XML = new XML();
 
-            _auctionItemFileXML = obj as XML;
+            node = obj as XML;
+            _auctionItemFileXML = node.item[0];
             _auctionItemDBXML = itemLoader.auctionItemDBXML;
 
             itemLoader.removeEventListener(ResultEvent.RESULT, itemFileVerify);
             itemLoader.removeEventListener(FaultEvent.FAULT, itemFileFail);
+
+        addFinalBid();
 
     }
 
@@ -540,8 +544,10 @@ public class invoice extends invoiceLayout {
     private function auctionFileVerify(event:ResultEvent):void {
         var obj:Object;
         obj = XML(event.result);
+        var node:XML = new XML();
 
-        _auctionFileXML = obj as XML;
+        node = obj as XML;
+        _auctionFileXML = node.auction[0];
         _auctionDBXML = auctionLoader.auctionDBXML;
 
         auctionLoader.removeEventListener(ResultEvent.RESULT, auctionFileVerify);
@@ -564,22 +570,22 @@ public class invoice extends invoiceLayout {
         _auctionDBXML;
         _auctionItemFileXML;
 
-        _auctionItemFileXML.item[0].auctionFees = new XML();
+        _auctionItemFileXML.auctionFees = new XML();
 
         var node:XML = new XML();
-        node = <fee idBidder="" description="" id="" type="" amount="" display="" applyTo="" quantity=""/>;
+        node = <fee idBidder="" description="" id="" type="" amount="" display="" applyTo="" quantity="" ReserveMet="" BuyNow="" Winner="" ReserveFee="" Tax=""/>;
 
         _currBid =_auctionItemDBXML.start_bid;
 
         node.@idBidder = _bidderID;
         node.@amount = _currBid;
-        node.@id = _auctionItemFileXML.item[0].itemId;
-        node.@quantity = _auctionItemFileXML.item[0].quantity;
-        node.@description = _auctionItemFileXML.item[0].description;
+        node.@id = _auctionItemFileXML.itemId;
+        node.@quantity = _auctionItemFileXML.quantity;
+        node.@description = _auctionItemFileXML.description;
         node.@display = "$" + node.@amount;
         node.@applyTo = "Item";
 
-        _auctionItemFileXML.item[0].auctionFees.appendChild(node);
+        _auctionItemFileXML.auctionFees.appendChild(node);
 
         addTaxes();
 
@@ -587,7 +593,7 @@ public class invoice extends invoiceLayout {
 
     private function addTaxes():void {
 
-        tempXML = _auctionItemFileXML.item[0].copy();
+        tempXML = _auctionItemFileXML.copy();
 
 
         var xl:XMLList = XMLList(tempXML.auctionFees.children());
