@@ -10,6 +10,7 @@ import mx.collections.XMLListCollection;
 import mx.rpc.events.FaultEvent;
 import mx.rpc.events.ResultEvent;
 import mx.rpc.http.HTTPService;
+import mx.utils.RpcClassAliasInitializer;
 
 public class invoice extends invoiceLayout {
     public function invoice() {
@@ -576,6 +577,20 @@ public class invoice extends invoiceLayout {
         node = <fee idBidder="" description="" id="" type="" amount="" display="" applyTo="" quantity="" ReserveMet="" BuyNow="" Winner="" ReserveFee="" Tax=""/>;
 
         _currBid =_auctionItemDBXML.start_bid;
+        var _buyNow:String;
+        var _reserveFee:String;
+        var _reserveInit:String;
+        var _reserve:int;
+
+        node.BuyNow = _buyNow;
+        _reserveInit = _auctionItemFileXML.reserveDollar;
+        _reserve = int(_reserveInit);
+
+        if(_reserve == 0)
+        {node.ReserveMet = 0;}
+        else
+        {node.ReserveMet = _reserve;}
+
 
         node.@idBidder = _bidderID;
         node.@amount = _currBid;
