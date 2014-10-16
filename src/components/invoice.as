@@ -114,6 +114,11 @@ public class invoice extends invoiceLayout {
         _invoiceType = value;
     }
 
+
+    public function set auctionsItemListDBXML(value:XML):void {
+        _auctionsItemListDBXML = value;
+    }
+
     public function clear():void {
 
         companyInfo.text = "";
@@ -299,6 +304,10 @@ public class invoice extends invoiceLayout {
 
     public function loaditemSellerListFail(event:FaultEvent):void {
 
+        var responseXML:XML = XML(event.fault);
+
+        sellerXmlFileLoader.removeEventListener(ResultEvent.RESULT, loaditemSellerListVerify);
+        sellerXmlFileLoader.removeEventListener(ResultEvent.RESULT, loaditemSellerListFail);
 
     }
 
@@ -307,8 +316,6 @@ public class invoice extends invoiceLayout {
         var responseXML:XML = XML(event.result);
         _auctionSellerLists = responseXML;
 
-        sellerXmlFileLoader.removeEventListener(ResultEvent.RESULT, loaditemSellerListVerify);
-        sellerXmlFileLoader.removeEventListener(ResultEvent.RESULT, loaditemSellerListFail);
 
         loadSellerListValid();
 
@@ -323,51 +330,6 @@ public class invoice extends invoiceLayout {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-    private function calculateTaxAmount():void {
-        _invoiceTaxAmountCharge = _invoiceTax * Number(_invoiceSubtotalAmount);
-        taxAmountTxt.text = _invoiceTaxAmountCharge.toString();
-        _invoiceTax;
-
-        calculateFinalTotalAmount();
-    }
-
-    private function calculateFinalTotalAmount():void {
-        _invoiceFinalAmount = _invoiceTaxAmountCharge + Number(_invoiceSubtotalAmount);
-        totalAmount.text = _invoiceFinalAmount.toFixed(2);
-    }
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    private function calculateFinalBidSubTotal():void {
-        _invoiceSubtotalAmount = _invoiceTotal + _invoicePremiumAmount;
-
-        subtotalTxt.text = _invoiceSubtotalAmount.toString();
-    }
-
-    private function calculateFinalBidPreimum():void {
-        _invoicePremiumAmount = _invoiceTotal * .10;
-        premiumTotalTxt.text = _invoicePremiumAmount.toString();
-    }
-
-    private function calculateFinalBidTotal():void {
-        var node:XML = XML(_auctionItemFileXML.auctionFees);
-
-        var total:Number = 0;
-        var totalMD:Number = 0;
-        var i:int;
-        var x:int = node.length();
-
-        for (i = 0; i < x; i++) {
-            total += Number(node.fee[i].@amount.toString());
-        }
-
-        _invoiceTotal = total;
-
-        bidTotalTxt.text = total.toString();
-    }
 
     private function addFinalBid():void {
         _auctionDBXML;
@@ -412,15 +374,8 @@ public class invoice extends invoiceLayout {
         auctionItemFeeHolder.validateNow();
         auctionItemFeeHolder.validateDisplayList();
 
-        calculateTaxAmount();
+       // calculateTaxAmount();
     }
-
-
-
-
-
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -603,33 +558,6 @@ public class invoice extends invoiceLayout {
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
-
-    private function auctionXMLFail(event:Event):void {
-
-        var obj:Object;
-
-        obj = XML(auctionsxmlFileLoader.lastResult);
-        obj;
-
-    }
-
-    private function auctionXMLVerify(event:Event):void {
-
-        _auctionItemFileXML = XML(auctionsxmlFileLoader.lastResult);
-        _auctionItemFileXML;
-
-
-        xmlPrint.text = _auctionItemFileXML.toString();
-
-        addFinalBid();
-    }
-
-    public function set auctionsItemListDBXML(value:XML):void {
-        _auctionsItemListDBXML = value;
-    }
-
-
     public function loadItemListData():void{
 
         xmlPrint.text = _auctionsItemListDBXML.toString();
@@ -646,6 +574,8 @@ public class invoice extends invoiceLayout {
 
         auctionLoader.removeEventListener(ResultEvent.RESULT, auctionFileVerify);
         auctionLoader.removeEventListener(FaultEvent.FAULT, auctionFileFail);
+
+        addFinalBid();
     }
 
     private function auctionFileFail(event:ResultEvent):void {
