@@ -22,6 +22,14 @@ public class auctionItemClass extends AbstractInvoker {
 
     private var _currentEditState:String = "New";
 
+    public function get auctionItemDBXML():XML {
+        return _auctionItemDBXML;
+    }
+
+    public function set auctionItemDBXML(value:XML):void {
+        _auctionItemDBXML = value;
+    }
+
     public function get currentEditState():String {
         return _currentEditState;
     }
@@ -451,5 +459,7 @@ public class auctionItemClass extends AbstractInvoker {
             loadItemFileXML(url);
         }
     }
+
+
 }
 }

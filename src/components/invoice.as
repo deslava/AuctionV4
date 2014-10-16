@@ -16,12 +16,6 @@ public class invoice extends invoiceLayout {
         super();
     }
 
-    private var _invoiceTotal:int = 0;
-    private var _invoicePremiumAmount:int = 0;
-    private var _invoiceSubtotalAmount:int = 0;
-    private var _invoiceTax:Number = 0;
-    private var _invoiceTaxAmountCharge:Number = 0;
-    private var _invoiceFinalAmount:Number = 0;
     private var _sellerUserDBXML:XML;
     private var _sellerUserFileXML:XML;
     private var _bidderUserDBXML:XML;
@@ -33,10 +27,7 @@ public class invoice extends invoiceLayout {
     private var _auctionItemDBXML:XML;
     private var _auctionsItemListDBXML:XML;
     private var _auctionSellerFileXML:XML = new XML();
-    private var _auctionFileURL:String = new String();
     private var xc8:XMLListCollection = new XMLListCollection();
-    private var auctionsxmlFileLoader:HTTPService = new HTTPService();
-    private var auctionsfileLoader:fileLoaderClass = new fileLoaderClass();
     private var xmlFileLoader:HTTPService = new HTTPService();
     private var fileLoader:fileLoaderClass = new fileLoaderClass();
     private var xmlFileLoader2:HTTPService = new HTTPService();
@@ -44,10 +35,12 @@ public class invoice extends invoiceLayout {
     private var sellerXmlFileLoader:HTTPService = new HTTPService();
     private var sellerFileLoader:fileLoaderClass = new fileLoaderClass();
     private var _seller:sellerClass = new sellerClass();
-    private var _sellerID:Number = 0;
+
 
     private var auctionLoader:auctionClass = new auctionClass();
     private var itemLoader:auctionItemClass = new auctionItemClass();
+
+    private var _sellerID:Number = 0;
 
     public function set sellerID(value:Number):void {
         _sellerID = value;
@@ -147,7 +140,6 @@ public class invoice extends invoiceLayout {
     }
 
   public function loadFeeXML():void {
-
 
         tempXML = _auctionItemFileXML.copy();
 
@@ -329,56 +321,6 @@ public class invoice extends invoiceLayout {
     }
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    private function addFinalBid():void {
-        _auctionDBXML;
-        _auctionItemFileXML;
-
-        _auctionItemFileXML.item[0].auctionFees = new XML();
-
-        var node:XML = new XML();
-        node = <fee idBidder="" description="" id="" type="" amount="" display="" applyTo="" quantity=""/>;
-
-        _currBid =_auctionItemDBXML.start_bid;
-
-        node.@idBidder = _bidderID;
-        node.@amount = _currBid;
-        node.@id = _auctionItemFileXML.item[0].itemId;
-        node.@quantity = _auctionItemFileXML.item[0].quantity;
-        node.@description = _auctionItemFileXML.item[0].description;
-        node.@display = "$" + node.@amount;
-       node.@applyTo = "Item";
-
-        _auctionItemFileXML.item[0].auctionFees.appendChild(node);
-
-        addTaxes();
-
-    }
-
-    private function addTaxes():void {
-
-        tempXML = _auctionItemFileXML.item[0].copy();
-
-
-        var xl:XMLList = XMLList(tempXML.auctionFees.children());
-        var XMLString:String = xl.toXMLString();
-
-        var node:XML = new XML(XMLString);
-
-        _invoiceTax = Number(node.@amount.toString());
-
-        xc8.addItem(node);
-
-        auctionItemFeeHolder.dataProvider = xc8.list;
-        auctionItemFeeHolder.validateNow();
-        auctionItemFeeHolder.validateDisplayList();
-
-       // calculateTaxAmount();
-    }
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     private function loadBuyerUserLists(obj:Object):void {
 
@@ -487,10 +429,6 @@ public class invoice extends invoiceLayout {
         return url;
     }
 
-
-
-
-
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public function loadItemSellerSelected(i:int):void {
@@ -562,7 +500,41 @@ public class invoice extends invoiceLayout {
 
         xmlPrint.text = _auctionsItemListDBXML.toString();
 
+        if(_invoiceType == "loadSelectedInvoices")
+        {
+            loadItemData();
+        }
+
     }
+
+    private function loadItemData():void {
+
+        itemLoader.loadItemWithID(_auctionID, _itemID);
+        itemLoader.addEventListener(ResultEvent.RESULT, itemFileVerify);
+        itemLoader.addEventListener(FaultEvent.FAULT, itemFileFail);
+    }
+
+    private function itemFileVerify(event:ResultEvent):void {
+            var obj:Object;
+            obj = XML(event.result);
+
+            _auctionItemFileXML = obj as XML;
+            _auctionItemDBXML = itemLoader.auctionItemDBXML;
+
+            itemLoader.removeEventListener(ResultEvent.RESULT, itemFileVerify);
+            itemLoader.removeEventListener(FaultEvent.FAULT, itemFileFail);
+
+    }
+
+    private function itemFileFail(event:ResultEvent):void {
+            var obj:Object;
+            obj = XML(event.result);
+
+            itemLoader.removeEventListener(ResultEvent.RESULT, itemFileVerify);
+            itemLoader.removeEventListener(FaultEvent.FAULT, itemFileFail);
+
+    }
+
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     private function auctionFileVerify(event:ResultEvent):void {
@@ -575,7 +547,6 @@ public class invoice extends invoiceLayout {
         auctionLoader.removeEventListener(ResultEvent.RESULT, auctionFileVerify);
         auctionLoader.removeEventListener(FaultEvent.FAULT, auctionFileFail);
 
-        addFinalBid();
     }
 
     private function auctionFileFail(event:ResultEvent):void {
@@ -586,5 +557,56 @@ public class invoice extends invoiceLayout {
         auctionLoader.removeEventListener(FaultEvent.FAULT, auctionFileFail);
 
     }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    private function addFinalBid():void {
+        _auctionDBXML;
+        _auctionItemFileXML;
+
+        _auctionItemFileXML.item[0].auctionFees = new XML();
+
+        var node:XML = new XML();
+        node = <fee idBidder="" description="" id="" type="" amount="" display="" applyTo="" quantity=""/>;
+
+        _currBid =_auctionItemDBXML.start_bid;
+
+        node.@idBidder = _bidderID;
+        node.@amount = _currBid;
+        node.@id = _auctionItemFileXML.item[0].itemId;
+        node.@quantity = _auctionItemFileXML.item[0].quantity;
+        node.@description = _auctionItemFileXML.item[0].description;
+        node.@display = "$" + node.@amount;
+        node.@applyTo = "Item";
+
+        _auctionItemFileXML.item[0].auctionFees.appendChild(node);
+
+        addTaxes();
+
+    }
+
+    private function addTaxes():void {
+
+        tempXML = _auctionItemFileXML.item[0].copy();
+
+
+        var xl:XMLList = XMLList(tempXML.auctionFees.children());
+        var XMLString:String = xl.toXMLString();
+
+        var node:XML = new XML(XMLString);
+
+        //_invoiceTax = Number(node.@amount.toString());
+
+        xc8.addItem(node);
+
+        auctionItemFeeHolder.dataProvider = xc8.list;
+        auctionItemFeeHolder.validateNow();
+        auctionItemFeeHolder.validateDisplayList();
+
+    }
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 }
 }
