@@ -574,8 +574,8 @@ public class invoice extends invoiceLayout {
         var obj:Object = new Object();
         var xl:XMLList= new XMLList();
 
-        obj = _auctionItemFileXML.auctionFees;
-        _itemFeesXML = obj as XML;
+        obj = _auctionItemFileXML;
+        _itemFeesXML = XML(obj.auctionFees);
 
         xl = _itemFeesXML.fee.(@id=="Reserve Fee");
 
