@@ -36,6 +36,7 @@ public class invoice extends invoiceLayout {
     private var sellerXmlFileLoader:HTTPService = new HTTPService();
     private var sellerFileLoader:fileLoaderClass = new fileLoaderClass();
     private var _seller:sellerClass = new sellerClass();
+    private var _itemFeesXML:XML = new XML();
 
 
     private var auctionLoader:auctionClass = new auctionClass();
@@ -570,6 +571,13 @@ public class invoice extends invoiceLayout {
     private function addFinalBid():void {
         _auctionDBXML;
         _auctionItemFileXML;
+        var obj:Object = new Object();
+
+        obj = _auctionItemFileXML.auctionFees;
+        _itemFeesXML = obj as XML;
+
+        var xl:XMLList=_itemFeesXML.*.(@id=="Reserve Fee");
+
 
         _auctionItemFileXML.auctionFees = new XML();
 
@@ -581,17 +589,24 @@ public class invoice extends invoiceLayout {
         var _reserveFee:String;
         var _reserveInit:String;
         var _reserve:int;
+        var _sellerType:String;
 
-        node.BuyNow = _buyNow;
+        _sellerType = _bidderUserDBXML.user[0].userType;
+
+        node.@BuyNow = _buyNow;
         _reserveInit = _auctionItemFileXML.reserveDollar;
         _reserve = int(_reserveInit);
 
-        if(_reserve == 0)
-        {node.ReserveMet = 0;}
+        if(_reserve == 0 && _sellerType == "Bidder")
+        {node.@ReserveMet = "true";}
+        else if(_reserve > _currBid && _sellerType != "Bidder")
+        {node.@ReserveMet = "false";}
         else
-        {node.ReserveMet = _reserve;}
+        {
+            node.@ReserveMet = "true";
+        }
 
-
+        node.@Winner = _sellerType;
         node.@idBidder = _bidderID;
         node.@amount = _currBid;
         node.@id = _auctionItemFileXML.itemId;

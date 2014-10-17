@@ -60,8 +60,8 @@
       <file leaf-file-name="invoice.as" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/invoice.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7710843" vertical-offset="9548" max-vertical-offset="10846">
-              <caret line="588" column="7" selection-start-line="588" selection-start-column="7" selection-end-line="588" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.1294719" vertical-offset="9682" max-vertical-offset="11101">
+              <caret line="574" column="0" selection-start-line="574" selection-start-column="0" selection-end-line="574" selection-end-column="0" />
               <folding>
                 <element signature="e#21#63#0" expanded="true" />
               </folding>
@@ -715,7 +715,7 @@
       <workItem from="1412694308834" duration="10857000" />
       <workItem from="1412784731421" duration="18146000" />
       <workItem from="1413069280979" duration="35312000" />
-      <workItem from="1413348127331" duration="28101000" />
+      <workItem from="1413348127331" duration="35871000" />
     </task>
     <task id="LOCAL-00001" summary="Update Backup Oct 5, 2014">
       <created>1412568188402</created>
@@ -805,11 +805,15 @@
       <created>1413491266758</created>
       <updated>1413491266758</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Update Backup Oct 15, 2014">
+      <created>1413493239088</created>
+      <updated>1413493239088</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="820310000" />
+    <option name="totallyTimeSpent" value="828080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -822,18 +826,18 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3596758" sideWeight="0.69635415" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35359675" sideWeight="0.69635415" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3596758" sideWeight="0.30364582" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35359675" sideWeight="0.30364582" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32117528" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955715" sideWeight="0.49970114" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32028836" sideWeight="0.4983897" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21614583" sideWeight="0.51582277" order="0" side_tool="true" content_ui="tabs" x="860" y="231" width="402" height="601" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21614583" sideWeight="0.515674" order="0" side_tool="true" content_ui="tabs" x="860" y="231" width="402" height="601" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21614583" sideWeight="0.4841772" order="1" side_tool="false" content_ui="combo" x="579" y="61" width="473" height="964" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21614583" sideWeight="0.4827586" order="1" side_tool="false" content_ui="combo" x="579" y="61" width="473" height="964" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285273" sideWeight="0.62227416" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -902,38 +906,48 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
-          <line>101</line>
+          <line>102</line>
           <option name="timeStamp" value="329" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
-          <line>505</line>
-          <option name="timeStamp" value="336" />
+          <line>595</line>
+          <option name="timeStamp" value="353" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
-          <line>524</line>
-          <option name="timeStamp" value="342" />
+          <line>597</line>
+          <option name="timeStamp" value="354" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
-          <line>554</line>
-          <option name="timeStamp" value="346" />
+          <line>609</line>
+          <option name="timeStamp" value="355" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
-          <line>576</line>
-          <option name="timeStamp" value="349" />
+          <line>617</line>
+          <option name="timeStamp" value="356" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
-          <line>603</line>
-          <option name="timeStamp" value="350" />
+          <line>581</line>
+          <option name="timeStamp" value="359" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
-          <line>593</line>
-          <option name="timeStamp" value="352" />
+          <line>583</line>
+          <option name="timeStamp" value="360" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
+          <line>584</line>
+          <option name="timeStamp" value="361" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="flex">
+          <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
+          <line>586</line>
+          <option name="timeStamp" value="362" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://C:/Program Files (x86)/Zend/Apache2/htdocs/AuctionV4/out/production/AuctionV4/login.php</url>
@@ -954,7 +968,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="353" />
+      <option name="time" value="363" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1339,8 +1353,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/invoice.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7710843" vertical-offset="9548" max-vertical-offset="10846">
-          <caret line="588" column="7" selection-start-line="588" selection-start-column="7" selection-end-line="588" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.1294719" vertical-offset="9682" max-vertical-offset="11101">
+          <caret line="574" column="0" selection-start-line="574" selection-start-column="0" selection-end-line="574" selection-end-column="0" />
           <folding>
             <element signature="e#21#63#0" expanded="true" />
           </folding>
