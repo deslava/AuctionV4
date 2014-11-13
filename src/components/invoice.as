@@ -2,6 +2,7 @@ package components {
 import auctionFunctionsClass.auctionClass;
 import auctionFunctionsClass.auctionItemClass;
 import auctionFunctionsClass.fileLoaderClass;
+import auctionFunctionsClass.invoiceItemClass;
 import auctionFunctionsClass.sellerClass;
 
 import flash.events.Event;
@@ -40,6 +41,7 @@ public class invoice extends invoiceLayout {
 
     private var auctionLoader:auctionClass = new auctionClass();
     private var itemLoader:auctionItemClass = new auctionItemClass();
+    private var itemInvoice:invoiceItemClass = new invoiceItemClass();
 
     private var _sellerID:Number = 0;
 
@@ -576,7 +578,10 @@ public class invoice extends invoiceLayout {
         obj = _auctionItemFileXML;
         _itemFeesXML = XML(obj.auctionFees);
 
-
+        itemInvoice.auctionItemFileXML = _auctionItemFileXML;
+        itemInvoice.auctionItemDBXML = _auctionItemDBXML;
+        itemInvoice.bidderUserDBXML = _bidderUserDBXML;
+        itemInvoice;
 
     }
 

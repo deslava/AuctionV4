@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67542ef7-7a40-4b5d-a8d3-5f0c041b5c58" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/invoiceItemClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemListClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemListClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemsListClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemsListClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionsListClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/auctionsListClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/fileLoaderClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/fileLoaderClass.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/invoice.as" afterPath="$PROJECT_DIR$/src/components/invoice.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/invoiceItemClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/invoiceItemClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/itemBidClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/itemBidClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/sellerClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/sellerClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/serverTime.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/serverTime.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/userBidderClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/userBidderClass.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auctionFunctionsClass/userClass.as" afterPath="$PROJECT_DIR$/src/auctionFunctionsClass/userClass.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/" />
@@ -36,86 +47,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pageCreationCompleteHandler.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pageCreationCompleteHandler.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3519">
-              <caret line="181" column="1" selection-start-line="181" selection-start-column="1" selection-end-line="181" selection-end-column="1" />
-              <folding>
-                <element signature="e#22#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoiceFunctions.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/invoiceFunctions.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="476">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="itemsCategories.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/itemsCategories.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1404786254839" expanded="true" signature="1134:1194" placeholder="INSERT INTO ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="itemsXML.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/itemsXML.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1461" max-vertical-offset="11016">
-              <caret line="421" column="0" selection-start-line="421" selection-start-column="0" selection-end-line="421" selection-end-column="0" />
-              <folding>
-                <marker date="1406834261523" expanded="true" signature="2073:2158" placeholder="SELECT item_..auction_items..." />
-                <marker date="1406834261523" expanded="true" signature="3135:3661" placeholder="INSERT INTO ..." />
-                <marker date="1406834261523" expanded="true" signature="18983:19279" placeholder="UPDATE aucti..." />
-                <marker date="1406834261523" expanded="true" signature="19354:19625" placeholder="UPDATE aucti..." />
-                <marker date="1406834261523" expanded="true" signature="21836:22132" placeholder="UPDATE aucti..." />
-                <marker date="1406834261523" expanded="true" signature="22207:22478" placeholder="UPDATE aucti..." />
-                <marker date="1406834261523" expanded="true" signature="27075:27160" placeholder="UPDATE aucti..." />
-                <marker date="1406834261523" expanded="true" signature="27667:27747" placeholder="DELETE FROM ..." />
-                <marker date="1406834261523" expanded="true" signature="27803:27885" placeholder="DELETE FROM ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="invoice.as" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/invoice.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61645746" vertical-offset="0" max-vertical-offset="10234">
-              <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
-              <folding />
+            <state vertical-scroll-proportion="0.4162331" vertical-offset="9511" max-vertical-offset="10489">
+              <caret line="583" column="20" selection-start-line="583" selection-start-column="20" selection-end-line="583" selection-end-column="20" />
+              <folding>
+                <element signature="e#21#63#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/login.php">
+      <file leaf-file-name="invoiceItemClass.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/auctionFunctionsClass/invoiceItemClass.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="935">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="serverConfig.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/serverConfig.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="476">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1946" max-vertical-offset="2907">
+              <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,6 +118,7 @@
         <option value="$PROJECT_DIR$/src/components/userInvoice.as" />
         <option value="$PROJECT_DIR$/src/auctionFunctionsClass/auctionItemClass.as" />
         <option value="$PROJECT_DIR$/src/pageCreationCompleteHandler.as" />
+        <option value="$PROJECT_DIR$/src/auctionFunctionsClass/invoiceItemClass.as" />
         <option value="$PROJECT_DIR$/src/components/invoice.as" />
       </list>
     </option>
@@ -721,7 +673,7 @@
       <workItem from="1415656991909" duration="6966000" />
       <workItem from="1415722736039" duration="10869000" />
       <workItem from="1415831174656" duration="1219000" />
-      <workItem from="1415845174228" duration="4279000" />
+      <workItem from="1415845174228" duration="6832000" />
     </task>
     <task id="LOCAL-00001" summary="Update Backup Oct 5, 2014">
       <created>1412568188402</created>
@@ -827,17 +779,21 @@
       <created>1413522186367</created>
       <updated>1413522186367</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Update Backup Oct 15, 2014">
+      <created>1415895712931</created>
+      <updated>1415895712931</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="944881000" />
+    <option name="totallyTimeSpent" value="947434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24721378" sideWeight="0.5675057" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24721378" sideWeight="0.5675057" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955715" sideWeight="0.49970114" order="12" side_tool="false" content_ui="tabs" />
@@ -850,12 +806,12 @@
       <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32117528" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955715" sideWeight="0.49970114" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32028836" sideWeight="0.4983897" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32016212" sideWeight="0.4983897" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21614583" sideWeight="0.5208614" order="0" side_tool="true" content_ui="tabs" x="860" y="231" width="402" height="601" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21614583" sideWeight="0.52077" order="0" side_tool="true" content_ui="tabs" x="860" y="231" width="402" height="601" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21614583" sideWeight="0.47779274" order="1" side_tool="false" content_ui="combo" x="579" y="61" width="473" height="964" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21614583" sideWeight="0.47821683" order="1" side_tool="false" content_ui="combo" x="579" y="61" width="473" height="964" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285273" sideWeight="0.62227416" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -949,14 +905,14 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="flex">
           <url>file://$PROJECT_DIR$/src/components/invoice.as</url>
-          <line>578</line>
-          <option name="timeStamp" value="375" />
+          <line>583</line>
+          <option name="timeStamp" value="377" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="376" />
+      <option name="time" value="378" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -964,13 +920,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Program Files (x86)/Zend/Apache2/htdocs/AuctionV4/out/production/AuctionV4/itemsXML.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.576923" vertical-offset="449" max-vertical-offset="11016">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files (x86)/Zend/Apache2/htdocs/AuctionV4/out/production/AuctionV4/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22780569" vertical-offset="357" max-vertical-offset="2414">
@@ -1279,7 +1228,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1404786254839" expanded="true" signature="1134:1194" placeholder="INSERT INTO ..." />
+            <marker date="1404786254839" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -1297,32 +1246,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1461" max-vertical-offset="11016">
           <caret line="421" column="0" selection-start-line="421" selection-start-column="0" selection-end-line="421" selection-end-column="0" />
           <folding>
-            <marker date="1406834261523" expanded="true" signature="2073:2158" placeholder="SELECT item_..auction_items..." />
-            <marker date="1406834261523" expanded="true" signature="3135:3661" placeholder="INSERT INTO ..." />
-            <marker date="1406834261523" expanded="true" signature="18983:19279" placeholder="UPDATE aucti..." />
-            <marker date="1406834261523" expanded="true" signature="19354:19625" placeholder="UPDATE aucti..." />
-            <marker date="1406834261523" expanded="true" signature="21836:22132" placeholder="UPDATE aucti..." />
-            <marker date="1406834261523" expanded="true" signature="22207:22478" placeholder="UPDATE aucti..." />
-            <marker date="1406834261523" expanded="true" signature="27075:27160" placeholder="UPDATE aucti..." />
-            <marker date="1406834261523" expanded="true" signature="27667:27747" placeholder="DELETE FROM ..." />
-            <marker date="1406834261523" expanded="true" signature="27803:27885" placeholder="DELETE FROM ..." />
+            <marker date="1406834261523" expanded="true" signature="-1:-1" placeholder="SELECT item_..auction_items..." />
+            <marker date="1406834261523" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1406834261523" expanded="true" signature="-1:-1" placeholder="UPDATE aucti..." />
+            <marker date="1406834261523" expanded="true" signature="-1:-1" placeholder="UPDATE aucti..." />
+            <marker date="1406834261523" expanded="true" signature="-1:-1" placeholder="UPDATE aucti..." />
+            <marker date="1406834261523" expanded="true" signature="-1:-1" placeholder="UPDATE aucti..." />
+            <marker date="1406834261523" expanded="true" signature="-1:-1" placeholder="UPDATE aucti..." />
+            <marker date="1406834261523" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1406834261523" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serverConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="476">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="935">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1336,11 +1269,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/serverConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2952243" vertical-offset="0" max-vertical-offset="691">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13892908" vertical-offset="244" max-vertical-offset="935">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auctionFunctionsClass/invoiceItemClass.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2907">
+          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/invoice.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61645746" vertical-offset="0" max-vertical-offset="10234">
-          <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
-          <folding />
+        <state vertical-scroll-proportion="0.4162331" vertical-offset="9511" max-vertical-offset="10489">
+          <caret line="583" column="20" selection-start-line="583" selection-start-column="20" selection-end-line="583" selection-end-column="20" />
+          <folding>
+            <element signature="e#21#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
