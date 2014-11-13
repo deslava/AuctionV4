@@ -10,7 +10,6 @@ import mx.collections.XMLListCollection;
 import mx.rpc.events.FaultEvent;
 import mx.rpc.events.ResultEvent;
 import mx.rpc.http.HTTPService;
-import mx.utils.RpcClassAliasInitializer;
 
 public class invoice extends invoiceLayout {
     public function invoice() {
@@ -572,53 +571,12 @@ public class invoice extends invoiceLayout {
         _auctionDBXML;
         _auctionItemFileXML;
         var obj:Object = new Object();
-        var xl:XMLList= new XMLList();
+        var itemType:String;
 
         obj = _auctionItemFileXML;
         _itemFeesXML = XML(obj.auctionFees);
 
-        xl = _itemFeesXML.fee.(@id=="Reserve Fee");
 
-
-        _auctionItemFileXML.auctionFees = new XML();
-
-        var node:XML = new XML();
-        node = <fee idBidder="" description="" id="" type="" amount="" display="" applyTo="" quantity="" ReserveMet="" BuyNow="" Winner="" ReserveFee="" Tax=""/>;
-
-        _currBid =_auctionItemDBXML.start_bid;
-        var _buyNow:String;
-        var _reserveFee:String;
-        var _reserveInit:String;
-        var _reserve:int;
-        var _sellerType:String;
-
-        _sellerType = _bidderUserDBXML.user[0].userType;
-
-        node.@BuyNow = _buyNow;
-        _reserveInit = _auctionItemFileXML.reserveDollar;
-        _reserve = int(_reserveInit);
-
-        if(_reserve == 0 && _sellerType == "Bidder")
-        {node.@ReserveMet = "true";}
-        else if(_reserve > _currBid && _sellerType != "Bidder")
-        {node.@ReserveMet = "false";}
-        else
-        {
-            node.@ReserveMet = "true";
-        }
-
-        node.@Winner = _sellerType;
-        node.@idBidder = _bidderID;
-        node.@amount = _currBid;
-        node.@id = _auctionItemFileXML.itemId;
-        node.@quantity = _auctionItemFileXML.quantity;
-        node.@description = _auctionItemFileXML.description;
-        node.@display = "$" + node.@amount;
-        node.@applyTo = "Item";
-
-        _auctionItemFileXML.auctionFees.appendChild(node);
-
-        addTaxes();
 
     }
 
