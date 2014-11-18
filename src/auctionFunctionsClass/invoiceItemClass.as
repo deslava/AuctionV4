@@ -60,21 +60,21 @@ public class invoiceItemClass {
 
 
 
-    public function addItem(_itemFileXML:XML):void{
+    public function addItem(_itemXML:XML):void{
 
 
-        formatFeeXML(_itemFeesXML);
+        formatFeeXML(_itemXML);
 
 
 
     }
 
-    private function formatFeeXML(_itemFeesXML:XML):void{
+    private function formatFeeXML(_itemXML:XML):void{
 
         var node:XML;
         var obj:Object = new Object();
 
-        obj = _itemFileXML;
+        obj = _itemXML;
 
         if(obj == null)
         {_itemFeesXML = new XML();}
@@ -108,8 +108,8 @@ public class invoiceItemClass {
         }
 
         _currBid = _auctionItemDBXML.start_bid;
-        _sellerType = _bidderUserDBXML.User[0].userType;
-        _bidderID = _bidderUserDBXML.User[0].userID;
+        _sellerType = _bidderUserDBXML.user[0].userType;
+        _bidderID = _bidderUserDBXML.user[0].userId;
 
         reserveStr = _auctionItemFileXML.reserveDollar;
         _reserve = int(reserveStr);
@@ -139,7 +139,6 @@ public class invoiceItemClass {
             node.@amount = _currBid;
         }
 
-
         if(_buyNow == "false" && _sellerType != "Bidder")
             node.@display = node.@amount + " (RF)";
         else if(_buyNow == "true")
@@ -147,7 +146,7 @@ public class invoiceItemClass {
         else
             node.@display = "$" + node.@amount;
 
-
+        _reserve = 0;
 
     }
     private function assignDefaultFee():void{

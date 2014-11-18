@@ -570,17 +570,11 @@ public class invoice extends invoiceLayout {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     private function addFinalBid():void {
-        _auctionDBXML;
-        _auctionItemFileXML;
-        var obj:Object = new Object();
-        var itemType:String;
-
-        obj = _auctionItemFileXML;
-        _itemFeesXML = XML(obj.auctionFees);
 
         itemInvoice.auctionItemFileXML = _auctionItemFileXML;
         itemInvoice.auctionItemDBXML = _auctionItemDBXML;
         itemInvoice.bidderUserDBXML = _bidderUserDBXML;
+        itemInvoice.addItem(_auctionItemFileXML);
         itemInvoice;
 
     }
